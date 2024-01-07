@@ -3,7 +3,7 @@ import "./PageHeader.scss";
 const PageHeader = (props) => {
   return (
     <div className="wave-header">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg className="absolute bottom-0 left-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#fff"
           fill-opacity="1"
