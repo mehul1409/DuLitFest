@@ -1,9 +1,9 @@
-const EventDetails = [
+const EventDetailsDay1 = [
     {
 
         "time": "11:00-11:50 AM",
         "Place": "Shridhar Shriram Auditorium",
-        "Event_Name": " Inaugration Ceremony",
+        "Event_Name": "Inaugration Ceremony",
         "Address": "lorem ipsum",
     },
     {
@@ -20,7 +20,7 @@ const EventDetails = [
     },
     {
         "time": "1:00 - 1:50 PM",
-        "Place": "Shridhar Shriram Auditorium",
+        "Place": "Arun Jaitley Front Lawn",
         "Event_Name": "Being Hindu in Bangladesh",
         "Address": "Deep Halder & Devdutta Majji in conversation with Utpal Kumar",
     },
@@ -28,13 +28,13 @@ const EventDetails = [
         "time": "2:00 - 2:50 PM",
         "Place": "Shridhar Shriram Auditorium",
         "Event_Name": "Warrior of the Fourth Estate",
-        "Address": "Address by Swapan Dasgupta, Principal Prof. Manoj Khanna and Amb. Oleg Osipov",
+        "Address": "lorem ipsum",
     },
     {
         "time": "2:00 - 2:50 PM",
-        "Place": "Shridhar Shriram Auditorium",
+        "Place": "Arun Jaitley Front Lawn",
         "Event_Name": "- She The Leader : Women in Politics",
-        "Address": "Address by Swapan Dasgupta, Principal Prof. Manoj Khanna and Amb. Oleg Osipov",
+        "Address": "- Nidhi Sharma in conversation with Priya Sharma",
     },
     {
         "time": "3:00 - 3:50 PM",
@@ -44,9 +44,9 @@ const EventDetails = [
     },
     {
         "time": "3:00 - 3:50 PM",
-        "Place": "Shridhar Shriram Auditorium",
+        "Place": "Arun Jaitley Front Lawn",
         "Event_Name": "Indian Attitude Towards Knowledge",
-        "Address": "",
+        "Address": "Prof. Kapil Kapoor in conversation with Sampadananda Mishra",
     },
     {
         "time": "4:00 - 4:50 PM",
@@ -56,15 +56,15 @@ const EventDetails = [
     },
     {
         "time": "4:00 - 4:50 PM",
-        "Place": "Shridhar Shriram Auditorium",
+        "Place": "Arun Jaitley Front Lawn",
         "Event_Name": "Nothing But the Truth",
-        "Address": "Address by Swapan Dasgupta, Principal Prof. Manoj Khanna and Amb. Oleg Osipov",
+        "Address": "Rishabh Shah in conversation",
     },
     {
         "time": "5:00 PM - 5:50 PM",
         "Place": "Shridhar Shriram Auditorium",
         "Event_Name": "The Art of Habit",
-        "Address": "- Gauranga Das Prabhu in conversation",
+        "Address": "Gauranga Das Prabhu in conversation",
     },
     {
         "time": "6:00 PM - 6:50 PM",
@@ -74,4 +74,4 @@ const EventDetails = [
     },
 ]
 
-export default EventDetails;
+export default EventDetailsDay1;
