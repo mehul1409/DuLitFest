@@ -16,7 +16,7 @@
 
 .home-about {
     position: relative;
-    top: -100px;
+    // top: -100px;
     // background-image: linear-gradient(to bottom, #576e8f 0%, #263243 100%);
     background-color: #263243;
     // box-shadow: 0 0 2px #263243, 0 0 10px #263243, 0 0 20px #263243, 0 0 30px #263243,
@@ -28,7 +28,8 @@
 }
 
 .before-about {
-    height: 100px;
+  background-color: #263243;
+    height: 40px;
     box-shadow: 0 0 2px #263243, 0 0 10px #263243, 0 0 20px #263243, 0 0 30px #263243,
     0 0 40px #263243, 0 0 50px #263243,
     0 0 60px #263243, 0 0 70px #263243,
@@ -134,9 +135,6 @@
   width: 65%;
   z-index: -1;
   border-radius: 20px;
-}
-.underpage p:last-child {
-//   margin-bottom: 0;
 }
 
 .about-us {
