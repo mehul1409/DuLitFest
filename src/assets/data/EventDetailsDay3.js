@@ -42,7 +42,7 @@ const EventDetailsDay3 = [
         "time": "2:00 - 2:50 PM",
         "Place": "Arun Jaitley Front Lawn",
         "Event_Name": "Book Launch - Chanakya Intelligence",
-        "Address": "Lorem ipsum",
+        "Address": "",
     },
     {
         "time": "3:00 - 3:50 PM",
@@ -54,7 +54,7 @@ const EventDetailsDay3 = [
         "time": "3:00 - 3:50 PM",
         "Place": "Arun Jaitley Front Lawn",
         "Event_Name": "The Girl from Kathua : Sacrificial Victim of Ghazwa-e-Hind",
-        "Address": "Lorem ipsum",
+        "Address": "",
     },
     {
         "time": "4:00 - 4:50 PM",
@@ -66,13 +66,13 @@ const EventDetailsDay3 = [
         "time": "4:00 - 4:50 PM",
         "Place": "Arun Jaitley Front Lawn",
         "Event_Name": "The Middle Eastern Dilemma",
-        "Address": "t - Neeraj Atri, Aabhas Maldahiyar in conversation with Ramesh Shinde",
+        "Address": "Neeraj Atri, Aabhas Maldahiyar in conversation with Ramesh Shinde",
     },
     {
         "time": "5:00 PM - 6:30 PM",
         "Place": "Shridhar Shriram Auditorium",
         "Event_Name": "The Closing Debate",
-        "Address": "lorem ipsum",
+        "Address": "",
     },
 
 ]
