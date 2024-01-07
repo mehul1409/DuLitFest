@@ -96,7 +96,7 @@ const SpeakersData = [
     },
     {
         "name": "Nitin Gokhale",
-        "imgUrl": "{{image_url}}",
+        "imgUrl": "/assets/images/NitinGokhle.jpeg",
         "tag": "Security analyst, journalist, and author"
     },
 

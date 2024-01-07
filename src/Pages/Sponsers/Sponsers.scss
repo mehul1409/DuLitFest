@@ -1,69 +1,40 @@
+.sponsers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .Sponsersbody{
-    background-color: #1f2937;
-    text-align: center;
-  }
-  
-  .middle{
-    height: 100vh;
-    width:100vw;
-    background-color:white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-  }
-  
-  .sponsers{
-    display: grid;
-    box-sizing: border-box;
-    grid-template-columns: repeat(5,1fr);
-    grid-auto-rows: 250px;
-    gap: 10px;
-    width: 1000px;
-    height: 90%;
-  }
-  
-  .sponsers img {
-    height: 50%;
-    width: 80%;
-    object-fit: cover;
-    animation: slide 10s linear infinite;
-    position: relative;
-    animation-fill-mode: forwards;
+.box-1 {
+  width: 60%;
+  height: 60%;
+  margin-top: 100px;
+
+  h1 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding: 2px 2px;
   }
 
-  .sponsers::-webkit-scrollbar {
-    display: none;
+  img {
+    width: 60%;
+    height: 60%;
+    margin-left: 16%;
   }
-  
-  @keyframes slide {
-    0% {
-      top: 20%;
-    }
-    100% {
-      top: -350%;
-    }
-  }
-  
-  
-  @media only screen and (max-width:720px){
-    .sponsers{
-      grid-template-columns: repeat(4,1fr);
-    }
-  }
-  
-  @media only screen and (max-width:580px){
-    .sponsers{
-      grid-template-columns: repeat(3,1fr);
-    }
+}
+
+.box-2 {
+  width: 60%;
+  height: 60%;
+
+  h1 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding: 2px 2px;
   }
 
-  
-  @media only screen and (max-width:390px){
-    .sponsers{
-      grid-template-columns: repeat(2,1fr);
-    }
+  img {
+    width: 65%;
+    height: 60%;
+    margin-left: 16%;
   }
-  
-  
+}

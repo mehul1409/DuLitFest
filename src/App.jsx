@@ -6,11 +6,13 @@ import Register from "./Pages/Register/Register";
 import Sponsers from "./Pages/Sponsers/Sponsers";
 import Navbar from "./Components/Navbar/Navbar";
 import Contact from "./Pages/Contact/Contact";
+import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 
 const App = () => {
   return (
     <>
       <Navbar />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/speakers" element={<Speakers />} />
