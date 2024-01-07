@@ -4,6 +4,7 @@ const PageHeader = (props) => {
   return (
     <div className="wave-header" style={{ backgroundColor: props.bgColor }}>
       <svg
+        className="absolute bottom-0 left-0"
         style={{ backgroundColor: props.bgColor }}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
