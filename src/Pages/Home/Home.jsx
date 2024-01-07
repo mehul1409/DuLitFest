@@ -6,7 +6,8 @@ import Footer from "../../Components/Footer/Footer";
 const Home = () => {
   return (
   <>
-    <div className="home-hero">
+   <div className="home-cont-hero">
+   <div className="home-hero">
       {/* <img src={homeHero} alt="" id="homeimg"/> */}
     </div>
     <div className="before-about"></div>
@@ -26,7 +27,6 @@ const Home = () => {
       <div className="about-us1">
       Officiated by the University of Delhi, we are well-positioned to establish this as the nation's foremost and largest student-led literary event. Set against the backdrop of Delhi's brisk January ambiance, we are curating a three-day literary fiesta at DU's esteemed Shri Ram College of Commerce in the North Campus, scheduled for January 19th to 21st, 2024. Nestled within this historic institution, our aim is not only to celebrate literature but also to infuse it with renewed vigour and enthusiasm. 
       </div>
-      <ExploreCard/>
 
 <div className="about-us1">
 The festival promises a diverse array of activities, including author dialogues, curated panel discussions, engaging workshops, shopping and culinary delights, captivating musical performances, platforms for emerging literary talent, curated book exhibitions, competitions, and more.
@@ -47,7 +47,10 @@ Our vision is to establish this literary festival as a cherished tradition and s
 
 
     </div>
+    <ExploreCard/>
     <Footer/>
+   </div>
+    
   </>
   );
 };
