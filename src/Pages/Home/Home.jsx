@@ -46,6 +46,7 @@ Our vision is to establish this literary festival as a cherished tradition and s
 
 
     </div>
+    <Footer/>
   </>
   );
 };
