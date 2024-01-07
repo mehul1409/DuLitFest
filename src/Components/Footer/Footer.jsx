@@ -37,7 +37,7 @@ const Footer = (props) => {
               </span>
             </a>
           </div>
-          <div className="space-y-2 text-sm">
+          <div className="space-y-2 text-sm paragraph">
             <p className="text-xl font-bold tracking-wide text-white">
               Contacts
             </p>
@@ -52,7 +52,7 @@ const Footer = (props) => {
                 850-123-5021
               </a>
             </div>
-            <div className="flex">
+            <div className="flex paragraph">
               <p className="mr-1 text-white">Email:</p>
               <a
                 href="mailto:info@lorem.mail"
@@ -63,7 +63,7 @@ const Footer = (props) => {
                 info@lorem.mail
               </a>
             </div>
-            <div className="flex">
+            <div className="flex paragraph">
               <p className="mr-1 text-white">Address:</p>
               <a
                 href="https://www.google.com/maps"
@@ -103,7 +103,7 @@ const Footer = (props) => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
+        <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row paragraph">
           <p className="text-sm text-white">
             © Copyright 2020 Lorem Inc. All rights reserved.
           </p>
