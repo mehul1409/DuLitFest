@@ -1,5 +1,19 @@
-.svgFooter{
-    height: 20px;
-    background: url("/src/Components/Footer/wave1.png") transparent,
-              url("/src/Components/Footer/wave1.png") transparent;
+p {
+  margin: 2em;
+  font-weight: bold;
+  font-size: 130%;
+  text-transform: uppercase;
+}
+
+.in {
+  width: 80%;
+  margin-bottom: 200px;
+}
+
+.header {
+  fill: url(#linear-gradient);
+}
+
+.footer {
+  fill: url(#linear-gradient);
 }

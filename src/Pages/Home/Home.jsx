@@ -1,3 +1,4 @@
+import LandingPage from "../../Components/LandingPage/LandingPage";
 import "./Home.scss";
 import homeHero from './homeHero.png'
 
