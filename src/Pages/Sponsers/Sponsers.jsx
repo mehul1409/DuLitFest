@@ -41,7 +41,7 @@ const Sponsers = () => {
   return (
     <>
       <div className="Sponsersbody">
-        <PageHeader heading="Sponsers" />
+        <PageHeader heading="Our Partners" />
         <div className="middle">
           <div className="sponsers">
             {images.map((image, index) => (

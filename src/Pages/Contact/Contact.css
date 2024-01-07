@@ -39,12 +39,14 @@
 }
 .contact-form h2 {
   line-height: 40px;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   font-size: 30px;
   font-weight: 500;
   color: #69275c;
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
+  border-bottom: 1px solid #000;
+  border-bottom-width: 1px
 }
 .contact-form .main {
   position: relative;
@@ -105,7 +107,7 @@
   display: inline-block;
   box-sizing: border-box;
   border: none;
-  background: #fcfcfc;
+  background:#dfdddd;
   transition: 0.3s ease;
 }
 
