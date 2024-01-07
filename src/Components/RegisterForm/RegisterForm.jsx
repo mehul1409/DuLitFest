@@ -1,9 +1,37 @@
 import "./RegisterForm.scss";
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
+import { db } from "../../firebase";
+
 const RegisterForm = () => {
   const initialValues = { username: "", email: "", password: "" };
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
+
+  const addDataToFirestore = async () => {
+    try {
+      if (formData.checkboxes.option1) {
+        const docRef = await addDoc(collection(db, "Day1"), {
+          ...formData,
+          timestamp: serverTimestamp(),
+        });
+      }
+      if (formData.checkboxes.option2) {
+        const docRef = await addDoc(collection(db, "Day2"), {
+          ...formData,
+          timestamp: serverTimestamp(),
+        });
+      }
+      if (formData.checkboxes.option3) {
+        const docRef = await addDoc(collection(db, "Day3"), {
+          ...formData,
+          timestamp: serverTimestamp(),
+        });
+      }
+    } catch (error) {
+      console.error("Error adding document: ", error);
+    }
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
