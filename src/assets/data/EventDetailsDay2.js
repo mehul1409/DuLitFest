@@ -4,7 +4,7 @@ const EventDetailsDay2 = [
         "time": "11:00-11:50 AM",
         "Place": "Shridhar Shriram Auditorium",
         "Event_Name": "The Importance of Shinzo Abe : India, Japan and the Indo-Pacific",
-        "Address": "lorem ipsum",
+        "Address": "",
     },
     {
 

@@ -4,7 +4,7 @@ const EventDetailsDay1 = [
         "time": "11:00-11:50 AM",
         "Place": "Shridhar Shriram Auditorium",
         "Event_Name": "Inaugration Ceremony",
-        "Address": "lorem ipsum",
+        "Address": "",
     },
     {
         "time": "12:00-12:50 PM",
@@ -16,7 +16,7 @@ const EventDetailsDay1 = [
         "time": "1:00 - 1:50 PM",
         "Place": "Shridhar Shriram Auditorium",
         "Event_Name": "Forever Ayodhya Text",
-        "Address": "lorem ipsum",
+        "Address": "",
     },
     {
         "time": "1:00 - 1:50 PM",
@@ -28,13 +28,13 @@ const EventDetailsDay1 = [
         "time": "2:00 - 2:50 PM",
         "Place": "Shridhar Shriram Auditorium",
         "Event_Name": "Warrior of the Fourth Estate",
-        "Address": "lorem ipsum",
+        "Address": "",
     },
     {
         "time": "2:00 - 2:50 PM",
         "Place": "Arun Jaitley Front Lawn",
-        "Event_Name": "- She The Leader : Women in Politics",
-        "Address": "- Nidhi Sharma in conversation with Priya Sharma",
+        "Event_Name": "She The Leader : Women in Politics",
+        "Address": "Nidhi Sharma in conversation with Priya Sharma",
     },
     {
         "time": "3:00 - 3:50 PM",
