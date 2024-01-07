@@ -1,15 +1,15 @@
 import Footer from "../../Components/Footer/Footer";
 import PageHeader from "../../Components/PageHeader/PageHeader";
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import "./Register.scss";
 
 const Register = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    age: '',
-    profession: '',
+    name: "",
+    email: "",
+    phone: "",
+    age: "",
+    profession: "",
     checkboxes: {
       option1: false,
       option2: false,
@@ -18,12 +18,12 @@ const Register = () => {
   });
 
   const [formErrors, setFormErrors] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    age: '',
-    profession: '',
-    checkboxes: '',
+    name: "",
+    email: "",
+    phone: "",
+    age: "",
+    profession: "",
+    checkboxes: "",
   });
 
   const handleInputChange = (e) => {
@@ -31,7 +31,8 @@ const Register = () => {
 
     setFormData((prevData) => ({
       ...prevData,
-      [name]: type === 'checkbox' ? { ...prevData[name], [value]: checked } : value,
+      [name]:
+        type === "checkbox" ? { ...prevData[name], [value]: checked } : value,
     }));
   };
 
@@ -42,41 +43,41 @@ const Register = () => {
     const errors = {};
 
     if (!formData.name.trim()) {
-      errors.name = 'Name is required';
+      errors.name = "Name is required";
     }
 
     if (!formData.email.trim()) {
-      errors.email = 'Email is required';
-    } else if (!/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(formData.email)) {
-      errors.email = 'Invalid email format';
+      errors.email = "Email is required";
+    } else if (
+      !/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(formData.email)
+    ) {
+      errors.email = "Invalid email format";
     }
 
     if (!formData.phone.trim()) {
-      errors.phone = 'Phone number is required';
+      errors.phone = "Phone number is required";
     } else if (!/^\d{10}$/.test(formData.phone)) {
-      errors.phone = 'Invalid phone number';
+      errors.phone = "Invalid phone number";
     }
 
     if (!formData.age.trim()) {
-      errors.age = 'Age is required';
+      errors.age = "Age is required";
     } else if (isNaN(formData.age) || +formData.age <= 0) {
-      errors.age = 'Invalid age';
+      errors.age = "Invalid age";
     }
 
     if (!formData.profession.trim()) {
-      errors.profession = 'College/Profession is required';
+      errors.profession = "College/Profession is required";
     }
 
     if (!Object.values(formData.checkboxes).some((isChecked) => isChecked)) {
-      errors.checkboxes = 'At least one checkbox must be selected';
+      errors.checkboxes = "At least one checkbox must be selected";
     }
 
     setFormErrors(errors);
 
-
     if (Object.keys(errors).length === 0) {
-      console.log('Form data submitted:', formData);
-
+      console.log("Form data submitted:", formData);
     }
   };
   return (
@@ -153,7 +154,9 @@ const Register = () => {
             <label>Days you will be attending the fest:</label>
             <div className="checkbox-group">
               <label className="dayylab">
-                <div className="dareg"><li className="reglist">Day 1</li></div>
+                <div className="dareg">
+                  <li className="reglist">Day 1</li>
+                </div>
                 <input
                   className="dayregi"
                   type="checkbox"
@@ -166,7 +169,9 @@ const Register = () => {
             </div>
             <div className="checkbox-group">
               <label className="dayylab">
-                <div className="dareg"><li className="reglist">Day 2</li></div>
+                <div className="dareg">
+                  <li className="reglist">Day 2</li>
+                </div>
                 <input
                   className="dayregi"
                   type="checkbox"
@@ -179,7 +184,9 @@ const Register = () => {
             </div>
             <div className="checkbox-group">
               <label className="dayylab">
-                <div className="dareg"><li className="reglist">Day 3</li></div>
+                <div className="dareg">
+                  <li className="reglist">Day 3</li>
+                </div>
                 <input
                   className="dayregi"
                   type="checkbox"
@@ -194,7 +201,9 @@ const Register = () => {
           </div>
 
           <div className="heyreg">
-            <div className="regbtn" type="submit">Register</div>
+            <div className="regbtn" type="submit">
+              Register
+            </div>
           </div>
         </form>
       </div>
@@ -204,4 +213,3 @@ const Register = () => {
 };
 
 export default Register;
-

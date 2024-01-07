@@ -113,7 +113,7 @@ const Footer = (props) => {
           </div>
         </div>
         <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
-          <p className="text-sm text-white " id="paragraph">
+          <p className="text-sm text-white ">
             © Copyright 2020 Lorem Inc. All rights reserved.
           </p>
         </div>
