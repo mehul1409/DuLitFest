@@ -42,21 +42,20 @@ const Contact = () => {
   return (
    <>
    <PageHeader heading='CONTACT US'/>
-    <div class="contact-form">
-        
-        <div class="container">
-            <div class="main">
-                <div class="content">
+    <div className="cccontact-form">
+        <div className="cccontainer">
+            <div className="mmmain">
+                <div className="cccontent">
                     <h2>Contact Us</h2>
                     <form action="#" method="post">
                     <input type="text" name="Name" value={user.Name} placeholder='Enter your E-mail' required autoComplete='off' onChange={data} />
           <input type="text" name="Email" value={user.Email} placeholder='Enter your Name' required autoComplete='off' onChange={data} />
-          <textarea name="Message" value={user.Message} placeholder='Your Message' autoComplete='off' onChange={data}></textarea>
+          <textarea rows={5} className='ctesta' name="Message" value={user.Message} placeholder='Your Message' autoComplete='off' onChange={data}></textarea>
           <button className='sendbutton' type='submit' onClick={senddata}>Send Message <i class="fas fa-paper-plane"></i></button>
        
                     </form>
                 </div>
-                <div class="form-img">
+                <div className="form-img">
                 <Lottie animationData={Animation} />
                 </div>
             </div>
