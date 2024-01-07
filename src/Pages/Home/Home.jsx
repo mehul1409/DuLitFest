@@ -2,6 +2,7 @@ import ExploreCard from "../../Components/ExploreCard/ExploreCard";
 import "./Home.scss";
 import homeHero from "./homeHero.png";
 import Footer from "../../Components/Footer/Footer";
+import Ticket from "../../Components/Ticket/Ticket";
 
 const Home = () => {
   return (
@@ -48,6 +49,7 @@ Our vision is to establish this literary festival as a cherished tradition and s
 
     </div>
     <ExploreCard/>
+    <Ticket/>
     <Footer/>
    </div>
     
