@@ -16,13 +16,13 @@ const EventDetails = [
         "time": "1:00 - 1:50 PM",
         "Place": "Shridhar Shriram Auditorium",
         "Event_Name": "Forever Ayodhya Text",
-        "Address": "Address by Swapan Dasgupta, Principal Prof. Manoj Khanna and Amb. Oleg Osipov",
+        "Address": "lorem ipsum",
     },
     {
         "time": "1:00 - 1:50 PM",
         "Place": "Shridhar Shriram Auditorium",
         "Event_Name": "Being Hindu in Bangladesh",
-        "Address": "Address by Swapan Dasgupta, Principal Prof. Manoj Khanna and Amb. Oleg Osipov",
+        "Address": "Deep Halder & Devdutta Majji in conversation with Utpal Kumar",
     },
     {
         "time": "2:00 - 2:50 PM",
@@ -46,13 +46,13 @@ const EventDetails = [
         "time": "3:00 - 3:50 PM",
         "Place": "Shridhar Shriram Auditorium",
         "Event_Name": "Indian Attitude Towards Knowledge",
-        "Address": "Sanjeev Sanyal in conversation",
+        "Address": "",
     },
     {
         "time": "4:00 - 4:50 PM",
         "Place": "Shridhar Shriram Auditorium",
         "Event_Name": "Bandi Jeevan : A Life in Chains",
-        "Address": "Address by Swapan Dasgupta, Principal Prof. Manoj Khanna and Amb. Oleg Osipov",
+        "Address": "Sanjeev Sanyal in conversation",
     },
     {
         "time": "4:00 - 4:50 PM",
