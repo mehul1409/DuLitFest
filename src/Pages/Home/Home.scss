@@ -2,15 +2,160 @@
     // height: 100vh;
     // width: 100%;
     // background: url('homeHero.png');
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-attachment: fixed;
-    height: 94vh;
-    width: 100%;
+    background-image: radial-gradient(circle, rgb(9, 10, 53, 0) 40%, #091335 90%), url(homeHero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 96vh;
+    // width: 100vw;
+    // background-color: aquamarine;
+    overflow: hidden;
 
 }
 
-#homeimg {
-    
-    object-fit: cover;
+.home-about {
+    position: relative;
+    top: -100px;
+    // background-image: linear-gradient(to bottom, #576e8f 0%, #263243 100%);
+    background-color: #263243;
+    // box-shadow: 0 0 2px #263243, 0 0 10px #263243, 0 0 20px #263243, 0 0 30px #263243,
+    // 0 0 40px #263243, 0 0 50px #263243,
+    // 0 0 60px #263243, 0 0 70px #263243,
+    // 0 0 80px #263243, 0 0 90px #263243
+    // ;
+    padding-top: 4vh;
+}
+
+.before-about {
+    height: 100px;
+    box-shadow: 0 0 2px #263243, 0 0 10px #263243, 0 0 20px #263243, 0 0 30px #263243,
+    0 0 40px #263243, 0 0 50px #263243,
+    0 0 60px #263243, 0 0 70px #263243,
+    0 0 80px #263243, 0 0 90px #263243
+    ;
+}
+
+// #ribbon-bottom {
+//   background: #fff url(http://portfolio.queenofwhisks.com/demo/overlay/stripe-diagonal-broken.png);
+// }
+// h1 {
+//   color: #333;
+//   font-family: Zapfino, 'Edwardian Script ITC', cursive;
+//   font-size: 40px;
+//   font-weight: normal;
+//   text-align: center;
+//   text-shadow: 6px 4px 3px rgba(0,0,0,0.5);
+//   line-height: 1.0;
+//   margin: 0 0 20px;
+// }
+.ribbon-container {
+  background: transparent !important;
+  position: relative;
+  z-index: 1;
+}
+.ribbon {
+  background: #1f2937 url(http://portfolio.queenofwhisks.com/demo/overlay/noise.png);
+  box-shadow: 2px 6px 12px rgba(0,0,0,0.5);
+//   font-family: Charter, serif;
+  font-size: 16px;
+  line-height: 1.0;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0.25em 0;
+  position: relative;
+  width: 70%;
+}
+.ribbon:before,
+.ribbon:after {
+  border: 1.5em solid #1f2937;
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -1em;
+  z-index: -1;
+}
+.ribbon:before {
+  left: -2em;
+  border-right-width: 1.5em;
+  border-left-color: transparent;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+.ribbon:after {
+  right: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent;
+  box-shadow: -2px 2px 2px rgba(0,0,0,0.5);
+}
+.ribbon-content {
+  border-top: 0.0625em dashed white;
+  border-bottom: 0.0625em dashed white;
+  box-shadow: inset 0px 1px 1px rgba(0,0,0,0.08), inset 0px -1px 1px rgba(255,255,255,0.08), 0px -1px 1px rgba(255,255,255,0.2), 0px 1px 1px rgba(0,0,0,0.08);
+  display: block;
+  padding: 0.6875em 0;
+}
+.ribbon-content:before,
+.ribbon-content:after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-style: solid;
+  border-color: #3d4b5f transparent transparent transparent;
+  bottom: -1em;
+}
+.ribbon-content:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+}
+.ribbon-content:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
+}
+.ribbon a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.25);
+}
+// .ribbon a:hover {
+//   color: hsl(30, 90%, 43%);
+// }
+.underpage {
+  background: #f4f4f4 url(http://portfolio.queenofwhisks.com/demo/overlay/noise-paper.png);
+  box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.25);
+  box-sizing: border-box;
+  color: #444;
+//   font-family: Garamond, 'Goudy Old Style', Times, 'Times New Roman', serif;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding: 5.5em 1.5em 1.5em;
+  position: relative;
+  top: -4em;
+  width: 65%;
+  z-index: -1;
+  border-radius: 20px;
+}
+.underpage p:last-child {
+//   margin-bottom: 0;
+}
+
+.about-us {
+ text-align: justify;
+}
+
+.about-us1 {
+    margin-bottom: 5px;
+}
+
+@media screen and (max-aspect-ratio: 4/3) {
+   .ribbon {
+     width: 98%;
+   }
+   .underpage {
+    width: 88%;
+   }
+   .home-about {
+    overflow-x: hidden;
+   }
+
 }
