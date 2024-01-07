@@ -3,12 +3,13 @@ import EventDetailsDay1 from "../../assets/data/EventDetailsDay1";
 import EventDetailsDay2 from "../../assets/data/EventDetailsDay2";
 import EventDetailsDay3 from "../../assets/data/EventDetailsDay3";
 import "./Programme.scss";
+import Footer from "../../Components/Footer/Footer";
+
 const Programme = () => {
   return (
     <>
       <PageHeader heading="Programme" bgColor="" />
       <div className="outer-1">
-
         <div className="box-1">
           <div className="Day1">
             Day-1 -19th January,2024
@@ -24,8 +25,7 @@ const Programme = () => {
                 <p> {event.Address}</p>
               </div>
             ))}
-          </ul >
-
+          </ul>
         </div>
         <div className="box-1">
           <div className="Day2">
@@ -42,8 +42,8 @@ const Programme = () => {
                 <p> {event.Address}</p>
               </div>
             ))}
-          </ul >
-        </div >
+          </ul>
+        </div>
         <div className="box-1">
           <div className="Day3">
             Day-3 -20th January,2024
@@ -59,9 +59,10 @@ const Programme = () => {
                 <p> {event.Address}</p>
               </div>
             ))}
-          </ul >
-        </div >
+          </ul>
+        </div>
       </div>
+      <Footer />
     </>
   );
 };

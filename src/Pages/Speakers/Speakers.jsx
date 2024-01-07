@@ -2,6 +2,7 @@ import PageHeader from "../../Components/PageHeader/PageHeader";
 import "./Speakers.scss";
 import SpeakersDetails from "../../assets/data/SpeakersDetails";
 import SpeakerCard from "../../Components/SpeakerCard/SpeakerCard";
+import Footer from "../../Components/Footer/Footer";
 
 const Speakers = () => {
   return (
@@ -19,6 +20,7 @@ const Speakers = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </>
   );
 };
