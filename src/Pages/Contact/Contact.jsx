@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import Animation from "./Animation - 1703414310490.json"
 import Lottie from "lottie-react";
-import './Contact.scss'
+import PageHeader from "../../Components/PageHeader/PageHeader";
+import Footer from "../../Components/Footer/Footer";
+import './Contact.css'
 
 const Contact = () => {
   const [user , setuser] = useState(
@@ -38,8 +40,9 @@ const Contact = () => {
   }
   
   return (
+   <>
+   <PageHeader heading='CONTACT US'/>
     <div class="contact-form">
-      <h1 > Contact Us</h1>
         
         <div class="container">
             <div class="main">
@@ -59,6 +62,8 @@ const Contact = () => {
             </div>
         </div>
     </div> 
+    <Footer/>
+   </>
   )
 }
 

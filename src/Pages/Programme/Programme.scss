@@ -1,0 +1,143 @@
+.outer-1 {
+    width: 100%;
+    // background-image: linear-gradient(rgb(250, 169, 47), rgb(250, 169, 47, 0.5), rgb(246, 37, 251, 0.5), rgb(246, 37, 251, 1));
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+
+    // background-color: #4158D0;
+    // background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    border: none;
+
+}
+
+.Day1,
+.Day2,
+.Day3 {
+
+
+    text-align: center;
+    margin-bottom: 0%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    font-size: 1.4rem;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.box-1 {
+    border: 1px black solid;
+    border-radius: 10px;
+    text-align: center;
+    background-color: skyblue;
+    margin-bottom: 5%;
+    margin: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+
+}
+
+.one {
+    border-bottom: 1px solid black;
+
+
+}
+
+ul {
+    div {
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                font-size: 1.1rem;
+                font-weight: 400;
+                padding-left: 2%;
+                padding-right: 2%;
+            }
+        }
+
+
+
+        h1 {
+            font-size: large;
+            font-size: 1.6rem;
+            font-weight: 800;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            font-weight: 200;
+            padding-top: 2%;
+        }
+
+    }
+}
+
+
+@media (max-width: 768px) {
+    .box-1 {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    ul div .top {
+        p {
+            font-size: 1.3rem;
+        }
+    }
+}
+
+@media (max-width: 616px) {
+    .box-1 {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    ul div .top {
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    ul div {
+        h1 {
+            font-size: 1.1rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .box-1 {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    ul div .top {
+        p {
+            font-size: 0.7rem;
+        }
+    }
+
+    ul div {
+        h1 {
+            font-size: 1rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+    }
+}
