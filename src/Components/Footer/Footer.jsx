@@ -37,12 +37,17 @@ const Footer = (props) => {
               </span>
             </a>
           </div>
-          <div className="space-y-2 text-sm paragraph">
-            <p className="text-xl font-bold tracking-wide text-white">
+          <div className="space-y-2 text-sm ">
+            <p
+              className="text-xl font-bold tracking-wide text-white"
+              id="paragraph"
+            >
               Contacts
             </p>
             <div className="flex">
-              <p className="mr-1 text-white">Phone:</p>
+              <p className="mr-1 text-white " id="paragraph">
+                Phone:
+              </p>
               <a
                 href="tel:850-123-5021"
                 aria-label="Our phone"
@@ -52,8 +57,10 @@ const Footer = (props) => {
                 850-123-5021
               </a>
             </div>
-            <div className="flex paragraph">
-              <p className="mr-1 text-white">Email:</p>
+            <div className="flex ">
+              <p className="mr-1 text-white " id="paragraph">
+                Email:
+              </p>
               <a
                 href="mailto:info@lorem.mail"
                 aria-label="Our email"
@@ -63,8 +70,10 @@ const Footer = (props) => {
                 info@lorem.mail
               </a>
             </div>
-            <div className="flex paragraph">
-              <p className="mr-1 text-white">Address:</p>
+            <div className="flex ">
+              <p className="mr-1 text-white " id="paragraph">
+                Address:
+              </p>
               <a
                 href="https://www.google.com/maps"
                 target="_blank"
@@ -103,8 +112,8 @@ const Footer = (props) => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row paragraph">
-          <p className="text-sm text-white">
+        <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
+          <p className="text-sm text-white " id="paragraph">
             © Copyright 2020 Lorem Inc. All rights reserved.
           </p>
         </div>
