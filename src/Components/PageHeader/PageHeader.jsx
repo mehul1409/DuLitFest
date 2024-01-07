@@ -2,8 +2,12 @@ import "./PageHeader.scss";
 
 const PageHeader = (props) => {
   return (
-    <div className="wave-header">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <div className="wave-header" style={{ backgroundColor: props.bgColor }}>
+      <svg
+        style={{ backgroundColor: props.bgColor }}
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
         <path
           fill="#fff"
           fill-opacity="1"
@@ -11,7 +15,7 @@ const PageHeader = (props) => {
         ></path>
       </svg>
       <div class="HeadingOfPage">
-        <h1>{props.heading}</h1>
+        <h1 style={{ textColor: props.textColor }}>{props.heading}</h1>
       </div>
     </div>
   );
