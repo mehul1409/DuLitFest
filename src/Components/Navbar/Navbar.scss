@@ -1,127 +1,130 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .Navbarbody {
-    min-height: 4vh;
-    position: relative;
-    z-index:10;
+  min-height: 4vh;
+  position: relative;
+  z-index: 10;
 }
 
 .Navbarbody .navbar {
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-.Navbarbody .navbar .navitems{
-    position: fixed;
-    top:0;
-    backdrop-filter: blur(10px);
-    background-color: #242323;
+.Navbarbody .navbar .navitems {
+  // position: fixed;
+  // top:0;
+  backdrop-filter: blur(10px);
+  background-color: #242323;
 }
 
-.Navbarbody .navbar .navitems img{
-    width:80px;
-    height:60px; 
-    padding:5px;
+.Navbarbody .navbar .navitems img {
+  width: 80px;
+  height: 60px;
+  padding: 5px;
 }
 
 .Navbarbody .navbar ul {
-    width: 100%;
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .Navbarbody .navbar li {
-    // height: 50px; 
-    margin:1%;
-    transition:0.4s ease-in-out;
+  // height: 50px;
+  margin: 1%;
+  transition: 0.4s ease-in-out;
 }
 
 .Navbarbody .navbar a {
-    height: 100%;
-    padding: 0 5px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: white;
-    font-size: 1.2rem;
-    transition:transform 0.4s ease-in-out;
+  height: 100%;
+  padding: 0 5px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1.2rem;
+  transition: transform 0.4s ease-in-out;
 }
 
-.Navbarbody .navbar  .navitemMobile:hover {
-    background-color: rgb(240, 240, 240, 0.8);
-    border-radius: 10px;
-    transform: scale(1.1);
-    color:black;
+.Navbarbody .navbar .navitemMobile:hover {
+  background-color: rgb(240, 240, 240, 0.8);
+  border-radius: 10px;
+  transform: scale(1.1);
+  color: black;
 }
 
 .Navbarbody .navbar .navitems :first-child {
-    margin-right: auto;
+  margin-right: auto;
 }
 
 .Navbarbody .navbar .sidebar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    z-index: 999;
-    backdrop-filter: blur(10px);
-    background-color: #242323;
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+  background-color: #242323;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  display: none;
 }
 
 .Navbarbody .navbar .sidebar li {
-    width: 100%;
+  width: 100%;
 }
 
 .Navbarbody .navbar .sidebar a {
-    // width: 100%;
-    color:white;
-    font-size: 1.2rem;
-    margin-left:5%;
-    margin-top:7%;
+  // width: 100%;
+  color: white;
+  font-size: 1.2rem;
+  margin-left: 5%;
+  margin-top: 7%;
 }
 
 .Navbarbody .navbar .sidebar a:hover {
-    // background-color: rgb(240, 240, 240, 0.8);
-    border-radius: 10px;
-    transform: scale(1.1);
-    color:black;
-    // margin-right:15%;
+  // background-color: rgb(240, 240, 240, 0.8);
+  border-radius: 10px;
+  transform: scale(1.1);
+  color: black;
+  // margin-right:15%;
 }
 
-.Navbarbody .navbar .navitems .registerButton a{
-    background-color: lightcyan;
-    color:black !important;
-    height:100%;
-    border-radius: 10px;
-    margin-right: 5%;
+.Navbarbody .navbar .navitems .registerButton a {
+  background-color: lightcyan;
+  color: black !important;
+  height: 100%;
+  border-radius: 10px;
+  margin-right: 5%;
 }
 
-.Navbarbody .navbar .sidebar .registerButton a{
-    background-color: lightcyan;
-    color:black !important;
-    border-radius: 20px;
-    margin-left:5% ;
-    width: 50%;
-    font-weight: 800;
-    letter-spacing: 3px;
+.Navbarbody .navbar .sidebar .registerButton a {
+  background-color: lightcyan;
+  color: black !important;
+  border-radius: 20px;
+  margin-left: 5%;
+  width: 50%;
+  font-weight: 800;
+  letter-spacing: 3px;
 }
 
 #show {
-    display: flex;
+  display: flex;
 }
 
-.Navbarbody .hamburger{
-    display: none;
+.Navbarbody .hamburger {
+  display: none;
 }
 
 @media only screen and (max-width:910px){
