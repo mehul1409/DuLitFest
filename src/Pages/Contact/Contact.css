@@ -62,7 +62,7 @@
 }
 
 .contact-form .form-img {
-  flex-basis: 48%;
+  flex-basis: 50%;
   background: #f0f4f8;
   background-size: cover;
   padding: 40px;
@@ -70,6 +70,10 @@
   border-bottom-right-radius: 8px;
   align-items: center;
   display: grid;
+}
+
+.contact-form .container{
+  margin:auto;
 }
 
 .contact-form .form-img img {

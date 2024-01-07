@@ -41,7 +41,7 @@ const Contact = () => {
   
   return (
    <>
-   <PageHeader heading='CONTACT-US'/>
+   <PageHeader heading='CONTACT US'/>
     <div class="contact-form">
         
         <div class="container">
