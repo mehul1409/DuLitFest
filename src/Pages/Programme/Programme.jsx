@@ -1,7 +1,12 @@
+import PageHeader from "../../Components/PageHeader/PageHeader";
 import "./Programme.scss";
 
 const Programme = () => {
-  return <div>Programme</div>;
+  return (
+    <>
+      <PageHeader heading="Programme" />
+    </>
+  );
 };
 
 export default Programme;
