@@ -13,12 +13,6 @@ const Contact = () => {
     Message: "",
   });
 
-  const [user, setuser] = useState({
-    Name: "",
-    Email: "",
-    Message: "",
-  });
-
   const data = (e) => {
     const { name, value } = e.target;
     setuser({ ...user, [name]: value });
@@ -27,7 +21,6 @@ const Contact = () => {
   };
 
   const senddata = async (e) => {
-    const { Name, Email, Message } = user;
     const { Name, Email, Message } = user;
     e.preventDefault();
     const options = {
@@ -43,11 +36,7 @@ const Contact = () => {
         Email,
         Message,
       }),
-    };
-        Name,
-        Email,
-        Message,
-      }),
+    }
     };
 
     const res = await fetch(
@@ -119,7 +108,6 @@ const Contact = () => {
     </div>
    </>
   );
-};
 
-export default Contact;
+
 export default Contact;
