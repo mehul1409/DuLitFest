@@ -201,9 +201,9 @@ const Register = () => {
           </div>
 
           <div className="heyreg">
-            <div className="regbtn" type="submit">
+            <button className="regbtn" onclick={handleFormSubmit} >
               Register
-            </div>
+            </button>
           </div>
         </form>
       </div>
