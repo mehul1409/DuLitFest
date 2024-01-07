@@ -5,7 +5,6 @@ import Programme from "./Pages/Programme/Programme";
 import Register from "./Pages/Register/Register";
 import Sponsers from "./Pages/Sponsers/Sponsers";
 import Navbar from "./Components/Navbar/Navbar";
-import Footer from "./Components/Footer/Footer";
 import Contact from "./Pages/Contact/Contact";
 
 const App = () => {
@@ -20,7 +19,6 @@ const App = () => {
         <Route path="/sponsers" element={<Sponsers />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer />
     </>
   );
 };
