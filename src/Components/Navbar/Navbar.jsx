@@ -12,6 +12,10 @@ const Navbar = () => {
     console.log(sidebarVisible);
   };
 
+  const closeMobileMenu = () => {
+    setSidebarVisible(false);
+  };
+
   return (
     <div className="Navbarbody">
       <div className="navbar">
@@ -55,32 +59,32 @@ const Navbar = () => {
               <RxCross2 />
             </a>
           </li>
-          <li>
+          <li onClick={closeMobileMenu}>
             <Link to="/" className="navitemMobile">
               HOME
             </Link>
           </li>
-          <li>
+          <li onClick={closeMobileMenu}>
             <Link to="/speakers" className="navitemMobile">
               SPEAKERS
             </Link>
           </li>
-          <li>
+          <li onClick={closeMobileMenu}>
             <Link to="/programme" className="navitemMobile">
               PROGRAMME
             </Link>
           </li>
-          <li>
+          <li onClick={closeMobileMenu}>
             <Link to="/sponsers" className="navitemMobile">
               SPONSERS
               </Link>
             </li>
-            <li>
+            <li onClick={closeMobileMenu}>
               <Link to='/contact' className="navitemMobile">
               CONTACT
               </Link>
             </li>
-            <li className="registerButton" >
+            <li className="registerButton" onClick={closeMobileMenu}>
               <Link to='/register'>
               REGISTER
               </Link>
