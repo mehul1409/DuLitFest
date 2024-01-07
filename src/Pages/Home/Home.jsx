@@ -1,7 +1,16 @@
 import "./Home.scss";
+import homeHero from './homeHero.png'
 
 const Home = () => {
-  return <div>Home</div>;
+
+  return (
+  <>
+    <div className="home-hero">
+      <img src={homeHero} alt="" id="homeimg"/>
+    </div>
+  </>
+  );
+
 };
 
 export default Home;

@@ -2,17 +2,22 @@ import "./Footer.scss";
 import { CiInstagram } from "react-icons/ci";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import wave1 from './wave1.png'
 
 const Footer = () => {
   return (
     <>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style={{ backgroundColor: "transparent" }}>
         <path
+          className="bg-transparent"
           fill="#1f2937"
           fill-opacity="1"
           d="M0,64L120,101.3C240,139,480,213,720,234.7C960,256,1200,224,1320,208L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
         ></path>
       </svg>
+      {/* <div className= "svgfooter"> */}
+        {/* <img src={wave1} alt="wave" style={{mixBlendMode: "multiply"}} /> */}
+      {/* </div> */}
       <div className="px-4 pt-2 mx-auto sm:max-w-full md:max-w-full lg:max-w-full md:px-24 lg:px-8 bg-gray-800 text-white">
         <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4 text-white">
           <div className="sm:col-span-2 text-white">
