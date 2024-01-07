@@ -18,7 +18,7 @@ const Sponsers = () => {
               <img src={picc2} alt='' />
             </div>
             <div className='box-2'>
-              <h1>Title Parter</h1>
+              <h1>Title Partner</h1>
               <img src={clglogo} alt='' />
             </div>
           </div>
