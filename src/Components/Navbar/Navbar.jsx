@@ -37,6 +37,11 @@ const Navbar = () => {
               <a href="">SPONSERS</a>
               </Link>
             </li>
+            <li className="mobileview">
+              <Link to='/contact' className="navitemMobile">
+              <a href="">CONTACT</a>
+              </Link>
+            </li>
             <li className="mobileview registerButton">
               <Link to='/register'>
                 <a href="">REGISTER</a>
@@ -64,6 +69,11 @@ const Navbar = () => {
             <li>
               <Link to='/sponsers' className="navitemMobile">
               SPONSERS
+              </Link>
+            </li>
+            <li>
+              <Link to='/contact' className="navitemMobile">
+              CONTACT
               </Link>
             </li>
             <li className="registerButton" >
