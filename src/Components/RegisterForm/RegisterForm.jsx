@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./RegisterForm.scss";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
-import { db } from "../../firebase";
+import { db } from "../../../firebase";
 import { motion } from "framer-motion";
 
 const RegisterForm = () => {
@@ -39,6 +39,7 @@ const RegisterForm = () => {
 
   const addToFirestore = async (formData) => {
     try {
+      console.log("Adding your data to database");
       if (formData.checkboxes.option1) {
         const docRef = await addDoc(collection(db, "Day1"), {
           ...formData,
@@ -58,7 +59,7 @@ const RegisterForm = () => {
           ...formData,
           timestamp: serverTimestamp(),
         });
-        console.log("Document written with ID: ", docRef.id);
+        // console.log("Document written with ID: ", docRef.id);
       }
       alert("Registered Successfully");
     } catch (error) {
