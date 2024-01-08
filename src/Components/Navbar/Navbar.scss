@@ -147,7 +147,25 @@
 }
 
 @media only screen and (max-width: 910px) {
-  .Navbarbody .mobileview {
+  .mobileview {
+    display: none;
+  }
+  #navItemHome {
+    display: none;
+  }
+  #navItemRegister {
+    display: none;
+  }
+  #navItemContact {
+    display: none;
+  }
+  #navItemSponsers {
+    display: none;
+  }
+  #navItemProgramme {
+    display: none;
+  }
+  #navItemSpeakers {
     display: none;
   }
   .Navbarbody .hamburger {

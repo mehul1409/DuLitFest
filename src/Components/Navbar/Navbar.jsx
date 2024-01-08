@@ -33,6 +33,7 @@ const Navbar = () => {
             animate={{ y: "0vw" }}
             transition={{ duration: 0.6 }}
             className="mobileview"
+            id="navItemHome"
           >
             <Link to="/" className="navitemMobile">
               HOME
@@ -43,6 +44,7 @@ const Navbar = () => {
             animate={{ y: "0vw" }}
             transition={{ duration: 0.6 }}
             className="mobileview"
+            id="navItemSpeakers"
           >
             <Link to="/speakers" className="navitemMobile">
               SPEAKERS
@@ -53,6 +55,7 @@ const Navbar = () => {
             animate={{ y: "0vw" }}
             transition={{ duration: 0.6 }}
             className="mobileview"
+            id="navItemProgramme"
           >
             <Link to="/programme" className="navitemMobile">
               PROGRAMME
@@ -63,6 +66,7 @@ const Navbar = () => {
             animate={{ y: "0vw" }}
             transition={{ duration: 0.6 }}
             className="mobileview"
+            id="navItemSponsers"
           >
             <Link to="/sponsers" className="navitemMobile">
               PARTNERS
@@ -73,6 +77,7 @@ const Navbar = () => {
             animate={{ y: "0vw" }}
             transition={{ duration: 0.6 }}
             className="mobileview"
+            id="navItemContact"
           >
             <Link to="/contact" className="navitemMobile">
               CONTACT
@@ -83,6 +88,7 @@ const Navbar = () => {
             animate={{ y: "0vw" }}
             transition={{ duration: 0.6 }}
             className="mobileview registerButton"
+            id="navItemRegister"
           >
             <Link to="/register">REGISTER</Link>
           </motion.li>
