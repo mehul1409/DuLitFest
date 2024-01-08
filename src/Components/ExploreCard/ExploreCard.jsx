@@ -1,13 +1,24 @@
 import "./ExploreCard.css";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const ExploreCard = () => {
   return (
     <div className="exploree">
-      <div className="Exploreheading">
+      <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5, delay: 0.3 }}
+      viewport={{ once: true }}
+      className="Exploreheading">
         <h1 className="headexp">Explore the Event</h1>
-      </div>
-      <main className="page-content">
+      </motion.div>
+      <motion.main
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5, delay: 0.3 }}
+      viewport={{ once: true }}
+      className="page-content">
         <div className="card">
           <div className="content">
             <h2 className="title">SPONSERS</h2>
@@ -40,7 +51,7 @@ const ExploreCard = () => {
             </button>
           </div>
         </div>
-      </main>
+      </motion.main>
     </div>
   );
 };

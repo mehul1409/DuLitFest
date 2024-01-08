@@ -3,6 +3,7 @@ import "./Home.scss";
 import homeHero from "./homeHero.png";
 import Footer from "../../Components/Footer/Footer";
 import Ticket from "../../Components/Ticket/Ticket";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
@@ -12,7 +13,12 @@ const Home = () => {
           {/* <img src={homeHero} alt="" id="homeimg"/> */}
         </div>
         <div className="before-about"></div>
-        <div className="home-about">
+        <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.5, delay: 0.3 }}
+        viewport={{ once: true }}
+        className="home-about">
           <div id="ribbon-bottom">
             <header className="ribbon-container">
               {/* <h1></h1> */}
@@ -68,7 +74,7 @@ const Home = () => {
               </div>
             </header>
           </div>
-        </div>
+        </motion.div>
         <ExploreCard />
         <Ticket />
         <Footer />

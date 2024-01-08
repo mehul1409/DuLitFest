@@ -2,6 +2,7 @@ import React from 'react';
 import './Ticket.css';
 import picc2 from './picc2.png'
 import clglogo from './clglogo.png'
+import { motion } from 'framer-motion';
 
 const Ticket = () => {
     
@@ -12,10 +13,20 @@ const Ticket = () => {
       
   return (
     <>
-    <div className="Ticketheading">
+    <motion.div
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ duration: 1.5, delay: 0.3 }}
+    viewport={{ once: true }}
+    className="Ticketheading">
         <p className="headticket">Get Your Free Pass</p>
-        </div>
-    <div className='ticket'>
+        </motion.div>
+    <motion.div
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ duration: 1.5, delay: 0.3 }}
+    viewport={{ once: true }}
+    className='ticket'>
       {/* Top section */}
       <div className='ticket-top'>
         {/* Logo on the left */}
@@ -58,7 +69,7 @@ const Ticket = () => {
             <p className='jjj'>Event Date</p>  19 Jan - 21 Jan
           </div>
       </div>
-    </div>
+    </motion.div>
     </>
   );
 }

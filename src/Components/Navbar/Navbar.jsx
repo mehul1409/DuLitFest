@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
 import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [sidebarVisible, setSidebarVisible] = useState(false);
@@ -20,37 +21,65 @@ const Navbar = () => {
     <div className="Navbarbody">
       <div className="navbar">
         <ul className="navitems">
-          <img src="/assets/images/Logo.svg" alt="" />
-          <li className="mobileview">
+          <motion.img
+          initial={{ y: '-10vh' }}
+          animate={{ y: '0vw' }}
+           transition={{ duration: 0.5 }}
+          src="/assets/images/Logo.svg" alt="" />
+          <motion.li
+          initial={{ y: '-10vh' }}
+          animate={{ y: '0vw' }}
+           transition={{ duration: 0.6 }}
+          className="mobileview">
             <Link to="/" className="navitemMobile">
               <a href="">HOME</a>
             </Link>
-          </li>
-          <li className="mobileview">
+          </motion.li>
+          <motion.li
+          initial={{ y: '-10vh' }}
+          animate={{ y: '0vw' }}
+           transition={{ duration: 0.6 }}
+          className="mobileview">
             <Link to="/speakers" className="navitemMobile">
               <a href="">SPEAKERS</a>
             </Link>
-          </li>
-          <li className="mobileview">
+          </motion.li>
+          <motion.li
+          initial={{ y: '-10vh' }}
+          animate={{ y: '0vw' }}
+           transition={{ duration: 0.6 }}
+          className="mobileview">
             <Link to="/programme" className="navitemMobile">
               <a href="">PROGRAMME</a>
             </Link>
-          </li>
-          <li className="mobileview">
+          </motion.li>
+          <motion.li
+          initial={{ y: '-10vh' }}
+          animate={{ y: '0vw' }}
+           transition={{ duration: 0.6 }}
+          className="mobileview">
             <Link to="/sponsers" className="navitemMobile">
               <a href="">SPONSERS</a>
               </Link>
-            </li>
-            <li className="mobileview">
+            </motion.li>
+            <motion.li
+            initial={{ y: '-10vh' }}
+            animate={{ y: '0vw' }}
+             transition={{ duration: 0.6 }}
+            className="mobileview">
               <Link to='/contact' className="navitemMobile">
               <a href="">CONTACT</a>
               </Link>
-            </li>
-            <li className="mobileview registerButton">
+            </motion.li>
+            <motion.li
+            initial={{ y: '-10vh' }}
+            animate={{ y: '0vw' }}
+             transition={{ duration: 0.6 }}
+            className="mobileview registerButton">
               <Link to='/register'>
                 <a href="">REGISTER</a>
               </Link>
-            </li>
+            </motion.li>
             <li className="hamburger" onClick={handleClick}><a href=""><RxHamburgerMenu/></a></li>
         </ul>
         <ul className="sidebar" id={`${sidebarVisible ? "show" : ""}`}>

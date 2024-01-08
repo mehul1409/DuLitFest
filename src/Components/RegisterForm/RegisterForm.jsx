@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import "./RegisterForm.scss";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { db } from "../../firebase";
+import { motion } from "framer-motion";
 
 const RegisterForm = () => {
   const [formData, setFormData] = useState({
@@ -85,7 +86,12 @@ const RegisterForm = () => {
     <>
 
       <div className="regis">
-        <form className="registration-form" onSubmit={handleFormSubmit}>
+        <motion.form
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.5, delay: 0.3 }}
+        viewport={{ once: true }}
+        className="registration-form" onSubmit={handleFormSubmit}>
           <div>
             <label htmlFor="name">Name:</label>
             <input
@@ -206,7 +212,7 @@ const RegisterForm = () => {
               Register
             </button>
           </div>
-        </form>
+        </motion.form>
       </div>
 
     </>

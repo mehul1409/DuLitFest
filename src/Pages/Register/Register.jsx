@@ -5,9 +5,12 @@ import RegisterForm from '../../Components/RegisterForm/RegisterForm';
 export default function Registerform() {
   return (
     <>
-      <PageHeader heading="Register" />
+      <PageHeader  bgColor="
+#536976
+" fgColor="
+#bbd2c5"  heading="Register" />
       <RegisterForm />
-      <Footer />
+      <Footer  bgColor="#536976"  />
     </>
   )
 }

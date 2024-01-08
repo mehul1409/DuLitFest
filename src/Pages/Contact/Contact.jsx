@@ -4,6 +4,7 @@ import Lottie from "lottie-react";
 import PageHeader from "../../Components/PageHeader/PageHeader";
 import Footer from "../../Components/Footer/Footer";
 import "./Contact.css";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const [user, setuser] = useState({
@@ -46,9 +47,15 @@ const Contact = () => {
 
   return (
     <>
-      <PageHeader heading="CONTACT US" />
+      <PageHeader bgColor="
+#00416a" fgColor="#e4e5e6" heading="CONTACT US" />
       <div className="cccontact-form">
-        <div className="cccontainer">
+        <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.5, delay: 0.3 }}
+        viewport={{ once: true }}
+        className="cccontainer">
           <div className="mmmain">
             <div className="cccontent">
               <h2>Contact Us</h2>
@@ -89,9 +96,9 @@ const Contact = () => {
               <Lottie animationData={Animation} />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
-      <Footer />
+      <Footer bgColor="#00416a" />
     </>
   );
 };

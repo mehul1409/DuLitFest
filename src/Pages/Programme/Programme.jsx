@@ -9,17 +9,20 @@ import Footer from "../../Components/Footer/Footer";
 const Programme = () => {
   return (
     <>
-      <PageHeader heading="Programme" bgColor="" />
+      <PageHeader
+      bgColor="#808080" fgColor="#3fada8"
+      heading="Programme"/>
+      <div className="hello">
       <div className="outer-1">
         <motion.div
-          initial={{ x: '-100vw' }}
-          animate={{ x: '0.7vw' }}
-          transition={{ duration: 2 }}
+          // initial={{ x: '-100vw' }}
+          // animate={{ x: '0.7vw' }}
+          // transition={{ duration: 1 }}
           className="box-1">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 1, delay: 0 }}
             viewport={{ once: true }}
             className="Day1">
             Day-1 -19th January,2024
@@ -29,7 +32,7 @@ const Programme = () => {
               < motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                transition={{ duration: 5, delay: 0.1 }}
+                transition={{ duration: 1, delay: 0.1 }}
                 viewport={{ once: true }}
                 className="one" key={index}
                 style={{
@@ -50,14 +53,14 @@ const Programme = () => {
         </motion.div>
 
         <motion.div
-          initial={{ x: '-100vw' }}
-          animate={{ x: '0.7vw' }}
-          transition={{ duration: 2 }}
+          // initial={{ x: '-100vw' }}
+          // animate={{ x: '0.7vw' }}
+          // transition={{ duration: 2 }}
           className="box-2">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 1 }}
             viewport={{ once: true }}
             className="Day1">
             Day-2 -20th January,2024
@@ -67,7 +70,7 @@ const Programme = () => {
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                transition={{ duration: 5, delay: 0.1 }}
+                transition={{ duration: 1, delay: 0.1 }}
                 viewport={{ once: true }}
                 className="one" key={index}
                 style={{
@@ -89,13 +92,14 @@ const Programme = () => {
 
 
         <motion.div
-          initial={{ x: '-100vw' }}
-          animate={{ x: '0.7vw' }}
-          transition={{ duration: 2 }} className="box-1">
+          // initial={{ x: '-100vw' }}
+          // animate={{ x: '0.7vw' }}
+          // transition={{ duration: 2 }} 
+          className="box-1">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 1 }}
             viewport={{ once: true }}
             className="Day1">
             Day-3 -20th January,2024
@@ -105,7 +109,7 @@ const Programme = () => {
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                transition={{ duration: 5, delay: 0.1 }}
+                transition={{ duration: 1, delay: 0.1 }}
                 viewport={{ once: true }}
                 className="one" key={index}
                 style={{
@@ -125,7 +129,8 @@ const Programme = () => {
           </ul>
         </motion.div>
       </div >
-      <Footer />
+      <Footer bgColor="#808080" />
+      </div>
     </>
   );
 };

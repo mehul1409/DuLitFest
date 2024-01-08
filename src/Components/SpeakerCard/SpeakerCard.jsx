@@ -1,5 +1,6 @@
 import "./SpeakerCard.scss";
 import React from "react";
+import { motion } from "framer-motion";
 
 const Card = (props) => {
   return (
@@ -17,7 +18,12 @@ const Card = (props) => {
     //   </div>
     // </div>
 
-    <div className="wrapper">
+    <motion.div
+    initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.5, delay: 0.3 }}
+            viewport={{ once: true }}
+    className="wrapper">
       <div className="Wrappercard">
         <img loading="lazy" src={props.imgUrl} alt={props.name} />{" "}
         <div className="info">
@@ -25,7 +31,7 @@ const Card = (props) => {
           <p className="card_tag">{props.tag}</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

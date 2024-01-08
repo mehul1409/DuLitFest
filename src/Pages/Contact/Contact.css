@@ -11,7 +11,8 @@
  
   /* min-height: 100vh; */
   z-index: 0;
-  background: #1f2937;
+  /* background: #1f2937; */
+  background-image: linear-gradient(to bottom, #e4e5e6 0%,#00416a 100%);
   padding: 30px;
   justify-content: center;
   /* display: grid; */
