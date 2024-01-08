@@ -136,15 +136,6 @@
   display: none;
 }
 
-@media only screen and (max-width: 910px) {
-  .Navbarbody .mobileview {
-    display: none;
-  }
-  .Navbarbody .hamburger {
-    display: block;
-  }
-}
-
 // .sidebar {
 //   width: 50% !important;
 //   transition: all 2s;
@@ -153,4 +144,13 @@
 #mnh {
   position: relative;
   top: -5px !important;
+}
+
+@media only screen and (max-width: 910px) {
+  .Navbarbody .mobileview {
+    display: none;
+  }
+  .Navbarbody .hamburger {
+    display: block;
+  }
 }
