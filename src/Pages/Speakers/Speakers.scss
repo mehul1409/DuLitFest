@@ -1,8 +1,7 @@
 .team_container {
   // background: hsl(11, 21%, 64%);
-  background-image: linear-gradient(to bottom, #3b8d99 0%, 
-  #6b6b83 50%,#aa4b6b
-  100%);
+  background-image: linear-gradient(to bottom, #3b8d99 0%,
+      #6b6b83 50%, #aa4b6b 100%);
   width: 100%;
   padding: 6rem 1rem 0rem 1rem;
 }
@@ -26,8 +25,9 @@
 
 @media screen and (max-width: 768px) {
   .card_container {
-    max-width: 60%;
+    max-width: 95%;
     margin: auto;
+    height: auto;
     grid-template-columns: 1fr;
   }
 }
