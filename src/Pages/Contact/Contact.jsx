@@ -5,6 +5,8 @@ import PageHeader from "../../Components/PageHeader/PageHeader";
 import Footer from "../../Components/Footer/Footer";
 import "./Contact.css";
 import { motion } from "framer-motion";
+import emailjs from "emailjs-com";
+
 
 const Contact = () => {
   const [user, setuser] = useState({
@@ -21,28 +23,26 @@ const Contact = () => {
   const senddata = async (e) => {
     const { Name, Email, Message } = user;
     e.preventDefault();
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        Name,
-        Email,
-        Message,
-      }),
+    const templateParams = {
+      from_name: Name,
+      to_name: "Recipient Name", // Replace with the recipient's name
+      message: Message,
+      reply_to: Email,
     };
 
-    const res = await fetch(
-      "https://oih-database-default-rtdb.firebaseio.com/Message.json",
-      options
-    );
-    console.log(res);
-    if (res) {
-      alert("your message sent");
-    } else {
-      alert("An error occured");
-    }
+    // Use your Email.js service ID and template ID
+    emailjs
+      .send("service_bcj3mlt", "template_daa7ynl", templateParams, "JxE0Md4YeAEerTa7FFYpS")
+      .then(
+        (response) => {
+          console.log("Email sent successfully:", response);
+          alert("Your message sent!");
+        },
+        (error) => {
+          console.error("Email failed to send:", error);
+          alert("An error occurred while sending the message.");
+        }
+      );
   };
 
   return (
@@ -60,7 +60,7 @@ const Contact = () => {
           <div className="mmmain">
             <div className="cccontent">
               <h2>Contact Us</h2>
-              <form action="#" method="post">
+              <form ref={form} action="#" method="post">
                 <input
                   type="text"
                   name="Name"
