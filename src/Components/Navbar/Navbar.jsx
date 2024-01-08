@@ -65,7 +65,7 @@ const Navbar = () => {
             className="mobileview"
           >
             <Link to="/sponsers" className="navitemMobile">
-              <a href="">SPONSERS</a>
+              <a href="">PARTNERS</a>
             </Link>
           </motion.li>
           <motion.li
@@ -117,7 +117,7 @@ const Navbar = () => {
           </li>
           <li className="sidebb" onClick={closeMobileMenu}>
             <Link to="/sponsers" className="navitemMobile">
-              SPONSERS
+              PARTNERS
             </Link>
           </li>
           <li className="sidebb" onClick={closeMobileMenu}>

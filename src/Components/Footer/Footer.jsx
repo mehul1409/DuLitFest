@@ -1,7 +1,8 @@
 import "./Footer.scss";
 import { CiInstagram } from "react-icons/ci";
-import { FaFacebook } from "react-icons/fa";
+// import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import wave1 from "./wave1.png";
 
 const Footer = (props) => {
@@ -56,7 +57,7 @@ const Footer = (props) => {
             >
               Contacts
             </p>
-            <div className="flex">
+            {/* <div className="flex">
               <p className="mr-1 text-white " id="paragraph">
                 Phone:
               </p>
@@ -68,7 +69,7 @@ const Footer = (props) => {
               >
                 8595842343
               </a>
-            </div>
+            </div> */}
             <div className="flex ">
               <p className="mr-1 text-white " id="paragraph">
                 Email:
@@ -82,7 +83,7 @@ const Footer = (props) => {
                 contact@dulitfest.org
               </a>
             </div>
-            <div className="flex ">
+            {/* <div className="flex ">
               <p className="mr-1 text-white " id="paragraph">
                 Address:
               </p>
@@ -97,7 +98,7 @@ const Footer = (props) => {
                 University of Delhi, Maurice Nagar, Roop Nagar, New Delhi,
                 Delhi, 110007
               </a>
-            </div>
+            </div> */}
           </div>
           <div>
             <span className="text-xl font-bold tracking-wide text-white">
@@ -105,20 +106,23 @@ const Footer = (props) => {
             </span>
             <div className="flex items-center mt-1 space-x-3">
               <a
-                href="/"
+                href="https://www.instagram.com/dulitfest?igsh=M2swdHU0ZG5odWli"
                 className="text-whitetransition-colors duration-300 hover:text-deep-purple-accent-400"
+                target="_blank"
               >
                 <CiInstagram className="text-3xl" />
               </a>
               <a
-                href="/"
+                href="https://www.linkedin.com/company/delhi-university-literature-festival/"
                 className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                target="_blank"
               >
-                <FaFacebook className="text-3xl" />
+                <FaLinkedin className="text-3xl" />
               </a>
               <a
-                href="/"
+                href="https://x.com/dulitfest?t=q9T6I9tY6MVR_Unh8NtJOg&s=09"
                 className="text-white transition-colors duration-300 hover:text-deep-purple-accent-400"
+                target="_blank"
               >
                 <FaTwitter className="text-3xl" />
               </a>

@@ -6,22 +6,24 @@ const ExploreCard = () => {
   return (
     <div className="exploree">
       <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1.5, delay: 0.3 }}
-      viewport={{ once: true }}
-      className="Exploreheading">
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.5, delay: 0.3 }}
+        viewport={{ once: true }}
+        className="Exploreheading"
+      >
         <h1 className="headexp">Explore the Event</h1>
       </motion.div>
       <motion.main
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1.5, delay: 0.3 }}
-      viewport={{ once: true }}
-      className="page-content">
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.5, delay: 0.3 }}
+        viewport={{ once: true }}
+        className="page-content"
+      >
         <div className="card">
           <div className="content">
-            <h2 className="title">SPONSERS</h2>
+            <h2 className="title">PARTNERS</h2>
             <button className="btn">
               <Link to="/sponsers">MORE</Link>
             </button>
