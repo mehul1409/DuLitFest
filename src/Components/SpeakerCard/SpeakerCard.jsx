@@ -24,7 +24,7 @@ const Card = (props) => {
       </div>
       <div className="info">
         <h1 className="card_name">{props.name}</h1>
-        <p className="card_tag">{props.tag}</p>
+        {/* <p className="card_tag">{props.tag}</p> */}
       </div>
     </div>
   );
