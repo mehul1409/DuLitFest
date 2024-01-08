@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import "./RegisterForm.scss";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
@@ -38,7 +37,35 @@ const RegisterForm = () => {
     }));
   };
 
-  const handleFormSubmit = (e) => {
+  const addToFirestore = async (formData) => {
+    try {
+      if (formData.checkboxes.option1) {
+        const docRef = await addDoc(collection(db, "Day1"), {
+          ...formData,
+          timestamp: serverTimestamp(),
+        });
+        console.log("Document written with ID: ", docRef.id);
+      }
+      if (formData.checkboxes.option2) {
+        const docRef = await addDoc(collection(db, "Day2"), {
+          ...formData,
+          timestamp: serverTimestamp(),
+        });
+        console.log("Document written with ID: ", docRef.id);
+      }
+      if (formData.checkboxes.option3) {
+        const docRef = await addDoc(collection(db, "Day3"), {
+          ...formData,
+          timestamp: serverTimestamp(),
+        });
+        console.log("Document written with ID: ", docRef.id);
+      }
+      alert("Registered Successfully");
+    } catch (error) {
+      console.error("Error adding document: ", error);
+    }
+  };
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
 
     // Perform form validation
@@ -80,18 +107,34 @@ const RegisterForm = () => {
 
     if (Object.keys(errors).length === 0) {
       console.log("Form data submitted:", formData);
+      const send = await addToFirestore(formData);
+
+      //reset the form
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        age: "",
+        profession: "",
+        checkboxes: {
+          option1: false,
+          option2: false,
+          option3: false,
+        },
+      });
     }
   };
   return (
     <>
-
       <div className="regis">
         <motion.form
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1.5, delay: 0.3 }}
-        viewport={{ once: true }}
-        className="registration-form" onSubmit={handleFormSubmit}>
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1.5, delay: 0.3 }}
+          viewport={{ once: true }}
+          className="registration-form"
+          onSubmit={handleFormSubmit}
+        >
           <div>
             <label htmlFor="name">Name:</label>
             <input
@@ -208,13 +251,12 @@ const RegisterForm = () => {
           </div>
 
           <div className="heyreg">
-            <button className="regbtn" onClick={handleFormSubmit} >
+            <button className="regbtn" onClick={handleFormSubmit}>
               Register
             </button>
           </div>
         </motion.form>
       </div>
-
     </>
   );
 };
