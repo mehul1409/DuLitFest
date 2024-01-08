@@ -26,7 +26,7 @@ const Sponsers = () => {
               viewport={{ once: true }}
               className="boxx-1"
             >
-              <h1>Venue Partner</h1>
+              <h1>Title Partner</h1>
               <img className="imgg" src={picc2} alt="" />
             </motion.div>
             <motion.div
@@ -36,7 +36,7 @@ const Sponsers = () => {
               viewport={{ once: true }}
               className="boxx-2"
             >
-              <h1>Title Partner</h1>
+              <h1> Venue Partner</h1>
               <img className="imgg" src={clglogo} alt="" />
             </motion.div>
           </div>

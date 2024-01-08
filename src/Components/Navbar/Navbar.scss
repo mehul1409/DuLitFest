@@ -81,14 +81,12 @@
   align-items: flex-start;
   justify-content: flex-start;
   // display: none;
- 
 }
 
 .sidebar {
   overflow: hidden;
   transition: all 0.5s;
   width: 0px !important;
-
 }
 
 .Navbarbody .navbar .sidebar li {
@@ -130,21 +128,12 @@
 }
 
 #show {
-  display: flex;
+  display: flex !important;
   width: 250px !important;
 }
 
 .Navbarbody .hamburger {
   display: none;
-}
-
-@media only screen and (max-width:910px){
-    .Navbarbody .mobileview{
-        display: none;
-    }
-    .Navbarbody .hamburger{
-        display: block;
-    }
 }
 
 // .sidebar {
@@ -153,6 +142,122 @@
 // }
 
 #mnh {
- position: relative;
- top: -5px !important;
+  position: relative;
+  top: -5px !important;
 }
+
+// @media only screen and (max-width: 910px) {
+//   .navitems .mobileview,
+//   #navItemHome,
+//   #navItemRegister,
+//   #navItemContact,
+//   #navItemSponsers,
+//   #navItemProgramme,
+//   #navItemSpeakers {
+//     display: none !important;
+//   }
+
+//   .Navbarbody .hamburger {
+//     display: block;
+//   }
+// }
+
+@media only screen and (max-width: 320px) {
+  .navitems .mobileview,
+  #navItemHome,
+  #navItemRegister,
+  #navItemContact,
+  #navItemSponsers,
+  #navItemProgramme,
+  #navItemSpeakers {
+    display: none !important;
+  }
+
+  .Navbarbody .hamburger {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .navitems .mobileview,
+  #navItemHome,
+  #navItemRegister,
+  #navItemContact,
+  #navItemSponsers,
+  #navItemProgramme,
+  #navItemSpeakers {
+    display: none !important;
+  }
+
+  .Navbarbody .hamburger {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navitems .mobileview,
+  #navItemHome,
+  #navItemRegister,
+  #navItemContact,
+  #navItemSponsers,
+  #navItemProgramme,
+  #navItemSpeakers {
+    display: none !important;
+  }
+
+  .Navbarbody .hamburger {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navitems .mobileview,
+  #navItemHome,
+  #navItemRegister,
+  #navItemContact,
+  #navItemSponsers,
+  #navItemProgramme,
+  #navItemSpeakers {
+    display: none !important;
+  }
+
+  .Navbarbody .hamburger {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  .navitems .mobileview,
+  #navItemHome,
+  #navItemRegister,
+  #navItemContact,
+  #navItemSponsers,
+  #navItemProgramme,
+  #navItemSpeakers {
+    display: none !important;
+  }
+
+  .Navbarbody .hamburger {
+    display: block;
+  }
+}
+
+// @media only screen and (min-width: 1025px) {
+//   .navitems .mobileview,
+//   #navItemHome,
+//   #navItemRegister,
+//   #navItemContact,
+//   #navItemSponsers,
+//   #navItemProgramme,
+//   #navItemSpeakers {
+//     display: flex !important;
+//   }
+
+//   .Navbarbody .hamburger {
+//     display: none;
+//   }
+
+//   .sidebar {
+//     width: 0px;
+//   }
+// }

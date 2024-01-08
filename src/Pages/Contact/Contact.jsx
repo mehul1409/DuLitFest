@@ -47,7 +47,8 @@ const Contact = () => {
 
   return (
     <>
-      <PageHeader bgColor="#00416a" fgColor="#e4e5e6" heading="CONTACT US" />
+      {/* <PageHeader bgColor="#00416a" fgColor="#e4e5e6" heading="CONTACT US" /> */}
+      <PageHeader bgColor="#536976" fgColor="#bbd2c5" heading="CONTACT US" />
       <div className="cccontact-form">
         <motion.div
           initial={{ opacity: 0 }}
@@ -98,7 +99,8 @@ const Contact = () => {
           </div>
         </motion.div>
       </div>
-      <Footer bgColor="#00416a" />
+      {/* <Footer bgColor="#00416a" /> */}
+      <Footer bgColor="#536976" />
     </>
   );
 };

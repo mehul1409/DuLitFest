@@ -10,7 +10,6 @@ const Navbar = () => {
   const handleClick = (e) => {
     e.preventDefault();
     setSidebarVisible(!sidebarVisible);
-    console.log(sidebarVisible);
   };
 
   const closeMobileMenu = () => {
@@ -22,65 +21,81 @@ const Navbar = () => {
       <div className="navbar">
         <ul className="navitems">
           <motion.img
-          initial={{ y: '-10vh' }}
-          animate={{ y: '0vw' }}
-           transition={{ duration: 0.5 }}
-          src="/assets/images/Logo.svg" alt="" />
+            initial={{ y: "-10vh" }}
+            animate={{ y: "0vw" }}
+            transition={{ duration: 0.5 }}
+            src="/assets/images/Logo.svg"
+            alt=""
+          />
           <motion.li
-          initial={{ y: '-10vh' }}
-          animate={{ y: '0vw' }}
-           transition={{ duration: 0.6 }}
-          className="mobileview">
+            initial={{ y: "-10vh" }}
+            animate={{ y: "0vw" }}
+            transition={{ duration: 0.6 }}
+            className="mobileview"
+            id="navItemHome"
+          >
             <Link to="/" className="navitemMobile">
-              <a href="">HOME</a>
+              HOME
             </Link>
           </motion.li>
           <motion.li
-          initial={{ y: '-10vh' }}
-          animate={{ y: '0vw' }}
-           transition={{ duration: 0.6 }}
-          className="mobileview">
+            initial={{ y: "-10vh" }}
+            animate={{ y: "0vw" }}
+            transition={{ duration: 0.6 }}
+            className="mobileview"
+            id="navItemSpeakers"
+          >
             <Link to="/speakers" className="navitemMobile">
-              <a href="">SPEAKERS</a>
+              SPEAKERS
             </Link>
           </motion.li>
           <motion.li
-          initial={{ y: '-10vh' }}
-          animate={{ y: '0vw' }}
-           transition={{ duration: 0.6 }}
-          className="mobileview">
+            initial={{ y: "-10vh" }}
+            animate={{ y: "0vw" }}
+            transition={{ duration: 0.6 }}
+            className="mobileview"
+            id="navItemProgramme"
+          >
             <Link to="/programme" className="navitemMobile">
-              <a href="">PROGRAMME</a>
+              PROGRAMME
             </Link>
           </motion.li>
           <motion.li
-          initial={{ y: '-10vh' }}
-          animate={{ y: '0vw' }}
-           transition={{ duration: 0.6 }}
-          className="mobileview">
+            initial={{ y: "-10vh" }}
+            animate={{ y: "0vw" }}
+            transition={{ duration: 0.6 }}
+            className="mobileview"
+            id="navItemSponsers"
+          >
             <Link to="/sponsers" className="navitemMobile">
-              <a href="">SPONSERS</a>
-              </Link>
-            </motion.li>
-            <motion.li
-            initial={{ y: '-10vh' }}
-            animate={{ y: '0vw' }}
-             transition={{ duration: 0.6 }}
-            className="mobileview">
-              <Link to='/contact' className="navitemMobile">
-              <a href="">CONTACT</a>
-              </Link>
-            </motion.li>
-            <motion.li
-            initial={{ y: '-10vh' }}
-            animate={{ y: '0vw' }}
-             transition={{ duration: 0.6 }}
-            className="mobileview registerButton">
-              <Link to='/register'>
-                <a href="">REGISTER</a>
-              </Link>
-            </motion.li>
-            <li className="hamburger" onClick={handleClick}><a href=""><RxHamburgerMenu/></a></li>
+              PARTNERS
+            </Link>
+          </motion.li>
+          <motion.li
+            initial={{ y: "-10vh" }}
+            animate={{ y: "0vw" }}
+            transition={{ duration: 0.6 }}
+            className="mobileview"
+            id="navItemContact"
+          >
+            <Link to="/contact" className="navitemMobile">
+              CONTACT
+            </Link>
+          </motion.li>
+          <motion.li
+            initial={{ y: "-10vh" }}
+            animate={{ y: "0vw" }}
+            transition={{ duration: 0.6 }}
+            className="mobileview registerButton"
+            id="navItemRegister"
+          >
+            <Link to="/register">REGISTER</Link>
+          </motion.li>
+          <li className="hamburger" onClick={handleClick}>
+            <a href="">
+              <RxHamburgerMenu />
+            </a>
+          </li>
         </ul>
         <ul className="sidebar" id={`${sidebarVisible ? "show" : ""}`}>
           <li className="sidebb">
@@ -105,22 +120,20 @@ const Navbar = () => {
           </li>
           <li className="sidebb" onClick={closeMobileMenu}>
             <Link to="/sponsers" className="navitemMobile">
-              SPONSERS
-              </Link>
-            </li>
-            <li className="sidebb" onClick={closeMobileMenu}>
-              <Link to='/contact' className="navitemMobile">
+              PARTNERS
+            </Link>
+          </li>
+          <li className="sidebb" onClick={closeMobileMenu}>
+            <Link to="/contact" className="navitemMobile">
               CONTACT
-              </Link>
-            </li>
-            <li  className=" sidebb registerButton" onClick={closeMobileMenu}>
-              <Link to='/register'>
-              REGISTER
-              </Link>
-            </li>
-        </ul> 
+            </Link>
+          </li>
+          <li className=" sidebb registerButton" onClick={closeMobileMenu}>
+            <Link to="/register">REGISTER</Link>
+          </li>
+        </ul>
+      </div>
     </div>
-</div>
   );
 };
 
