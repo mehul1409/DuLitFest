@@ -10,7 +10,6 @@ const Navbar = () => {
   const handleClick = (e) => {
     e.preventDefault();
     setSidebarVisible(!sidebarVisible);
-    // console.log(sidebarVisible);
   };
 
   const closeMobileMenu = () => {
