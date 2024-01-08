@@ -144,6 +144,7 @@ const RegisterForm = () => {
               id="name"
               name="name"
               value={formData.name}
+              placeholder="Enter your name"
               onChange={handleInputChange}
             />
             <p className="error">{formErrors.name}</p>
@@ -156,6 +157,7 @@ const RegisterForm = () => {
               type="email"
               id="email"
               name="email"
+              placeholder="Enter your email"
               value={formData.email}
               onChange={handleInputChange}
             />
@@ -169,6 +171,7 @@ const RegisterForm = () => {
               type="text"
               id="phone"
               name="phone"
+              placeholder="Enter your phone number"
               value={formData.phone}
               onChange={handleInputChange}
             />
@@ -182,6 +185,7 @@ const RegisterForm = () => {
               type="text"
               id="age"
               name="age"
+              placeholder="Enter your age"
               value={formData.age}
               onChange={handleInputChange}
             />
@@ -195,6 +199,7 @@ const RegisterForm = () => {
               type="text"
               id="profession"
               name="profession"
+              placeholder="Enter your college/profession"
               value={formData.profession}
               onChange={handleInputChange}
             />

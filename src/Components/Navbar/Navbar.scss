@@ -20,7 +20,8 @@
   // position: fixed;
   // top:0;
   backdrop-filter: blur(10px);
-  background-color: #1f2937;
+  // background-color: #1f2937;
+  background-color: rgb(9, 19, 53);
 }
 
 .Navbarbody .navbar .navitems img {
@@ -80,14 +81,12 @@
   align-items: flex-start;
   justify-content: flex-start;
   // display: none;
- 
 }
 
 .sidebar {
   overflow: hidden;
   transition: all 0.5s;
   width: 0px !important;
-
 }
 
 .Navbarbody .navbar .sidebar li {
@@ -137,13 +136,13 @@
   display: none;
 }
 
-@media only screen and (max-width:910px){
-    .Navbarbody .mobileview{
-        display: none;
-    }
-    .Navbarbody .hamburger{
-        display: block;
-    }
+@media only screen and (max-width: 910px) {
+  .Navbarbody .mobileview {
+    display: none;
+  }
+  .Navbarbody .hamburger {
+    display: block;
+  }
 }
 
 // .sidebar {
@@ -152,6 +151,6 @@
 // }
 
 #mnh {
- position: relative;
- top: -5px !important;
+  position: relative;
+  top: -5px !important;
 }
