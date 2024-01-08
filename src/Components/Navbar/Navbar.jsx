@@ -35,7 +35,7 @@ const Navbar = () => {
             className="mobileview"
           >
             <Link to="/" className="navitemMobile">
-              <a href="">HOME</a>
+              HOME
             </Link>
           </motion.li>
           <motion.li
@@ -45,7 +45,7 @@ const Navbar = () => {
             className="mobileview"
           >
             <Link to="/speakers" className="navitemMobile">
-              <a href="">SPEAKERS</a>
+              SPEAKERS
             </Link>
           </motion.li>
           <motion.li
@@ -55,7 +55,7 @@ const Navbar = () => {
             className="mobileview"
           >
             <Link to="/programme" className="navitemMobile">
-              <a href="">PROGRAMME</a>
+              PROGRAMME
             </Link>
           </motion.li>
           <motion.li
@@ -65,7 +65,7 @@ const Navbar = () => {
             className="mobileview"
           >
             <Link to="/sponsers" className="navitemMobile">
-              <a href="">PARTNERS</a>
+              PARTNERS
             </Link>
           </motion.li>
           <motion.li
@@ -75,7 +75,7 @@ const Navbar = () => {
             className="mobileview"
           >
             <Link to="/contact" className="navitemMobile">
-              <a href="">CONTACT</a>
+              CONTACT
             </Link>
           </motion.li>
           <motion.li
@@ -84,9 +84,7 @@ const Navbar = () => {
             transition={{ duration: 0.6 }}
             className="mobileview registerButton"
           >
-            <Link to="/register">
-              <a href="">REGISTER</a>
-            </Link>
+            <Link to="/register">REGISTER</Link>
           </motion.li>
           <li className="hamburger" onClick={handleClick}>
             <a href="">
