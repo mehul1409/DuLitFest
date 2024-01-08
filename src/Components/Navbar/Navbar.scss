@@ -128,7 +128,7 @@
 }
 
 #show {
-  display: flex;
+  display: flex !important;
   width: 250px !important;
 }
 
@@ -146,29 +146,166 @@
   top: -5px !important;
 }
 
-@media only screen and (max-width: 910px) {
-  .navitems .mobileview {
-    display: none;
-  }
-  #navItemHome {
-    display: none;
-  }
-  #navItemRegister {
-    display: none;
-  }
-  #navItemContact {
-    display: none;
-  }
-  #navItemSponsers {
-    display: none;
-  }
-  #navItemProgramme {
-    display: none;
-  }
+@media only screen and (max-width: 320px) {
+  .navitems .mobileview,
+  #navItemHome,
+  #navItemRegister,
+  #navItemContact,
+  #navItemSponsers,
+  #navItemProgramme,
   #navItemSpeakers {
     display: none;
   }
+
   .Navbarbody .hamburger {
     display: block;
+  }
+
+  .sidebar {
+    width: 250px;
+  }
+
+  #show {
+    display: flex !important;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .navitems .mobileview,
+  #navItemHome,
+  #navItemRegister,
+  #navItemContact,
+  #navItemSponsers,
+  #navItemProgramme,
+  #navItemSpeakers {
+    display: none;
+  }
+
+  .Navbarbody .hamburger {
+    display: block;
+  }
+
+  .sidebar {
+    width: 250px;
+  }
+
+  #show {
+    display: flex !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navitems .mobileview,
+  #navItemHome,
+  #navItemRegister,
+  #navItemContact,
+  #navItemSponsers,
+  #navItemProgramme,
+  #navItemSpeakers {
+    display: none;
+  }
+
+  .Navbarbody .hamburger {
+    display: block;
+  }
+
+  .sidebar {
+    width: 250px;
+  }
+
+  #show {
+    display: flex !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navitems .mobileview,
+  #navItemHome,
+  #navItemRegister,
+  #navItemContact,
+  #navItemSponsers,
+  #navItemProgramme,
+  #navItemSpeakers {
+    display: none;
+  }
+
+  .Navbarbody .hamburger {
+    display: block;
+  }
+
+  .sidebar {
+    width: 250px;
+  }
+
+  #show {
+    display: flex !important;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .navitems .mobileview,
+  #navItemHome,
+  #navItemRegister,
+  #navItemContact,
+  #navItemSponsers,
+  #navItemProgramme,
+  #navItemSpeakers {
+    display: none;
+  }
+
+  .Navbarbody .hamburger {
+    display: block;
+  }
+
+  .sidebar {
+    width: 250px;
+  }
+
+  #show {
+    display: flex !important;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .navitems .mobileview,
+  #navItemHome,
+  #navItemRegister,
+  #navItemContact,
+  #navItemSponsers,
+  #navItemProgramme,
+  #navItemSpeakers {
+    display: none;
+  }
+
+  .Navbarbody .hamburger {
+    display: block;
+  }
+
+  .sidebar {
+    width: 250px;
+  }
+
+  #show {
+    display: flex !important;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .navitems .mobileview,
+  #navItemHome,
+  #navItemRegister,
+  #navItemContact,
+  #navItemSponsers,
+  #navItemProgramme,
+  #navItemSpeakers {
+    display: flex !important;
+  }
+
+  .Navbarbody .hamburger {
+    display: none;
+  }
+
+  .sidebar {
+    width: 0px;
   }
 }
