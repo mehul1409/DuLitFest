@@ -8,11 +8,11 @@ const Speakers = () => {
   return (
     <>
       <PageHeader
-      bgColor="
-      #aa4b6b
-      " fgColor="
-      #3b8d99"
-      heading="Speakers" textColor="white" />
+        bgColor="#aa4b6b"
+        fgColor="#3b8d99"
+        heading="Speakers"
+        textColor="white"
+      />
       {/* <div className="flex items-center justify-center min-h-screen container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {SpeakersDetails.map((speaker, index) => (
@@ -37,7 +37,7 @@ const Speakers = () => {
           ))}
         </div>
       </div>
-      <Footer bgColor="#aa4b6b"/>
+      <Footer bgColor="#aa4b6b" />
     </>
   );
 };

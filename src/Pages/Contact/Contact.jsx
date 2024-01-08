@@ -47,15 +47,15 @@ const Contact = () => {
 
   return (
     <>
-      <PageHeader bgColor="
-#00416a" fgColor="#e4e5e6" heading="CONTACT US" />
+      <PageHeader bgColor="#00416a" fgColor="#e4e5e6" heading="CONTACT US" />
       <div className="cccontact-form">
         <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1.5, delay: 0.3 }}
-        viewport={{ once: true }}
-        className="cccontainer">
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1.5, delay: 0.3 }}
+          viewport={{ once: true }}
+          className="cccontainer"
+        >
           <div className="mmmain">
             <div className="cccontent">
               <h2>Contact Us</h2>

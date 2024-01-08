@@ -7,7 +7,17 @@ import wave1 from "./wave1.png";
 const Footer = (props) => {
   return (
     <>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"  style={{ backgroundColor: props.bgColor }}><path fill="#1f2937" fillOpacity="1" d="M0,224L34.3,208C68.6,192,137,160,206,170.7C274.3,181,343,235,411,245.3C480,256,549,224,617,181.3C685.7,139,754,85,823,74.7C891.4,64,960,96,1029,128C1097.1,160,1166,192,1234,202.7C1302.9,213,1371,203,1406,197.3L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        style={{ backgroundColor: props.bgColor }}
+      >
+        <path
+          fill="#1f2937"
+          fillOpacity="1"
+          d="M0,224L34.3,208C68.6,192,137,160,206,170.7C274.3,181,343,235,411,245.3C480,256,549,224,617,181.3C685.7,139,754,85,823,74.7C891.4,64,960,96,1029,128C1097.1,160,1166,192,1234,202.7C1302.9,213,1371,203,1406,197.3L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+        ></path>
+      </svg>
 
       {/* <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +94,8 @@ const Footer = (props) => {
                 title="Our address"
                 className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
-                University of Delhi, Maurice Nagar, Roop Nagar, New Delhi, Delhi, 110007
+                University of Delhi, Maurice Nagar, Roop Nagar, New Delhi,
+                Delhi, 110007
               </a>
             </div>
           </div>
@@ -115,7 +126,7 @@ const Footer = (props) => {
           </div>
         </div>
         <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
-          <p className="text-sm text-white " id="paragraph">
+          <p className="text-sm text-white ">
             © Copyright 2024 DU LitFest. All rights reserved.
           </p>
         </div>
