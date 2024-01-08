@@ -71,14 +71,23 @@
   right: 0;
   height: 100vh;
   width: 250px;
-  z-index: 999;
+  z-index: 2;
   backdrop-filter: blur(10px);
-  background-color: #242323;
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  // background-color: #242323;
+  background-color: #1f2937;
+  // box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  display: none;
+  // display: none;
+ 
+}
+
+.sidebar {
+  overflow: hidden;
+  transition: all 0.5s;
+  width: 0px !important;
+
 }
 
 .Navbarbody .navbar .sidebar li {
@@ -113,14 +122,15 @@
   background-color: lightcyan;
   color: black !important;
   border-radius: 20px;
-  margin-left: 5%;
-  width: 50%;
-  font-weight: 800;
-  letter-spacing: 3px;
+  // margin-left: 5%;
+  width: 40%;
+  font-weight: 700;
+  // letter-spacing: 3px;
 }
 
 #show {
   display: flex;
+  width: 250px !important;
 }
 
 .Navbarbody .hamburger {
@@ -136,3 +146,12 @@
     }
 }
 
+// .sidebar {
+//   width: 50% !important;
+//   transition: all 2s;
+// }
+
+#mnh {
+ position: relative;
+ top: -5px !important;
+}

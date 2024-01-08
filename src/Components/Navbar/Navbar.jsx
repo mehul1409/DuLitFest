@@ -83,37 +83,37 @@ const Navbar = () => {
             <li className="hamburger" onClick={handleClick}><a href=""><RxHamburgerMenu/></a></li>
         </ul>
         <ul className="sidebar" id={`${sidebarVisible ? "show" : ""}`}>
-          <li>
-            <a onClick={handleClick}>
+          <li className="sidebb">
+            <a id="mnh" onClick={handleClick}>
               <RxCross2 />
             </a>
           </li>
-          <li onClick={closeMobileMenu}>
+          <li className="sidebb" onClick={closeMobileMenu}>
             <Link to="/" className="navitemMobile">
               HOME
             </Link>
           </li>
-          <li onClick={closeMobileMenu}>
+          <li className="sidebb" onClick={closeMobileMenu}>
             <Link to="/speakers" className="navitemMobile">
               SPEAKERS
             </Link>
           </li>
-          <li onClick={closeMobileMenu}>
+          <li className="sidebb" onClick={closeMobileMenu}>
             <Link to="/programme" className="navitemMobile">
               PROGRAMME
             </Link>
           </li>
-          <li onClick={closeMobileMenu}>
+          <li className="sidebb" onClick={closeMobileMenu}>
             <Link to="/sponsers" className="navitemMobile">
               SPONSERS
               </Link>
             </li>
-            <li onClick={closeMobileMenu}>
+            <li className="sidebb" onClick={closeMobileMenu}>
               <Link to='/contact' className="navitemMobile">
               CONTACT
               </Link>
             </li>
-            <li className="registerButton" onClick={closeMobileMenu}>
+            <li  className=" sidebb registerButton" onClick={closeMobileMenu}>
               <Link to='/register'>
               REGISTER
               </Link>
