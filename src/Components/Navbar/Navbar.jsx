@@ -100,7 +100,8 @@ const Navbar = () => {
         <ul className="sidebar" id={`${sidebarVisible ? "show" : ""}`}>
           <li className="sidebb">
             <a id="mnh" onClick={handleClick}>
-              <RxCross2 />
+              {/* <RxCross2 /> */}
+             Back <span id="rarrow">&rarr;</span>
             </a>
           </li>
           <li className="sidebb" onClick={closeMobileMenu}>
@@ -128,7 +129,7 @@ const Navbar = () => {
               CONTACT
             </Link>
           </li>
-          <li className=" sidebb registerButton" onClick={closeMobileMenu}>
+          <li className=" sidebb sidebbregb registerButton" onClick={closeMobileMenu}>
             <Link to="/register">REGISTER</Link>
           </li>
         </ul>
