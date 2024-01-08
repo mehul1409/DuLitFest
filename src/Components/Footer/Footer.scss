@@ -4,6 +4,14 @@
   font-size: 130%;
   text-transform: uppercase;
 }
+.Colorbg-backgroundColor {
+  backdrop-filter: blur(1.9px) brightness(100%);
+  background: linear-gradient(
+    180deg,
+    rgba(22, 3, 35, 0.8) 85.5%,
+    rgba(22, 3, 35, 0.8) 100%
+  );
+}
 
 // .in {
 //   width: 80%;

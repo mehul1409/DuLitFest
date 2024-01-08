@@ -12,13 +12,17 @@ const Home = () => {
         <div className="home-hero">
           {/* <img src={homeHero} alt="" id="homeimg"/> */}
         </div>
+
         <div className="before-about"></div>
+        <ExploreCard />
+
         <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1.5, delay: 0.3 }}
-        viewport={{ once: true }}
-        className="home-about">
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1.5, delay: 0.3 }}
+          viewport={{ once: true }}
+          className="home-about"
+        >
           <div id="ribbon-bottom">
             <header className="ribbon-container">
               {/* <h1></h1> */}
@@ -75,7 +79,6 @@ const Home = () => {
             </header>
           </div>
         </motion.div>
-        <ExploreCard />
         <Ticket />
         <Footer />
       </div>

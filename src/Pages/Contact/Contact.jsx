@@ -5,6 +5,7 @@ import PageHeader from "../../Components/PageHeader/PageHeader";
 import Footer from "../../Components/Footer/Footer";
 import "./Contact.css";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [user, setuser] = useState({
@@ -18,30 +19,46 @@ const Contact = () => {
     setuser({ ...user, [name]: value });
   };
 
-  const senddata = async (e) => {
-    const { Name, Email, Message } = user;
-    e.preventDefault();
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        Name,
-        Email,
-        Message,
-      }),
-    };
+  var contactParams = {
+    from_name: user.Name,
+    from_email: user.Email,
+    message: user.Message,
+    to_name: "Du",
+    phone_no: user.number,
+    reply_to: "jiitopticachapter@gmail.com",
+  };
 
-    const res = await fetch(
-      "https://oih-database-default-rtdb.firebaseio.com/Message.json",
-      options
-    );
-    console.log(res);
-    if (res) {
-      alert("your message sent");
+  const senddata = async (e) => {
+    // const { Name, Email, Message } = user;
+    e.preventDefault();
+    if (!user.Name || !user.Email || !user.Message) {
+      alert("Please check your entries");
+      return false;
     } else {
-      alert("An error occured");
+      emailjs
+        .sendForm(
+          EMAILJS_SERVICE_ID,
+          EMAILJS_TEMPLATE_ID,
+          user,
+          EMAILJS_USER_ID
+        )
+        .then((response) => {
+          console.log("Email sent successfully:", response);
+          // Show success alert
+          window.alert("Message sent successfully!");
+        })
+        .catch((error) => {
+          console.error("Error sending email:", error);
+          // Show error alert
+          window.alert("Oops! Something went wrong. Please try again later.");
+        });
+
+      // Reset the form after submission
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
     }
   };
 
