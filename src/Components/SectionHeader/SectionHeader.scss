@@ -1,0 +1,41 @@
+.teSectionHeaderMainxt {
+    // height: 43px;
+    width: 100%;
+    // margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.SectionHeader_text {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SectionHeader_text_text-content {
+    color: #ffca42;
+    // font-family: "Playfair Display SC-Bold", Helvetica;
+    font-size: 36px;
+    font-weight: 700;
+    // letter-spacing: 0;
+    line-height: normal;
+    text-align: center;
+    // border-bottom: 2px solid #000;
+    /* You can adjust the thickness and color */
+    // display: inline-block;
+    /* Ensures the border only covers the text width */
+    padding-bottom: 5px;
+
+}
+
+.sectionHeaderUnderline {
+    background-color: white;
+    width: 80%;
+    height: 2px;
+    // border: 1px solid white;
+}

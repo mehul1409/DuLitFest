@@ -2,6 +2,7 @@ import "./ExploreCard.css";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import vector from './vector.png'
+import SectionHeader from "../SectionHeader/SectionHeader";
 
 const ExploreCard = () => {
   return (
@@ -12,7 +13,9 @@ const ExploreCard = () => {
         transition={{ duration: 1.5, delay: 0.3 }}
         viewport={{ once: true }}
         className="Exploreheading"
-      ><img src={vector} alt="image" className="backii backii1" />
+      >
+        {/* <img src={vector} alt="image" className="backii backii1" /> */}
+        <SectionHeader text="EXPLORE FESTIVAL" />
         {/* <h1 className="headexp">Explore the Event</h1> */}
       </motion.div>
       <motion.main
