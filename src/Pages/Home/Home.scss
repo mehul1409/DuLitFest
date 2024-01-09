@@ -15,11 +15,15 @@
 }
 
 .clouds {
-  width: 120%;
+  min-width: 120%;
+  position: relative;
+  top: -70px;
+  left: -10%;
+  right: 10%;
 }
 
 .home-cont-hero {
-
+  overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
   // background-position: center center;
@@ -186,7 +190,68 @@
   margin-bottom: 5px;
 }
 
+.cloud-img-container {
+  position: absolute;
+  top: 840px;
+  height: 180px;
+  width: 100%;
+  // z-index: -1;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0), white);
+  display: inline-block; /* Ensures container fits the image size */
+}
+.cloud-img-container2 {
+  position: absolute;
+  top: 840px;
+  height: 180px;
+  width: 100%;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0), white);
+  display: inline-block; /* Ensures container fits the image size */
+}
+
+.clouds {
+  display: block;
+  max-width: 120%;
+  position: relative;
+  top: -85px;
+  left: -10%;
+  right: 10%;
+}
+
+.phoneclouds {
+  display: none;
+}
+
+// .cloud-img-container::after {
+//   content: "";
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   height: 48%; /* Adjust the height of the fading effect as needed */
+//   background-image: linear-gradient(to top, rgba(255, 255, 255, 0), white); /* Fading from transparent to white */
+//   pointer-events: none; /* Ensures clicks pass through the overlay */
+// }
+
 @media screen and (max-aspect-ratio: 4/3) {
+  .phoneclouds {
+    display: block;
+    max-width: 120%;
+    position: relative;
+    top: -45px;
+    left: -10%;
+    right: 10%;
+  }
+  .cloud-img-container {
+    top: 520px;
+    height: 80px;
+  }
+  .cloud-img-container2 {
+    top: 540px;
+    height: 80px;
+  }
+  .clouds {
+    display: none;
+  }
   .ribbon {
     width: 100%;
     //  font-size: 20px;
@@ -198,6 +263,8 @@
     overflow-x: hidden;
   }
 }
+
+
 
 @media screen and (max-width: 520px) {
   .ribbon {

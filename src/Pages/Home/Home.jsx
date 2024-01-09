@@ -4,7 +4,8 @@ import hometoppic from "./hometoppic.png";
 import Footer from "../../Components/Footer/Footer";
 import Ticket from "../../Components/Ticket/Ticket";
 import { motion } from "framer-motion";
-import clouds from './clouds.png'
+import clouds2 from './clouds2.png'
+import phonecloud2 from './phonecloud2.png'
 
 const Home = () => {
   return (
@@ -14,7 +15,14 @@ const Home = () => {
           <img src={hometoppic} alt="" id="homeimg"/>
         </div>
         {/* <div className="before-about"></div> */}
-        <img src={clouds} alt="clouds" className="clouds" />
+        
+        
+        <img src={clouds2} alt="clouds" className="clouds" />
+        <img src={phonecloud2} alt="clouds" className="phoneclouds" />
+        <div className="cloud-img-container">
+        </div>
+        <div className="cloud-img-container2"></div>
+       
         <ExploreCard />
         <motion.div
         initial={{ opacity: 0 }}
