@@ -32,7 +32,7 @@ const Contact = () => {
 
     // Use your Email.js service ID and template ID
     emailjs
-      .send("service_bcj3mlt", "template_daa7ynl", templateParams, "JxE0Md4YeAEerTa7FFYpS")
+      .send("service_bcj3mlt", "template_daa7ynl", templateParams, "h2pO6If_ZBtId09cR")
       .then(
         (response) => {
           console.log("Email sent successfully:", response);
@@ -60,7 +60,7 @@ const Contact = () => {
           <div className="mmmain">
             <div className="cccontent">
               <h2>Contact Us</h2>
-              <form ref={form} action="#" method="post">
+              <form action="#" method="post">
                 <input
                   type="text"
                   name="Name"

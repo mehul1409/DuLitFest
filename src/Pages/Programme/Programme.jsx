@@ -25,7 +25,7 @@ const Programme = () => {
               viewport={{ once: true }}
               className="Day1"
             >
-              Day-1 -19th January,2024
+              Day - 1 - 19th January, 2024
             </motion.div>
             <ul>
               {EventDetailsDay1.map((event, index) => (
@@ -67,7 +67,7 @@ const Programme = () => {
               viewport={{ once: true }}
               className="Day1"
             >
-              Day-2 -20th January,2024
+              Day - 2 - 20th January, 2024
             </motion.div>
             <ul>
               {EventDetailsDay2.map((event, index) => (
@@ -109,7 +109,7 @@ const Programme = () => {
               viewport={{ once: true }}
               className="Day1"
             >
-              Day-3 -20th January,2024
+              Day - 3 - 20th January, 2024
             </motion.div>
             <ul>
               {EventDetailsDay3.map((event, index) => (
