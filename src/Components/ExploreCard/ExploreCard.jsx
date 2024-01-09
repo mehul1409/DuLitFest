@@ -1,6 +1,7 @@
 import "./ExploreCard.css";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import vector from './vector.png'
 
 const ExploreCard = () => {
   return (
@@ -11,8 +12,8 @@ const ExploreCard = () => {
         transition={{ duration: 1.5, delay: 0.3 }}
         viewport={{ once: true }}
         className="Exploreheading"
-      >
-        <h1 className="headexp">Explore the Event</h1>
+      ><img src={vector} alt="image" className="backii backii1" />
+        {/* <h1 className="headexp">Explore the Event</h1> */}
       </motion.div>
       <motion.main
         initial={{ opacity: 0 }}

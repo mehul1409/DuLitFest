@@ -3,6 +3,7 @@ import './Ticket.css';
 import picc2 from './picc2.png'
 import clglogo from './clglogo.png'
 import { motion } from 'framer-motion';
+import passheading from './passheading.png'
 
 const Ticket = () => {
     
@@ -19,7 +20,8 @@ const Ticket = () => {
     transition={{ duration: 1.5, delay: 0.3 }}
     viewport={{ once: true }}
     className="Ticketheading">
-        <p className="headticket">Get Your Free Pass</p>
+      <img src={passheading} alt="image" className="backii backii2" />
+        {/* <p className="headticket">Get Your Free Pass</p> */}
         </motion.div>
     <motion.div
     initial={{ opacity: 0 }}

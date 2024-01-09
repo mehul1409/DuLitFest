@@ -4,6 +4,7 @@ import hometoppic from "./hometoppic.png";
 import Footer from "../../Components/Footer/Footer";
 import Ticket from "../../Components/Ticket/Ticket";
 import { motion } from "framer-motion";
+import clouds from "./clouds.png";
 
 const Home = () => {
   return (
@@ -13,6 +14,8 @@ const Home = () => {
           <img src={hometoppic} alt="" id="homeimg" />
         </div>
         {/* <div className="before-about"></div> */}
+        <img src={clouds} alt="clouds" className="clouds" />
+        <ExploreCard />
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -76,6 +79,7 @@ const Home = () => {
             </header>
           </div>
         </motion.div>
+
         <Ticket />
         <Footer />
       </div>

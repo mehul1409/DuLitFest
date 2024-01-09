@@ -14,13 +14,17 @@
   overflow: hidden;
 }
 
+.clouds {
+  width: 120%;
+}
+
 .home-cont-hero {
 
   background-repeat: no-repeat;
   background-size: cover;
   // background-position: center center;
   background-attachment: fixed;
-background: #3E0067 url('./homebackg.png');
+  background: #3E0067 url('./homebackg.png');
 
 }
 
@@ -217,4 +221,16 @@ background: #3E0067 url('./homebackg.png');
     background-image:none;
     overflow: hidden;
   }
+
 }
+
+@media screen and (max-width: 420px) {
+
+  .underpage {
+    width: 95%;
+    padding: 5.5em 0.5em 0.5em;
+
+  }
+}
+
+
