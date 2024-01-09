@@ -20,8 +20,8 @@
   .imgg {
     // width: 60%;
     // height: 60%;
-    min-width: 300px;
-    max-height: 300px;
+    min-width: 320px;
+    max-height: 400px;
     // padding-bottom: 40px;
     // padding-top: 40px;
     // margin-left: 16%;
@@ -44,8 +44,8 @@
   .imgg {
     // width: 65%;
     // height: 60%;
-    min-width: 300px;
-    max-height: 300px;
+    min-width: 320px;
+    max-height: 400px;
     // padding-top: 50px;
     // padding-bottom: 50px;
     // margin-left: 16%;
@@ -62,7 +62,9 @@
 
 .middle {
   // background-image: linear-gradient(to bottom, #cbcaa5 0%,#334d50 100%);
-  background-color: #cbcaa5;
+  // background-color: rgb(203, 202, 165);
+  background: linear-gradient(rgb(203, 202, 165) 0%, rgba(203, 202, 165, 0.9) 5%, rgba(203, 202, 165, 0.8) 15%, rgba(203, 202, 165, 0.8) 35%, rgba(203, 202, 165, 0.8) 50%, rgb(203, 202, 165, 0.8) 75%, rgb(203, 202, 165, 1.9) 95%, rgb(203, 202, 165) 100%), url("/src/Pages/Sponsers/Group 710.png") center/contain repeat;
+  // url('./Group\ 710.png') center/contain repeat;
 }
 
 @media screen and (max-aspect-ratio: 4/3) {
@@ -72,6 +74,7 @@
     justify-content: space-evenly;
     align-items: center;
   }
+
   .boxx-1 {
     margin-bottom: 20px;
   }
@@ -81,17 +84,17 @@
   .boxx-1 {
     .imgg {
       min-width: 300px;
-      max-height: 400px;
-      padding: 40px 4px;
+      max-height: 450px;
+      // padding: 40px 4px;
     }
   }
 
   .boxx-2 {
     .imgg {
       min-width: 300px;
-      max-height: 400px;
-      padding-top: 50px;
-      padding-bottom: 50px;
+      max-height: 450px;
+      // padding-top: 50px;
+      // padding-bottom: 50px;
     }
   }
 }

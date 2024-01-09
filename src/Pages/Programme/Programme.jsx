@@ -9,7 +9,7 @@ import Footer from "../../Components/Footer/Footer";
 const Programme = () => {
   return (
     <>
-      <PageHeader bgColor="#808080" fgColor="#3fada8" heading="Programme" />
+      <PageHeader bgColor="#808080" fgColor="rgb(251, 219, 208, 1)" heading="Programme" />
       <div className="hello">
         <div className="outer-1">
           <motion.div
@@ -138,7 +138,7 @@ const Programme = () => {
             </ul>
           </motion.div>
         </div>
-        <Footer bgColor="#808080" />
+        <Footer bgColor="rgb(251, 219, 208, 1)" />
       </div>
     </>
   );

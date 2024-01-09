@@ -5,6 +5,13 @@
   text-transform: uppercase;
 }
 
+.Colorbg-backgroundColor {
+  backdrop-filter: blur(1.9px) brightness(100%);
+  background: linear-gradient(180deg,
+      rgb(62, 0, 103) 85.5%,
+      rgba(62, 0, 103) 100%);
+}
+
 // .in {
 //   width: 80%;
 //   margin-bottom: 200px;

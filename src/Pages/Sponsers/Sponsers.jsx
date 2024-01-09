@@ -10,13 +10,12 @@ import { motion } from "framer-motion";
 const Sponsers = () => {
   return (
     <>
+      <PageHeader
+        bgColor="#334d50"
+        fgColor="#cbcaa5"
+        heading="Our Partners"
+      />
       <div className="Sponsersbody">
-        <PageHeader
-          bgColor="#334d50"
-          fgColor="#cbcaa5"
-          heading="Our Partners"
-        />
-
         <div className="middle">
           <div className="sponsers">
             <motion.div

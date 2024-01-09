@@ -103,36 +103,42 @@ const Navbar = () => {
           <li className="sidebb">
             <a id="mnh" onClick={handleClick}>
               {/* <RxCross2 /> */}
-              <span id="rarrow">&larr;</span>Back 
+              <pre id="rarrow">&larr; </pre>Back
             </a>
           </li>
           <li className="sidebb" onClick={closeMobileMenu}>
             <Link to="/" className="navitemMobile">
               HOME
             </Link>
+            <div className="NavitemsUnderline"></div>
           </li>
           <li className="sidebb" onClick={closeMobileMenu}>
             <Link to="/speakers" className="navitemMobile">
               SPEAKERS
             </Link>
+            <div className="NavitemsUnderline"></div>
           </li>
           <li className="sidebb" onClick={closeMobileMenu}>
             <Link to="/programme" className="navitemMobile">
               PROGRAMME
             </Link>
+            <div className="NavitemsUnderline"></div>
           </li>
           <li className="sidebb" onClick={closeMobileMenu}>
             <Link to="/sponsers" className="navitemMobile">
               PARTNERS
             </Link>
+            <div className="NavitemsUnderline"></div>
           </li>
           <li className="sidebb" onClick={closeMobileMenu}>
             <Link to="/contact" className="navitemMobile">
               CONTACT
             </Link>
+            <div className="NavitemsUnderline"></div>
           </li>
           <li className=" sidebb sidebbregb registerButton" onClick={closeMobileMenu}>
             <Link to="/register">REGISTER</Link>
+            <div className="registerunderline"></div>
           </li>
         </ul>
       </div>
