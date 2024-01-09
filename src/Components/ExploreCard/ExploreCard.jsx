@@ -2,6 +2,7 @@ import "./ExploreCard.css";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import vector from './vector.png'
+import Crousel from "../Crousel/Crousel";
 import SectionHeader from "../SectionHeader/SectionHeader";
 
 const ExploreCard = () => {
@@ -18,6 +19,12 @@ const ExploreCard = () => {
         <SectionHeader text="EXPLORE FESTIVAL" />
         {/* <h1 className="headexp">Explore the Event</h1> */}
       </motion.div>
+
+      <div className="crousel-div">
+        <Crousel />
+      </div>
+
+
       <motion.main
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
