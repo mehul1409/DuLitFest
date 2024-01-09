@@ -277,7 +277,7 @@
   }
   .cloud-img-container {
     // top: 58%;
-    margin-top: -19px;
+    margin-top: -20px;
     height: 80px;
   }
   .cloud-img-container2 {
@@ -298,9 +298,20 @@
     left: -0.11%;
   }
   .home-hero {
+    position: fixed;
     height: fit-content;
     background-image:none;
     overflow: hidden;
+  }
+  .home-scroll {
+    margin-top: 116%;
+    position: relative;
+    // overflow: hidden;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center center;
+    // background-attachment: fixed;
+    background: #3E0067 url('./homebackg.png');
   }
 
 }

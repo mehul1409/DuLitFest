@@ -94,10 +94,11 @@ const Home = () => {
         </motion.div>
 
         <Ticket />
-
-
-        </div>
         <Footer />
+
+        
+        </div>
+        
       </div>
     </>
   );

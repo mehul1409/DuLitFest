@@ -35,22 +35,22 @@ const Footer = (props) => {
       {/* <div className= "svgfooter"> */}
       {/* <img src={wave1} alt="wave" style={{mixBlendMode: "multiply"}} /> */}
       {/* </div> */}
-      <div className="px-4 pt-2 mx-auto sm:max-w-full md:max-w-full lg:max-w-full md:px-24 lg:px-8 Colorbg-backgroundColor text-white">
-        <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4 text-white">
-          <div className="sm:col-span-2 text-white">
+      <div className="px-4 py-2 mx-auto sm:max-w-full md:max-w-full lg:max-w-full  Colorbg-backgroundColor text-white">
+        <div className="flex flex-col-reverse items-start lg:flex-row md:flex-row md:justify-between text-white py-4 md:py-0 ">
+          <div className="sm:col-span-2 text-white mr-8 md:mr-0 mt-4">
             <a
               href="/"
               aria-label="Go home"
               title="Company"
               className="inline-flex items-center"
             >
-              <img src="/assets/images/Logo.svg" alt="logo" className="h-28" />
-              <span className="ml-2 w-20 text-xl font-bold tracking-wide text-white uppercase">
+              <img src="/assets/images/Logo.svg" alt="logo" className="h-20 md:h-28" />
+              <span className="ml-2 mr-10 md:mr-0 md:w-20 text-md font-bold tracking-wide text-white uppercase md:text-xl">
                 Delhi University Literature Festival
               </span>
             </a>
           </div>
-          <div className="space-y-2 text-sm ">
+          <div className="space-y-2 text-sm pt-5">
             <p
               className="text-xl font-bold tracking-wide text-white"
               id="paragraph"
@@ -70,7 +70,7 @@ const Footer = (props) => {
                 8595842343
               </a>
             </div> */}
-            <div className="flex ">
+            <div className="flex">
               <p className="mr-1 text-white " id="paragraph">
                 Email:
               </p>
@@ -100,7 +100,7 @@ const Footer = (props) => {
               </a>
             </div> */}
           </div>
-          <div>
+          <div className="pt-4">
             <span className="text-xl font-bold tracking-wide text-white">
               Social
             </span>
@@ -129,8 +129,8 @@ const Footer = (props) => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
-          <p className="text-sm text-white ">
+        <div className=" pt-1 pb-1 border-t ">
+          <p className="text-sm text-white text-center">
             © Copyright 2024 DU LitFest. All rights reserved.
           </p>
         </div>
