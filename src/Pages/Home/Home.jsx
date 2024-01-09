@@ -29,7 +29,7 @@ const Home = () => {
 
 
           <ExploreCard />
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.5, delay: 0.3 }}
@@ -38,7 +38,7 @@ const Home = () => {
           >
             <div id="ribbon-bottom">
               <header className="ribbon-container">
-                {/* <h1></h1> */}
+              
                 <h2 className="ribbon">
                   <a className="ribbon-content">About Us</a>
                 </h2>
@@ -91,7 +91,7 @@ const Home = () => {
                 </div>
               </header>
             </div>
-          </motion.div>
+          </motion.div> */}
 
           <Ticket />
           <Footer />

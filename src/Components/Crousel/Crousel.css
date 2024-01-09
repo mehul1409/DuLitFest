@@ -1,20 +1,4 @@
-/* #app {
-    height: 100%;
-  }
-  html,
-  body {
-    position: relative;
-    height: 100%;
-  }
-  
-  body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
-  } */
+
   
   .swiper {
     width: 100%;
@@ -36,7 +20,7 @@
   }
 
   .crouss-div {
-    
+
     position: absolute;
     bottom: 55px;
     color: white;
@@ -55,19 +39,19 @@
 
   .crousimg {
     margin-top: 26px;
-    width: 90%;
-    height: 190px;
+    /* width: 600px !important; */
+    height: 180px;
     border-bottom-left-radius: 30px;
     border-top-right-radius: 30px;
   }
 
-  .swip-out {
+  /* .swip-out {
     width: 100% !important;
-  }
+  } */
 
   .swip-box {
-     width: 40% !important;
-     height: 260px !important;
+     /* width: 40% !important; */
+     height: 250px !important;
   }
 
   /* .swiper-pagination {

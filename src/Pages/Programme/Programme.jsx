@@ -58,16 +58,24 @@ const Programme = () => {
                   className="one"
                   key={index}
                   style={{
-                    backgroundColor:
-                      event.Place === "Shridhar Shriram Auditorium" ? "pink" : "yellow",
+                    borderLeft: event.Place === "Shridhar Shriram Auditorium" ? "16px solid #07A6DB" : "16px solid #FFCA42",
                   }}
                 >
+                  {/* <div className="event-indicate"></div> */}
                   <div className="top">
                     <p>{event.time}</p>
                     <p>{event.Place}</p>
                   </div>
-                  <h1> {event.Event_Name}</h1>
-                  <p> {event.Address}</p>
+                  <div className="timelin">
+                  <h1
+                 
+                  > {event.Event_Name}</h1>
+                  <p
+                  style={{
+                    display: !event.Address ? "none" : "block" 
+                  }}
+                  > {event.Address}</p>
+                  </div>
                 </motion.div>
               ))}
             </ul>
