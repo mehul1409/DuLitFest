@@ -59,7 +59,7 @@ backdrop-filter: blur(0.949999988079071px);
 }
 
 .Navbarbody .navbar .navitemMobile:hover {
-  background-color: rgb(240, 240, 240, 0.8);
+  background-color:black;
   border-radius: 10px;
   transform: scale(1.1);
   color: black;
@@ -99,6 +99,13 @@ backdrop-filter: blur(0.949999988079071px);
 
 .Navbarbody .navbar .sidebar li {
   width: 100%;
+  align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Navbarbody .navbar .sidebar li:nth-child(1) {
+  align-items:flex-end; 
 }
 
 .Navbarbody .navbar .sidebar a {
@@ -112,7 +119,7 @@ backdrop-filter: blur(0.949999988079071px);
 .Navbarbody .navbar .sidebar a:hover {
   border-radius: 10px;
   transform: scale(1.1);
-  color: black;
+  color:#FFCA42;
 }
 
 .Navbarbody .navbar .navitems .registerButton a {
@@ -127,15 +134,15 @@ font-weight: 600;
 }
 
 .Navbarbody .navbar .sidebar .registerButton a {
-  background-color: lightcyan;
-  color: black !important;
+  // background-color: lightcyan;
+  color: #FFCA42 !important;
   border-radius: 20px;
-  background-color: #FFCA42;
+  // background-color: #FFCA42;
   font-family: Playfair Display;
   font-style:normal;
-  color: #3E0067 !important;
+  // color: #3E0067 !important;
   width: 50%;
-  padding-left: 18px;
+  // padding-left: 18px;
   font-weight: 700;
 }
 
@@ -276,16 +283,16 @@ font-weight: 600;
 //   }
 // }
 
-.sidebb {
+.sidebb{
   display: flex;
   justify-content: center;
 }
 
-
 #mnh {
   position: relative;
   top: -5px !important;
-  left: 60px !important;
+  // left: 60px !important; 
+  right:13%;
   border-radius: 6.471px;
 border: 1.6px solid #d1cfcf;
 background: rgba(217, 217, 217, 0.18);
@@ -300,3 +307,22 @@ background: rgba(217, 217, 217, 0.18);
 //   font-size: 20px;
 //   font-weight: 900;
 // }
+
+.NavitemsUnderline{
+  width:60%;
+  border:1px solid white;
+  height:1px;
+  margin-top:2%;
+}
+
+.Navbarbody .navbar .sidebar li:hover .NavitemsUnderline{
+  border:1px solid #FFCA42;
+  margin-left:3%;
+}
+
+.registerunderline{
+  border: 1px solid #FFCA42 !important;
+  width:60%;
+  height:1px;
+  margin-top:2%;
+}
