@@ -42,7 +42,7 @@ backdrop-filter: blur(0.949999988079071px);
 
 .Navbarbody .navbar li {
   // height: 50px;
-  margin: 1%;
+  margin:1%;
   // background-color: #FFCA42;
   transition: 0.4s ease-in-out;
 }
@@ -248,6 +248,10 @@ font-weight: 600;
 
   .Navbarbody .navbar .navitems :nth-child(2) {
     display: none;
+  }
+
+  .Navbarbody .navbar li {
+    margin:2% 1%;
   }
 
 }
