@@ -6,8 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  background: #3E0067 url('../../Pages/Home/homebackg.png');
-
+  background: #3e0067 url("../../Pages/Home/homebackg.png");
 }
 
 .wave-header .HeadingOfPage h1 {
@@ -15,9 +14,9 @@
   // color: #fff;
   font-family: "raleway";
   font-weight: 700;
-  margin-bottom: 8rem;
+  margin-bottom: 13rem;
   margin-top: 7rem;
-  color: #FFCA42;
+  color: #ffca42;
   font-family: Playfair Display SC;
 }
 
@@ -38,11 +37,10 @@
   white-space: nowrap;
   padding-bottom: 13px;
   position: relative;
-
 }
 
 .HeadingOfPage h1:before {
-  background-color: #FFCA42;
+  background-color: #ffca42;
   content: "";
   display: block;
   height: 3px;
@@ -53,7 +51,7 @@
 }
 
 .HeadingOfPage h1:after {
-  background-color: #FFCA42;
+  background-color: #ffca42;
   content: "";
   display: block;
   position: absolute;
@@ -64,17 +62,9 @@
   margin-bottom: 0.25em;
 }
 
-@media screen and (max-width:1420px){
-  .wave-header{
-    min-height: 35vh;
-  }
-}
-
-@media screen and (max-width:1100px){
-
-  .wave-header .HeadingOfPage h1{
-    margin-bottom:10rem;
-    margin-top:7rem;
+@media screen and (max-width: 1420px) {
+  .wave-header {
+    min-height: 40vh;
   }
 }
 
@@ -84,9 +74,9 @@
   }
 
   .wave-header {
-    min-height: 25vh;
+    min-height: 30vh;
     width: 100%;
-    background: #3E0067 url('../../Pages/Home/homebackg.png');
+    background: #3e0067 url("../../Pages/Home/homebackg.png");
     position: relative;
     display: flex;
     justify-content: center;
@@ -99,6 +89,5 @@
     font-family: "raleway";
     font-weight: 700;
     margin-bottom: 8rem;
-    //   margin-top: 5rem;
   }
 }
