@@ -6,7 +6,6 @@ const SectionHeader = (props) => {
                 <div className='SectionHeader_text_text-content'>{props.text}</div>
                 <div className='sectionHeaderUnderline'></div>
             </div>
-
         </div>
     )
 }
