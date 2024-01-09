@@ -9,7 +9,7 @@ const Speakers = () => {
     <>
       <PageHeader
         bgColor="#aa4b6b"
-        fgColor="#3b8d99"
+        fgColor="rgba(185, 234, 255, 1)"
         heading="Speakers"
         textColor="white"
       />
@@ -37,7 +37,7 @@ const Speakers = () => {
           ))}
         </div>
       </div> */}
-      <Footer bgColor="#aa4b6b" />
+      <Footer bgColor="rgba(185, 234, 255, 1)" />
     </>
   );
 };

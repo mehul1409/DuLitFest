@@ -69,15 +69,19 @@ backdrop-filter: blur(0.949999988079071px);
   margin-right: auto;
 }
 
+.Navbarbody .navbar .navitems :nth-child(2) {
+  margin-right: auto;
+}
+
 .Navbarbody .navbar .sidebar {
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   height: 100vh;
   width: 350px;
   z-index: 2;
   // background: linear-gradient(to left, #150322 0.9%,rgba(22, 3, 34, 0.55) 59.8%, rgba(22, 3, 34, 0.45) 67.8%, rgba(22, 3, 34, 0.0) 100%);
-  background: linear-gradient(to left, #150322 0.9%,rgba(22, 3, 34, 0.65) 95%, rgba(22, 3, 34, 0.65) 90.8%,rgba(22, 3, 34, 0.0) 99.15%, rgba(22, 3, 34, 0.0) 99.15%);
+  background: linear-gradient(to right, #150322 0.9%,rgba(22, 3, 34, 0.65) 95%, rgba(22, 3, 34, 0.65) 90.8%,rgba(22, 3, 34, 0.0) 99.15%, rgba(22, 3, 34, 0.0) 99.15%);
 
   // background: linear-gradient(89deg, rgba(22, 3, 34, 0.00)  0.9%, rgba(22, 3, 34, 0.75) 90.8%, #150322 99.15%);
   // box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
@@ -106,23 +110,20 @@ backdrop-filter: blur(0.949999988079071px);
 }
 
 .Navbarbody .navbar .sidebar a:hover {
-  // background-color: rgb(240, 240, 240, 0.8);
   border-radius: 10px;
   transform: scale(1.1);
   color: black;
-  // margin-right:15%;
 }
 
 .Navbarbody .navbar .navitems .registerButton a {
   background-color: #FFCA42;
   color: #3E0067 !important;
-  height: 100%;
-  font-family: Playfair Display;
-  font-size: 20.857px;
+  font-size: 1rem;
 font-style: normal;
 font-weight: 600;
   border-radius: 10px;
-  padding: 5px 12px;
+  padding: 1px 9px;
+  margin: 4px;
 }
 
 .Navbarbody .navbar .sidebar .registerButton a {
@@ -130,13 +131,12 @@ font-weight: 600;
   color: black !important;
   border-radius: 20px;
   background-color: #FFCA42;
+  font-family: Playfair Display;
+  font-style:normal;
   color: #3E0067 !important;
-  // margin-left: 5%;
   width: 50%;
   padding-left: 18px;
-  // padding-right: 10px;
   font-weight: 700;
-  // letter-spacing: 3px;
 }
 
 #show {
@@ -172,7 +172,6 @@ font-weight: 600;
 @media only screen and (max-width: 320px) {
   .navitems .mobileview,
   #navItemHome,
-  #navItemRegister,
   #navItemContact,
   #navItemSponsers,
   #navItemProgramme,
@@ -183,12 +182,13 @@ font-weight: 600;
   .Navbarbody .hamburger {
     display: block;
   }
+
+
 }
 
 @media only screen and (max-width: 320px) {
   .navitems .mobileview,
   #navItemHome,
-  #navItemRegister,
   #navItemContact,
   #navItemSponsers,
   #navItemProgramme,
@@ -204,7 +204,6 @@ font-weight: 600;
 @media only screen and (max-width: 480px) {
   .navitems .mobileview,
   #navItemHome,
-  #navItemRegister,
   #navItemContact,
   #navItemSponsers,
   #navItemProgramme,
@@ -215,12 +214,12 @@ font-weight: 600;
   .Navbarbody .hamburger {
     display: block;
   }
+
 }
 
 @media only screen and (max-width: 768px) {
   .navitems .mobileview,
   #navItemHome,
-  #navItemRegister,
   #navItemContact,
   #navItemSponsers,
   #navItemProgramme,
@@ -236,7 +235,6 @@ font-weight: 600;
 @media only screen and (max-width: 910px) {
   .navitems .mobileview,
   #navItemHome,
-  #navItemRegister,
   #navItemContact,
   #navItemSponsers,
   #navItemProgramme,
@@ -247,6 +245,11 @@ font-weight: 600;
   .Navbarbody .hamburger {
     display: block;
   }
+
+  .Navbarbody .navbar .navitems :nth-child(2) {
+    display: none;
+  }
+
 }
 
 // @media only screen and (min-width: 1025px) {
@@ -278,7 +281,7 @@ font-weight: 600;
 #mnh {
   position: relative;
   top: -5px !important;
-  right: 60px !important;
+  left: 60px !important;
   border-radius: 6.471px;
 border: 1.6px solid #d1cfcf;
 background: rgba(217, 217, 217, 0.18);

@@ -5,7 +5,7 @@ import PageHeader from "../../Components/PageHeader/PageHeader";
 import Footer from "../../Components/Footer/Footer";
 import "./Contact.css";
 import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [user, setuser] = useState({
@@ -31,35 +31,31 @@ const Contact = () => {
   const senddata = async (e) => {
     // const { Name, Email, Message } = user;
     e.preventDefault();
-    if (!user.Name || !user.Email || !user.Message) {
-      alert("Please check your entries");
-      return false;
-    } else {
-      emailjs
-        .sendForm(
-          EMAILJS_SERVICE_ID,
-          EMAILJS_TEMPLATE_ID,
-          user,
-          EMAILJS_USER_ID
-        )
-        .then((response) => {
-          console.log("Email sent successfully:", response);
-          // Show success alert
-          window.alert("Message sent successfully!");
-        })
-        .catch((error) => {
-          console.error("Error sending email:", error);
-          // Show error alert
-          window.alert("Oops! Something went wrong. Please try again later.");
-        });
+    const templateParams = {
+      from_name: Name,
+      to_name: "Recipient Name", // Replace with the recipient's name
+      message: Message,
+      reply_to: Email,
+    };
 
-      // Reset the form after submission
-      setFormData({
-        name: "",
-        email: "",
-        message: "",
-      });
-    }
+    // Use your Email.js service ID and template ID
+    emailjs
+      .send(
+        "service_bcj3mlt",
+        "template_daa7ynl",
+        templateParams,
+        "h2pO6If_ZBtId09cR"
+      )
+      .then(
+        (response) => {
+          console.log("Email sent successfully:", response);
+          alert("Your message sent!");
+        },
+        (error) => {
+          console.error("Email failed to send:", error);
+          alert("An error occurred while sending the message.");
+        }
+      );
   };
 
   return (

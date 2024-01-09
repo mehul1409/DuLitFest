@@ -20,12 +20,18 @@ const Navbar = () => {
     <div className="Navbarbody">
       <div className="navbar">
         <ul className="navitems">
+        <li className="hamburger" onClick={handleClick}>
+            <a href="">
+              <RxHamburgerMenu />
+            </a>
+          </li>
           <motion.img
-            initial={{ y: "-10vh" }}
-            animate={{ y: "0vw" }}
-            transition={{ duration: 0.5 }}
+            // initial={{ y: "-10vh" }}
+            // animate={{ y: "0vw" }}
+            // transition={{ duration: 0.5 }}
             src="/assets/images/Logo.svg"
             alt=""
+            className="Dulitfeslogo"
           />
           <motion.li
             initial={{ y: "-10vh" }}
@@ -86,22 +92,18 @@ const Navbar = () => {
             initial={{ y: "-10vh" }}
             animate={{ y: "0vw" }}
             transition={{ duration: 0.6 }}
-            className="mobileview registerButton"
+            className="registerButton"
             id="navItemRegister"
           >
             <Link to="/register">REGISTER</Link>
           </motion.li>
-          <li className="hamburger" onClick={handleClick}>
-            <a href="">
-              <RxHamburgerMenu />
-            </a>
-          </li>
+          
         </ul>
         <ul className="sidebar" id={`${sidebarVisible ? "show" : ""}`}>
           <li className="sidebb">
             <a id="mnh" onClick={handleClick}>
               {/* <RxCross2 /> */}
-             Back <span id="rarrow">&rarr;</span>
+              <span id="rarrow">&larr;</span>Back 
             </a>
           </li>
           <li className="sidebb" onClick={closeMobileMenu}>
