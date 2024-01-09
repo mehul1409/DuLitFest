@@ -34,33 +34,33 @@ const ExploreCard = () => {
       >
         <div className="card">
           <div className="content">
-            <h2 className="title">PARTNERS</h2>
+            <h2 className="title">Partners</h2>
             <button className="btn">
-              <Link to="/sponsers">MORE</Link>
+              <Link to="/sponsers">More</Link>
             </button>
           </div>
         </div>
         <div className="card">
           <div className="content">
-            <h2 className="title">PROGRAMME</h2>
+            <h2 className="title">Programme</h2>
             <button className="btn">
-              <Link to="/programme">MORE</Link>
+              <Link to="/programme">More</Link>
             </button>
           </div>
         </div>
         <div className="card">
           <div className="content">
-            <h2 className="title">SPEAKERS</h2>
+            <h2 className="title">Speakers</h2>
             <button className="btn">
-              <Link to="/speakers">MORE</Link>
+              <Link to="/speakers">More</Link>
             </button>
           </div>
         </div>
         <div className="card">
           <div className="content">
-            <h2 className="title">CONTACT</h2>
+            <h2 className="title">Contact</h2>
             <button className="btn">
-              <Link to="/contact">MORE</Link>
+              <Link to="/contact">More</Link>
             </button>
           </div>
         </div>
