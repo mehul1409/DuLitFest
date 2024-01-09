@@ -22,7 +22,7 @@ const Navbar = () => {
         <ul className="navitems">
         <li className="hamburger" onClick={handleClick}>
             <a href="">
-              <RxHamburgerMenu />
+              <RxHamburgerMenu size={32}/>
             </a>
           </li>
           <motion.img
