@@ -12,7 +12,7 @@ const Home = () => {
     <>
       <div className="home-cont-hero">
         <div className="home-hero">
-          {/* <img src={hometoppic} alt="" id="homeimg" /> */}
+          <img src={hometoppic} alt="" id="homeimg" />
         </div>
         {/* <div className="before-about"></div> */}
 
