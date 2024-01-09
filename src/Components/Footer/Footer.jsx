@@ -14,7 +14,7 @@ const Footer = (props) => {
         style={{ backgroundColor: props.bgColor }}
       >
         <path
-          fill="rgb(9,19,53)"
+          fill="rgba(22, 3, 35, 0.8)"
           fillOpacity="1"
           d="M0,224L34.3,208C68.6,192,137,160,206,170.7C274.3,181,343,235,411,245.3C480,256,549,224,617,181.3C685.7,139,754,85,823,74.7C891.4,64,960,96,1029,128C1097.1,160,1166,192,1234,202.7C1302.9,213,1371,203,1406,197.3L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
         ></path>
@@ -35,7 +35,7 @@ const Footer = (props) => {
       {/* <div className= "svgfooter"> */}
       {/* <img src={wave1} alt="wave" style={{mixBlendMode: "multiply"}} /> */}
       {/* </div> */}
-      <div className="px-4 pt-2 mx-auto sm:max-w-full md:max-w-full lg:max-w-full md:px-24 lg:px-8 bg-backgroundColor text-white">
+      <div className="px-4 pt-2 mx-auto sm:max-w-full md:max-w-full lg:max-w-full md:px-24 lg:px-8 Colorbg-backgroundColor text-white">
         <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4 text-white">
           <div className="sm:col-span-2 text-white">
             <a

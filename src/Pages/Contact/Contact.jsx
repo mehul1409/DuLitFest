@@ -7,7 +7,6 @@ import "./Contact.css";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
 
-
 const Contact = () => {
   const [user, setuser] = useState({
     Name: "",
@@ -20,8 +19,17 @@ const Contact = () => {
     setuser({ ...user, [name]: value });
   };
 
+  var contactParams = {
+    from_name: user.Name,
+    from_email: user.Email,
+    message: user.Message,
+    to_name: "Du",
+    phone_no: user.number,
+    reply_to: "jiitopticachapter@gmail.com",
+  };
+
   const senddata = async (e) => {
-    const { Name, Email, Message } = user;
+    // const { Name, Email, Message } = user;
     e.preventDefault();
     const templateParams = {
       from_name: Name,
@@ -32,7 +40,12 @@ const Contact = () => {
 
     // Use your Email.js service ID and template ID
     emailjs
-      .send("service_bcj3mlt", "template_daa7ynl", templateParams, "h2pO6If_ZBtId09cR")
+      .send(
+        "service_bcj3mlt",
+        "template_daa7ynl",
+        templateParams,
+        "h2pO6If_ZBtId09cR"
+      )
       .then(
         (response) => {
           console.log("Email sent successfully:", response);
