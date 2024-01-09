@@ -110,23 +110,20 @@ backdrop-filter: blur(0.949999988079071px);
 }
 
 .Navbarbody .navbar .sidebar a:hover {
-  // background-color: rgb(240, 240, 240, 0.8);
   border-radius: 10px;
   transform: scale(1.1);
   color: black;
-  // margin-right:15%;
 }
 
 .Navbarbody .navbar .navitems .registerButton a {
   background-color: #FFCA42;
   color: #3E0067 !important;
-  height: 100%;
-  font-family: Playfair Display;
-  font-size: 20.857px;
+  font-size: 1rem;
 font-style: normal;
 font-weight: 600;
   border-radius: 10px;
-  padding: 5px 12px;
+  padding: 1px 9px;
+  margin: 4px;
 }
 
 .Navbarbody .navbar .sidebar .registerButton a {
@@ -134,16 +131,13 @@ font-weight: 600;
   color: black !important;
   border-radius: 20px;
   background-color: #FFCA42;
+  font-family: Playfair Display;
+  font-style:normal;
   color: #3E0067 !important;
-  // margin-left: 5%;
   width: 50%;
   padding-left: 18px;
-  // padding-right: 10px;
   font-weight: 700;
-  // letter-spacing: 3px;
-  // margin: 5px;
 }
-
 
 #show {
   display: flex !important;
