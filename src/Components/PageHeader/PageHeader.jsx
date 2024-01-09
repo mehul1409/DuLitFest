@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 
 const PageHeader = (props) => {
   return (
-    <div className="wave-header" style={{ backgroundColor: props.bgColor }}>
+    <div className="wave-header" >
       <svg
         className="absolute bottom-0 left-0"
-        style={{ backgroundColor: props.bgColor }}
+        // style={{ backgroundColor: props.bgColor }}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
       >
@@ -17,11 +17,11 @@ const PageHeader = (props) => {
         ></path>
       </svg>
       <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1.5, delay: 0.3 }}
-      viewport={{ once: true }}
-      className="HeadingOfPage">
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.5, delay: 0.3 }}
+        viewport={{ once: true }}
+        className="HeadingOfPage">
         <h1 style={{ textColor: props.textColor }}>{props.heading}</h1>
       </motion.div>
     </div>
