@@ -16,12 +16,17 @@ const Home = () => {
         </div>
         {/* <div className="before-about"></div> */}
         
-        
+        <div className="home-scroll">
+          
+        <div className="hh-cont">
         <img src={clouds2} alt="clouds" className="clouds" />
         <img src={phonecloud2} alt="clouds" className="phoneclouds" />
-        <div className="cloud-img-container">
-        </div>
+        <div className="hom-contt">
+        <div className="cloud-img-container"></div>
         <div className="cloud-img-container2"></div>
+        </div>
+        </div>
+
        
         <ExploreCard />
         <motion.div
@@ -90,6 +95,10 @@ const Home = () => {
 
         <Ticket />
         <Footer />
+
+        
+        </div>
+        
       </div>
     </>
   );

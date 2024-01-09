@@ -176,6 +176,7 @@
   border-radius: 20px;
 }
 
+
 .about-us {
   background-color: #ffffff;
   opacity: 0.6;
@@ -191,8 +192,10 @@
 }
 
 .cloud-img-container {
-  position: absolute;
-  top: 840px;
+  // position: absolute;
+  position: relative;
+  // top: 100vh;
+  margin-top: -20px;
   height: 180px;
   width: 100%;
   // z-index: -1;
@@ -200,8 +203,8 @@
   display: inline-block; /* Ensures container fits the image size */
 }
 .cloud-img-container2 {
-  position: absolute;
-  top: 840px;
+  position: relative;
+  margin-top: -170px;
   height: 180px;
   width: 100%;
   background-image: linear-gradient(to top, rgba(255, 255, 255, 0), white);
@@ -216,6 +219,14 @@
   left: -10%;
   right: 10%;
 }
+
+
+.hom-contt {
+  margin-top: -90px;
+}
+// .hh-cont {
+  
+// }
 
 .phoneclouds {
   display: none;
@@ -233,25 +244,7 @@
 // }
 
 @media screen and (max-aspect-ratio: 4/3) {
-  .phoneclouds {
-    display: block;
-    max-width: 120%;
-    position: relative;
-    top: -45px;
-    left: -10%;
-    right: 10%;
-  }
-  .cloud-img-container {
-    top: 520px;
-    height: 80px;
-  }
-  .cloud-img-container2 {
-    top: 540px;
-    height: 80px;
-  }
-  .clouds {
-    display: none;
-  }
+ 
   .ribbon {
     width: 100%;
     //  font-size: 20px;
@@ -274,6 +267,27 @@
 }
 
 @media screen and (max-width: 650px) {
+  .phoneclouds {
+    display: block;
+    max-width: 120%;
+    position: relative;
+    top: -45px;
+    left: -10%;
+    right: 10%;
+  }
+  .cloud-img-container {
+    // top: 58%;
+    margin-top: -20px;
+    height: 80px;
+  }
+  .cloud-img-container2 {
+    // top: 58%;
+    margin-top: -22px;
+    height: 80px;
+  }
+  .clouds {
+    display: none;
+  }
   #homeimg {
     position: relative;
     height: 60%;
@@ -284,9 +298,20 @@
     left: -0.11%;
   }
   .home-hero {
+    position: fixed;
     height: fit-content;
     background-image:none;
     overflow: hidden;
+  }
+  .home-scroll {
+    margin-top: 116%;
+    position: relative;
+    // overflow: hidden;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center center;
+    // background-attachment: fixed;
+    background: #3E0067 url('./homebackg.png');
   }
 
 }
