@@ -2,6 +2,7 @@ import "./ExploreCard.css";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import vector from './vector.png'
+import Crousel from "../Crousel/Crousel";
 
 const ExploreCard = () => {
   return (
@@ -15,6 +16,12 @@ const ExploreCard = () => {
       ><img src={vector} alt="image" className="backii backii1" />
         {/* <h1 className="headexp">Explore the Event</h1> */}
       </motion.div>
+
+      <div className="crousel-div">
+      <Crousel />
+      </div>
+
+
       <motion.main
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
