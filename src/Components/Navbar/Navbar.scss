@@ -61,10 +61,14 @@
 }
 
 .Navbarbody .navbar .navitemMobile:hover {
-  // background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
   border-radius: 10px;
   transform: scale(1.1);
   color: black;
+}
+
+.Navbarbody .navbar .sidebar .navitemMobile:hover {
+  background:transparent;
 }
 
 .Navbarbody .navbar .navitems :first-child {

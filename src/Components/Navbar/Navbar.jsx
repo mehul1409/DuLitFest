@@ -26,9 +26,6 @@ const Navbar = () => {
             </a>
           </li>
           <motion.img
-            // initial={{ y: "-10vh" }}
-            // animate={{ y: "0vw" }}
-            // transition={{ duration: 0.5 }}
             src="/assets/images/Logo.svg"
             alt=""
             className="Dulitfeslogo"
