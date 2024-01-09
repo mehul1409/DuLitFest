@@ -10,16 +10,9 @@ const Home = () => {
     <>
       <div className="home-cont-hero">
         <div className="home-hero">
-          <img src={hometoppic} alt="" id="homeimg"/>
+          <img src={hometoppic} alt="" id="homeimg" />
         </div>
-<<<<<<< HEAD
-
-        <div className="before-about"></div>
-        <ExploreCard />
-
-=======
         {/* <div className="before-about"></div> */}
->>>>>>> 430b043b8a486802d95da3f6dd09d1021b8204cf
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
