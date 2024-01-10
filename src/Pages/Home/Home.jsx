@@ -6,6 +6,7 @@ import Ticket from "../../Components/Ticket/Ticket";
 import { motion } from "framer-motion";
 import clouds2 from "./clouds2.png";
 import phonecloud2 from "./phonecloud2.png";
+import About from "../../Components/About/About";
 
 const Home = () => {
   return (
@@ -90,6 +91,8 @@ const Home = () => {
               </header>
             </div>
           </motion.div> */}
+
+          <About />
 
           <Ticket />
           <Footer />
