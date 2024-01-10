@@ -341,3 +341,10 @@
   height: 1px;
   margin-top: 2%;
 }
+
+.active {
+  background-color: rgb(255, 255, 255) !important;
+  border-radius: 10px !important;
+  transform: scale(1.1) !important;
+  color: #3e0067 !important;
+}

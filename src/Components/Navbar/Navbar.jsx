@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
+import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
 import { motion } from "framer-motion";
@@ -26,6 +27,9 @@ const Navbar = () => {
             </a>
           </li>
           <motion.img
+            // initial={{ y: "-10vh" }}
+            // animate={{ y: "0vw" }}
+            // transition={{ duration: 0.5 }}
             src="/assets/images/Logo.svg"
             alt=""
             className="Dulitfeslogo"
@@ -37,9 +41,9 @@ const Navbar = () => {
             className="mobileview"
             id="navItemHome"
           >
-            <Link to="/" className="navitemMobile">
+            <NavLink to="/" className="navitemMobile">
               HOME
-            </Link>
+            </NavLink>
           </motion.li>
           <motion.li
             initial={{ y: "-10vh" }}
@@ -48,9 +52,9 @@ const Navbar = () => {
             className="mobileview"
             id="navItemSpeakers"
           >
-            <Link to="/speakers" className="navitemMobile">
+            <NavLink to="/speakers" className="navitemMobile">
               SPEAKERS
-            </Link>
+            </NavLink>
           </motion.li>
           <motion.li
             initial={{ y: "-10vh" }}
@@ -59,9 +63,9 @@ const Navbar = () => {
             className="mobileview"
             id="navItemProgramme"
           >
-            <Link to="/programme" className="navitemMobile">
+            <NavLink to="/programme" className="navitemMobile">
               PROGRAMME
-            </Link>
+            </NavLink>
           </motion.li>
           <motion.li
             initial={{ y: "-10vh" }}
@@ -70,9 +74,9 @@ const Navbar = () => {
             className="mobileview"
             id="navItemSponsers"
           >
-            <Link to="/sponsers" className="navitemMobile">
+            <NavLink to="/sponsers" className="navitemMobile">
               PARTNERS
-            </Link>
+            </NavLink>
           </motion.li>
           <motion.li
             initial={{ y: "-10vh" }}
@@ -81,9 +85,9 @@ const Navbar = () => {
             className="mobileview"
             id="navItemContact"
           >
-            <Link to="/contact" className="navitemMobile">
+            <NavLink to="/contact" className="navitemMobile">
               CONTACT
-            </Link>
+            </NavLink>
           </motion.li>
           <motion.li
             initial={{ y: "-10vh" }}
