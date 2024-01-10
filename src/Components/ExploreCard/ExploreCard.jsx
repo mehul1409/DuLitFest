@@ -4,6 +4,12 @@ import { motion } from "framer-motion";
 import vector from './vector.png'
 import Crousel from "../Crousel/Crousel";
 import SectionHeader from "../SectionHeader/SectionHeader";
+import spons from "/assets/images/explorePartners1.png";
+import register from "/assets/images/exploreRegister1.png";
+import speak from "/assets/images/exploreSpeaker1.png";
+import time from "/assets/images/exploreProgramme1.png";
+
+
 
 const ExploreCard = () => {
   return (
@@ -32,37 +38,44 @@ const ExploreCard = () => {
         viewport={{ once: true }}
         className="page-content"
       >
+       
         <div className="card">
+        <Link to="/sponsers">
           <div className="content">
             <h2 className="title">Partners</h2>
-            <button className="btn">
-              <Link to="/sponsers">More</Link>
-            </button>
           </div>
+          </Link>
         </div>
+        
+
+       
         <div className="card">
+        <Link to="/programme">
           <div className="content">
             <h2 className="title">Programme</h2>
-            <button className="btn">
-              <Link to="/programme">More</Link>
-            </button>
           </div>
+          </Link>
         </div>
+      
+        
+        
         <div className="card">
+        <Link to="/speakers">
           <div className="content">
             <h2 className="title">Speakers</h2>
-            <button className="btn">
-              <Link to="/speakers">More</Link>
-            </button>
           </div>
+          </Link>
         </div>
+      
+      
+        
         <div className="card">
-          <div className="content">
+        <Link to="/contact">
+        <div className="content">
             <h2 className="title">Contact</h2>
-            <button className="btn">
-              <Link to="/contact">More</Link>
-            </button>
           </div>
+          </Link>
+          
         </div>
       </motion.main>
     </div>
