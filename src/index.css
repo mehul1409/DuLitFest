@@ -9,6 +9,10 @@
   font-family: 'Playfair Display SC', serif;
 }
 
+body {
+  user-select: none;
+}
+
 html {
   scroll-behavior: smooth;
 }

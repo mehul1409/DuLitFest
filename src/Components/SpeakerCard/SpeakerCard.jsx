@@ -19,13 +19,23 @@ const Card = (props) => {
     // </div>
 
     <div className="wrapper">
-      <div className="Wrappercard">
+      <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5, delay: 0.2 }}
+      viewport={{ once: true }}
+      className="Wrappercard">
         <img loading="lazy" src={props.imgUrl} alt={props.name} />{" "}
-      </div>
-      <div className="info">
+      </motion.div>
+      <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5, delay: 0.2 }}
+      viewport={{ once: true }}
+      className="info">
         <h1 className="card_name">{props.name}</h1>
         <p className="card_tag">{props.tag}</p>
-      </div>
+      </motion.div>
     </div>
   );
 };

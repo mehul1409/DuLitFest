@@ -5,10 +5,16 @@ import { FaTwitter } from "react-icons/fa";
 // import { FaLinkedin } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import wave1 from "./wave1.png";
+import { motion } from "framer-motion";
 
 const Footer = (props) => {
   return (
-    <>
+    <motion.div
+    // initial={{ opacity: 0 }}
+    //       whileInView={{ opacity: 1 }}
+    //       transition={{ duration: 1.5, delay: 0.3 }}
+    //       viewport={{ once: true }}
+    >
       {/* <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
@@ -141,7 +147,7 @@ const Footer = (props) => {
           </p>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 };
 

@@ -36,7 +36,12 @@ const Programme = () => {
       />
       <div className="hello">
         <div className="outer-1">
-          <div className="day-buttons">
+          <motion.div
+           initial={{ opacity: 0 }}
+           whileInView={{ opacity: 1 }}
+           transition={{ duration: 1, delay:0.1 }}
+           viewport={{ once: true }}
+          className="day-buttons">
             <button
               className={selectedDay === "Day1" ? "activeDay" : ""}
               onClick={() => handleDayClick("Day1")}
@@ -55,12 +60,12 @@ const Programme = () => {
             >
               Day 3
             </button>
-          </div>
+          </motion.div>
           <motion.div className="box-1">
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 2.5, delay:0.3 }}
               viewport={{ once: true }}
               className="Day1"
             >
@@ -71,7 +76,7 @@ const Programme = () => {
                 <motion.div
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
-                  transition={{ duration: 1, delay: 0.1 }}
+                  transition={{ duration: 1, delay: 0.3 }}
                   viewport={{ once: true }}
                   className="one"
                   key={index}
