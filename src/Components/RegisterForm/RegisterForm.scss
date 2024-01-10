@@ -3,14 +3,21 @@
 .regis {
   // background-color: black;
   // background-image: linear-gradient(to bottom, #BBD2C5 0%,#536976 100%);
-  background-image: linear-gradient(to bottom, #e4e5e6 0%, #00416a 100%);
+  // background-image: linear-gradient(to bottom, #e4e5e6 0%, #00416a 100%);
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #fff 0%,
+    #f2fbff 0.01%,
+    #d4f2ff 100%
+  );
   padding-bottom: 30px;
+  padding: 5%;
 }
 
 .registration-form {
   // color: white;
   color: black;
-  max-width: 400px;
+  max-width: 500px;
   margin: auto;
   padding: 20px;
   // border: 1px solid #ccc;
@@ -80,9 +87,9 @@ label {
 }
 
 .regbtn {
-  background-color: #007bff !important;
+  background-color: #3e0067 !important;
   // color: white;
-  color: black;
+  color: white;
   border: none;
   text-align: center;
   font-weight: bold;
