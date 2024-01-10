@@ -1,250 +1,241 @@
 .hello {
-    // background-image: linear-gradient( #3fada8 0%, 
-    // #808080 100%);
-    // background: linear-gradient(rgb(251, 219, 208, 1) 0%, rgba(251, 219, 208, 0.5) 2%, rgba(251, 219, 208, 0.1) 5%, rgba(251, 219, 208, 0.1) 50%, rgba(251, 219, 208, 0.5) 95%, rgba(251, 219, 208, 1) 100%),
-    //     url('./speaker-bg.jpg') center/contain repeat;
-    // background: linear-gradient(rgba(185, 234, 255, 1) 0%, rgba(185, 234, 255, 0.5) 2%, rgba(185, 234, 255, 0.1) 5%, rgba(185, 234, 255, 0.1) 50%, rgba(185, 234, 255, 0.5) 98%, rgba(185, 234, 255, 1) 100%),
-    // url('../Speakers/Books.png') center/contain repeat;
-    background: radial-gradient(50% 50% at 50% 50%, #FFF 0%, #F2FBFF 0.01%, #D4F2FF 100%);
-  padding: 6rem 0rem 0rem 0rem;
-    // background: linear-gradient(rgba(251, 219, 208, 1) 0%, rgba(251, 219, 208, 0.8) 2%, rgba(251, 219, 208, 0.7) 5%, rgba(251, 219, 208, 0.7) 50%, rgba(251, 219, 208, 1) 80%, rgba(251, 219, 208, 1) 95%),
-    //     url('./speaker-bg.jpg') center/contain repeat !important;
+  // background-image: linear-gradient( #3fada8 0%,
+  // #808080 100%);
+  // background: linear-gradient(rgb(251, 219, 208, 1) 0%, rgba(251, 219, 208, 0.5) 2%, rgba(251, 219, 208, 0.1) 5%, rgba(251, 219, 208, 0.1) 50%, rgba(251, 219, 208, 0.5) 95%, rgba(251, 219, 208, 1) 100%),
+  //     url('./speaker-bg.jpg') center/contain repeat;
+  // background: linear-gradient(rgba(185, 234, 255, 1) 0%, rgba(185, 234, 255, 0.5) 2%, rgba(185, 234, 255, 0.1) 5%, rgba(185, 234, 255, 0.1) 50%, rgba(185, 234, 255, 0.5) 98%, rgba(185, 234, 255, 1) 100%),
+  // url('../Speakers/Books.png') center/contain repeat;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #fff 0%,
+    #f2fbff 0.01%,
+    #d4f2ff 100%
+  );
+  padding: 2rem 0rem 0rem 0rem;
+  // background: linear-gradient(rgba(251, 219, 208, 1) 0%, rgba(251, 219, 208, 0.8) 2%, rgba(251, 219, 208, 0.7) 5%, rgba(251, 219, 208, 0.7) 50%, rgba(251, 219, 208, 1) 80%, rgba(251, 219, 208, 1) 95%),
+  //     url('./speaker-bg.jpg') center/contain repeat !important;
 }
 
 .outer-1 {
-    width: 100%;
-    // background-image: linear-gradient(rgb(250, 169, 47), rgb(250, 169, 47, 0.5), rgb(246, 37, 251, 0.5), rgb(246, 37, 251, 1));
-    // background-color: #FFDEE9;
-    // background-image: linear-gradient( #3fada8 0%, 
-    // #808080 100%);
+  width: 100%;
+  // background-image: linear-gradient(rgb(250, 169, 47), rgb(250, 169, 47, 0.5), rgb(246, 37, 251, 0.5), rgb(246, 37, 251, 1));
+  // background-color: #FFDEE9;
+  // background-image: linear-gradient( #3fada8 0%,
+  // #808080 100%);
 
-    // background-color: #4158D0;
-    // background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-    border: none;
-
+  // background-color: #4158D0;
+  // background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  border: none;
 }
 
 .day-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  // font-size: large;
+  // margin-top: 20px;
+  //   padding-top: 20px;
+
+  button {
+    color: #3e0067;
+    border-radius: 8px;
+    font-size: 2rem;
+    font-style: Playfare Display;
+    font-weight: 600;
+    border-radius: 10px;
+    // padding: 5px 9px;
+    margin: 0px 50px;
+    padding: 0px 20px;
+    border: 2px solid #3e0067;
+    // border-bottom-left-radius: 0;
+    // border-bottom-right-radius: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    // font-size: large;
-    // margin-top: 20px;
-    padding-top: 20px;
+    margin-bottom: 10px;
+  }
 
-    button {
-
-        color: #3e0067;
-        border-radius: 8px;
-        font-size: 2rem;
-        font-style: Playfare Display;
-        font-weight: 600;
-        border-radius: 10px;
-        // padding: 5px 9px;
-        margin: 0px 50px;
-        padding: 0px 20px;
-        border: 2px solid #3e0067;
-        // border-bottom-left-radius: 0;
-        // border-bottom-right-radius: 0;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 10px;
-    }
-
-    .activeDay {
-        color: #FFCA42;
-        transform: scale(1.2);
-        background-color: #3e0067;
-        // border-bottom: 2px solid #FFCA42;
-    }
+  .activeDay {
+    color: #ffca42;
+    transform: scale(1.2);
+    background-color: #3e0067;
+    // border-bottom: 2px solid #FFCA42;
+  }
 }
 
 .Day1,
 .Day2,
 .Day3 {
-
-
-    text-align: center;
-    margin-bottom: 0%;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fabf29;
-    font-size: 1.4rem;
-    // border-bottom: 3px #dae9ef solid;
-    border-radius: 6px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+  text-align: center;
+  margin-bottom: 0%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fabf29;
+  font-size: 1.4rem;
+  // border-bottom: 3px #dae9ef solid;
+  border-radius: 6px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .box-1,
 .box-2,
 .box-3 {
-    // border: 3px #dae9ef solid;
-    border-radius: 10px;
-    text-align: center;
-    // background-color: skyblue;
-    margin-bottom: 1%;
-    margin: auto;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 4%;
-
+  // border: 3px #dae9ef solid;
+  border-radius: 10px;
+  text-align: center;
+  // background-color: skyblue;
+  margin-bottom: 1%;
+  margin: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 4%;
 }
 
 .box-3 {
-    margin-bottom: 0%;
+  margin-bottom: 0%;
 }
 
-
-
 .event-indicate {
-    height: 200px;
-    position: absolute;
-    width: 20px;
-    background-color: #3e0067;
+  height: 200px;
+  position: absolute;
+  width: 20px;
+  background-color: #3e0067;
 }
 
 ul {
-    div {
+  div {
+    .top {
+      display: flex;
+      justify-content: space-between;
 
-        .top {
-            display: flex;
-            justify-content: space-between;
-
-            p {
-                font-size: 1.1rem;
-                font-weight: 400;
-                padding-left: 2%;
-                padding-right: 2%;
-            }
-        }
-
-
-
-        h1 {
-            font-size: large;
-            font-size: 1.6rem;
-            font-weight: 800;
-            text-align: center;
-        }
-
-        p {
-            margin-bottom: 10px;
-            font-size: 1.1rem;
-            font-weight: 200;
-            // padding-top: 2%;
-        }
-
+      p {
+        font-size: 1.1rem;
+        font-weight: 400;
+        padding-left: 2%;
+        padding-right: 2%;
+      }
     }
 
-    .day-buttons {
-
-        button {
-            font-size: 2rem;
-        }
-
+    h1 {
+      font-size: large;
+      font-size: 1.5rem;
+      font-weight: 800;
+      text-align: center;
     }
+
+    p {
+      margin-bottom: 10px;
+      font-size: 1rem;
+      font-weight: 200;
+      // padding-top: 2%;
+    }
+  }
+
+  .day-buttons {
+    button {
+      font-size: 2rem;
+    }
+  }
 }
 
-
 @media (max-width: 768px) {
+  .box-1,
+  .box-2,
+  .box-3 {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
 
-    .box-1,
-    .box-2,
-    .box-3 {
-        margin-left: 2%;
-        margin-right: 2%;
+  ul div .top {
+    p {
+      font-size: 1.3rem;
+    }
+  }
+
+  ul div {
+    h1 {
+      font-size: 1.2rem;
     }
 
-    ul div .top {
-        p {
-            font-size: 1.3rem;
-        }
+    p {
+      font-size: 0.75rem;
     }
+  }
 
-    .day-buttons {
-
-        button {
-            font-size: 2rem;
-            margin: 0px 20px;
-        }
-
+  .day-buttons {
+    button {
+      font-size: 1.5rem;
+      margin: 0px 20px;
     }
+  }
 }
 
 @media (max-width: 616px) {
+  .box-1,
+  .box-2,
+  .box-3 {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 
-    .box-1,
-    .box-2,
-    .box-3 {
-        margin-left: 5%;
-        margin-right: 5%;
+  ul div .top {
+    p {
+      font-size: 0.7rem;
+    }
+  }
+
+  ul div {
+    h1 {
+      font-size: 0.95rem;
     }
 
-    ul div .top {
-        p {
-            font-size: 0.7rem;
-        }
+    p {
+      font-size: 0.75rem;
     }
+  }
 
-    ul div {
-        h1 {
-            font-size: 1rem;
-        }
-
-        p {
-            font-size: 0.8rem;
-        }
+  .day-buttons {
+    button {
+      font-size: 1.3rem;
+      margin: 0px 20px;
     }
-
-    .day-buttons {
-
-        button {
-            font-size: 2rem;
-            margin: 0px 20px;
-        }
-
-    }
+  }
 }
 
 @media (max-width: 400px) {
+  .box-1,
+  .box-2,
+  .box-3 {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 
-    .box-1,
-    .box-2,
-    .box-3 {
-        margin-left: 5%;
-        margin-right: 5%;
+  ul div .top {
+    p {
+      font-size: 0.5rem;
+    }
+  }
+
+  ul div {
+    h1 {
+      font-size: 0.75rem;
     }
 
-    ul div .top {
-        p {
-            font-size: 0.5rem;
-        }
+    p {
+      font-size: 0.65rem;
     }
+  }
 
-    ul div {
-        h1 {
-            font-size: 0.8rem;
-        }
-
-        p {
-            font-size: 0.8rem;
-        }
+  .day-buttons {
+    button {
+      font-size: 1.3rem;
+      margin: 0px 10px;
+      //   padding: 5px;
     }
-
-    .day-buttons {
-
-        button {
-            font-size: 1rem;
-            margin: 0px 10px;
-            padding:5px;
-        }
-
-    }
-
+  }
 }
 
 // .top {
@@ -252,15 +243,14 @@ ul {
 // }
 
 .one {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    margin-top: 4px;
-    // border-bottom: 3px #dae9ef solid;
-    background-color: white;
-    height: 145px;
-    border-left: 16px black solid;
-
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  margin-top: 4px;
+  // border-bottom: 3px #dae9ef solid;
+  background-color: white;
+  height: 145px;
+  border-left: 16px black solid;
 }
 
 @media screen and (max-width: 616px) {
@@ -269,16 +259,16 @@ ul {
   }
 }
 
-.MobileTicketSection{
-    display: none;
+.MobileTicketSection {
+  display: none;
 }
 
-@media only screen and (max-width:620px){
-    .MobileTicketSection{
-        display: block;
-    }
+@media only screen and (max-width: 620px) {
+  .MobileTicketSection {
+    display: block;
+  }
 
-    .DesktopTicketSection{
-        display: none;
-    }
+  .DesktopTicketSection {
+    display: none;
+  }
 }

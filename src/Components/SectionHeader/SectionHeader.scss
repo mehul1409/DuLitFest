@@ -1,3 +1,10 @@
+.SectionHeaderMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
 .teSectionHeaderMainxt {
   // height: 43px;
   width: 100%;
@@ -40,18 +47,28 @@
 }
 
 @media screen and (max-width: 768px) {
+  .SectionHeaderMain {
+    margin-top: 8%;
+  }
+
   .SectionHeader_text_text-content {
     font-size: 30px;
   }
 }
 
 @media screen and (max-width: 480px) {
+  .SectionHeaderMain {
+    margin-top: 10%;
+  }
   .SectionHeader_text_text-content {
     font-size: 24px;
   }
 }
 
 @media screen and (max-width: 320px) {
+  .SectionHeaderMain {
+    margin-top: 15%;
+  }
   .SectionHeader_text_text-content {
     font-size: 18px;
   }
