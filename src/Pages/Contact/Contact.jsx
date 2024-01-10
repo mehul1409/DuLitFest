@@ -29,7 +29,7 @@ const Contact = () => {
   };
 
   const senddata = async (e) => {
-    // const { Name, Email, Message } = user;
+    const { Name, Email, Message } = user;
     e.preventDefault();
     const templateParams = {
       from_name: Name,
@@ -38,6 +38,10 @@ const Contact = () => {
       reply_to: Email,
     };
 
+    if (Name === "" || Email === "" || Message === "") {
+      alert("Please fill all the fields");
+      return;
+    }
     // Use your Email.js service ID and template ID
     emailjs
       .send(
@@ -73,12 +77,12 @@ const Contact = () => {
           <div className="mmmain">
             <div className="cccontent">
               <h2>Contact Us</h2>
-              <form action="#" method="post">
+              <form className="contactusForm" action="#" method="post">
                 <input
                   type="text"
                   name="Name"
                   value={user.Name}
-                  placeholder="Enter your E-mail"
+                  placeholder="Enter your Name"
                   required
                   autoComplete="off"
                   onChange={data}
@@ -87,7 +91,7 @@ const Contact = () => {
                   type="text"
                   name="Email"
                   value={user.Email}
-                  placeholder="Enter your Name"
+                  placeholder="Enter your Email"
                   required
                   autoComplete="off"
                   onChange={data}
