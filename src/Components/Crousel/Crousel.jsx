@@ -56,7 +56,7 @@ export default function App() {
           </Link>
         </SwiperSlide>
         <SwiperSlide className="swip-box">
-          <Link to="/sponsers">
+          <Link to="/speakers">
             <img src={speak} alt="sponser" className="crousimg" />
             <div className="crouss-div">
               <div className="crous-text1">Speakers</div>
