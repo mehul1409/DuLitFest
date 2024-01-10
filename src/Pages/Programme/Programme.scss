@@ -269,3 +269,16 @@ ul {
   }
 }
 
+.MobileTicketSection{
+    display: none;
+}
+
+@media only screen and (max-width:620px){
+    .MobileTicketSection{
+        display: block;
+    }
+
+    .DesktopTicketSection{
+        display: none;
+    }
+}
