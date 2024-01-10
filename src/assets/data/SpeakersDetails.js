@@ -21,7 +21,7 @@ const SpeakersData = [
     },
     {
         "name": "Amb. Vijay Gokhale",
-        "imgUrl": "https://res.cloudinary.com/dndhweddg/image/upload/v1704552545/Vijay_Gokhale_kbpygn.jpg",
+        "imgUrl": "/assets/images/NitinGokhle1.jpeg",
         "tag": "Former Foreign Secretary of India"
     },
     {

@@ -2,8 +2,9 @@
   // background: hsl(11, 21%, 64%);
   // background-image: radial-gradient(50% 50% at 50% 50%, #FFF 0%, #B9EAFF 100%), url('./Books.png');
   // background: #B9EAFF url('./Books.png') center/contain repeat;
-  background: linear-gradient(rgba(185, 234, 255, 1) 0%, rgba(185, 234, 255, 0.5) 2%, rgba(185, 234, 255, 0.1) 5%, rgba(185, 234, 255, 0.1) 50%, rgba(185, 234, 255, 0.5) 98%, rgba(185, 234, 255, 1) 100%),
-    url('./Books.png') center/contain repeat;
+  // background: linear-gradient(rgba(185, 234, 255, 1) 0%, rgba(185, 234, 255, 0.5) 2%, rgba(185, 234, 255, 0.1) 5%, rgba(185, 234, 255, 0.1) 50%, rgba(185, 234, 255, 0.5) 98%, rgba(185, 234, 255, 1) 100%),
+  //   url('./Books.png') center/contain repeat;
+  background: radial-gradient(50% 50% at 50% 50%, #FFF 0%, #F2FBFF 0.01%, #D4F2FF 100%);  
   padding: 6rem 1rem 0rem 1rem;
 }
 

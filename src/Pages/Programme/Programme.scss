@@ -3,8 +3,9 @@
     // #808080 100%);
     // background: linear-gradient(rgb(251, 219, 208, 1) 0%, rgba(251, 219, 208, 0.5) 2%, rgba(251, 219, 208, 0.1) 5%, rgba(251, 219, 208, 0.1) 50%, rgba(251, 219, 208, 0.5) 95%, rgba(251, 219, 208, 1) 100%),
     //     url('./speaker-bg.jpg') center/contain repeat;
-    background: linear-gradient(rgba(185, 234, 255, 1) 0%, rgba(185, 234, 255, 0.5) 2%, rgba(185, 234, 255, 0.1) 5%, rgba(185, 234, 255, 0.1) 50%, rgba(185, 234, 255, 0.5) 98%, rgba(185, 234, 255, 1) 100%),
-    url('../Speakers/Books.png') center/contain repeat;
+    // background: linear-gradient(rgba(185, 234, 255, 1) 0%, rgba(185, 234, 255, 0.5) 2%, rgba(185, 234, 255, 0.1) 5%, rgba(185, 234, 255, 0.1) 50%, rgba(185, 234, 255, 0.5) 98%, rgba(185, 234, 255, 1) 100%),
+    // url('../Speakers/Books.png') center/contain repeat;
+    background: radial-gradient(50% 50% at 50% 50%, #FFF 0%, #F2FBFF 0.01%, #D4F2FF 100%);
   padding: 6rem 0rem 0rem 0rem;
     // background: linear-gradient(rgba(251, 219, 208, 1) 0%, rgba(251, 219, 208, 0.8) 2%, rgba(251, 219, 208, 0.7) 5%, rgba(251, 219, 208, 0.7) 50%, rgba(251, 219, 208, 1) 80%, rgba(251, 219, 208, 1) 95%),
     //     url('./speaker-bg.jpg') center/contain repeat !important;
@@ -131,7 +132,7 @@ ul {
         }
 
         p {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             font-size: 1.1rem;
             font-weight: 200;
             // padding-top: 2%;
@@ -237,8 +238,9 @@ ul {
     .day-buttons {
 
         button {
-            font-size: 1.7rem;
-            margin: 0px 20px;
+            font-size: 1rem;
+            margin: 0px 10px;
+            padding:5px;
         }
 
     }
@@ -256,14 +258,14 @@ ul {
     margin-top: 4px;
     // border-bottom: 3px #dae9ef solid;
     background-color: white;
-    height: 140px;
+    height: 145px;
     border-left: 16px black solid;
 
 }
 
 @media screen and (max-width: 616px) {
   .one {
-    height: 100px;
+    height: 110px;
   }
 }
 
