@@ -3,6 +3,8 @@ import "./RegisterForm.scss";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { db } from "../../../firebase";
 import { motion } from "framer-motion";
+// import SectionHeader from "../../Components/SectionHeader/SectionHeader";
+
 
 const RegisterForm = () => {
   const [formData, setFormData] = useState({
@@ -128,6 +130,7 @@ const RegisterForm = () => {
   return (
     <>
       <div className="regis">
+      {/* <SectionHeader text="Registration Form" /> */}
         <motion.form
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
