@@ -2,7 +2,8 @@ import "./Footer.scss";
 import { CiInstagram } from "react-icons/ci";
 // import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+// import { FaLinkedin } from "react-icons/fa";
+import { CiLinkedin } from "react-icons/ci";
 import wave1 from "./wave1.png";
 
 const Footer = (props) => {
@@ -45,7 +46,11 @@ const Footer = (props) => {
               title="Company"
               className="inline-flex items-center"
             >
-              <img src="/assets/images/Logo.svg" alt="logo" className="h-20 md:h-28" />
+              <img
+                src="/assets/images/Logo.svg"
+                alt="logo"
+                className="h-20 md:h-28"
+              />
               <span className="ml-2 mr-10 md:mr-0 md:w-20 text-md font-bold tracking-wide text-white uppercase md:text-xl">
                 Delhi University Literature Festival
               </span>
@@ -118,7 +123,7 @@ const Footer = (props) => {
                 className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
                 target="_blank"
               >
-                <FaLinkedin className="text-3xl" />
+                <CiLinkedin className="text-3xl text-white" />
               </a>
               <a
                 href="https://x.com/dulitfest?t=q9T6I9tY6MVR_Unh8NtJOg&s=09"
