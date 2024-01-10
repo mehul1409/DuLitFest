@@ -2,7 +2,7 @@
   height: 100vh;
   // width: 100%;
   // background: url('homeHero.png');
-  background-image:url(homeHero.png);
+  background-image: url(homeHero.png);
   // background-image: url(hometoppic.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,8 +28,7 @@
   background-size: cover;
   // background-position: center center;
   background-attachment: fixed;
-  background: #3E0067 url('./homebackg.png');
-
+  // background: #3e0067 url("./homebackg.png");
 }
 
 #homeimg {
@@ -176,7 +175,6 @@
   border-radius: 20px;
 }
 
-
 .about-us {
   background-color: #ffffff;
   opacity: 0.6;
@@ -220,12 +218,11 @@
   right: 10%;
 }
 
-
 .hom-contt {
   margin-top: -90px;
 }
 // .hh-cont {
-  
+
 // }
 
 .phoneclouds {
@@ -244,7 +241,10 @@
 // }
 
 @media screen and (max-aspect-ratio: 4/3) {
- 
+  .home-cont-hero {
+    background: #3e0067 url("./homebackg.png");
+  }
+
   .ribbon {
     width: 100%;
     //  font-size: 20px;
@@ -255,14 +255,21 @@
   .home-about {
     overflow-x: hidden;
   }
+  .home-scroll {
+    background: white;
+  }
 }
-
-
 
 @media screen and (max-width: 520px) {
   .ribbon {
     width: 100%;
     font-size: 20px;
+  }
+  .home-cont-hero {
+    background: #3e0067 url("./homebackg.png");
+  }
+  .home-scroll {
+    background: white;
   }
 }
 
@@ -274,6 +281,9 @@
     top: -45px;
     left: -10%;
     right: 10%;
+  }
+  .home-cont-hero {
+    background: #3e0067 url("./homebackg.png");
   }
   .cloud-img-container {
     // top: 58%;
@@ -300,7 +310,7 @@
   .home-hero {
     position: fixed;
     height: fit-content;
-    background-image:none;
+    background-image: none;
     overflow: hidden;
   }
   .home-scroll {
@@ -311,18 +321,17 @@
     // background-size: cover;
     // background-position: center center;
     // background-attachment: fixed;
-    background: #3E0067 url('./homebackg.png');
+    // background: #3e0067 url("./homebackg.png");
+    background: white;
   }
-
 }
 
 @media screen and (max-width: 420px) {
-
   .underpage {
     width: 95%;
     padding: 5.5em 0.5em 0.5em;
-
+  }
+  .home-scroll {
+    background: white;
   }
 }
-
-

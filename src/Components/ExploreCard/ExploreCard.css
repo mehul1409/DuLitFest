@@ -1,19 +1,19 @@
-
-.Exploreheading{
-display: flex;
-justify-content: center;
+.Exploreheading {
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
 }
 
 .headexp {
   margin: auto;
   text-align: center;
   font-size: 3rem;
-  margin-bottom:3%;
+  margin-bottom: 3%;
   font-weight: 600;
   padding: 0px 40px;
   /* border: 5px solid white; */
   color: aliceblue;
-  width:fit-content;
+  width: fit-content;
 }
 
 .page-content {
@@ -30,7 +30,7 @@ justify-content: center;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .headexp{
+  .headexp {
     font-size: 2rem;
   }
 }
@@ -42,9 +42,9 @@ justify-content: center;
 }
 
 @media (max-width: 600px) {
-  .headexp{
+  .headexp {
     font-size: 2rem;
-    padding:0 20px;
+    padding: 0 20px;
   }
 }
 @media (min-width: 800px) {
@@ -67,7 +67,8 @@ justify-content: center;
   text-align: center;
   color: #23465e;
   background-color: whitesmoke;
-  box-shadow: 5px 5px 5px rgba(205, 201, 201, 0.1), 0 10px 10px rgba(205, 201, 201, 0.1);
+  box-shadow: 5px 5px 5px rgba(205, 201, 201, 0.1),
+    0 10px 10px rgba(205, 201, 201, 0.1);
   border-radius: 15px;
   /* border:4px double black; */
 }
@@ -77,26 +78,25 @@ justify-content: center;
 }
 
 .card:nth-child(1) {
-  background-image: url('spons.png');
+  background-image: url("spons.png");
   background-repeat: no-repeat;
   background-position: center center;
 }
 .card:nth-child(2) {
-  background-image: url('time.png');
+  background-image: url("time.png");
   background-repeat: no-repeat;
   background-position: center center;
 }
-.card:nth-child(3){
-  background-image: url('speak.png');
+.card:nth-child(3) {
+  background-image: url("speak.png");
   background-repeat: no-repeat;
   background-position: center center;
 }
 .card:nth-child(4) {
-  background-image: url('contact.png');
+  background-image: url("contact.png");
   background-repeat: no-repeat;
   background-position: center center;
 }
-
 
 .title {
   font-size: 1.3rem;
@@ -110,7 +110,6 @@ justify-content: center;
 }
 
 .btn {
-
   border: 2px solid #f9f7f7;
   margin-top: 2px;
   padding: 2px;
@@ -119,15 +118,13 @@ justify-content: center;
   background-color: #f9f7f7;
 }
 
-
 @media screen and (max-width: 600px) {
-
   .backii {
-   width: 70%;
+    width: 70%;
   }
   .backii1 {
     margin-bottom: 20px;
-    margin-top:0px;
+    margin-top: 0px;
   }
 
   .crousel-div {
@@ -136,5 +133,4 @@ justify-content: center;
   .page-content {
     display: none;
   }
-  
 }

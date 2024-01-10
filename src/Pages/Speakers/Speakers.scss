@@ -4,8 +4,14 @@
   // background: #B9EAFF url('./Books.png') center/contain repeat;
   // background: linear-gradient(rgba(185, 234, 255, 1) 0%, rgba(185, 234, 255, 0.5) 2%, rgba(185, 234, 255, 0.1) 5%, rgba(185, 234, 255, 0.1) 50%, rgba(185, 234, 255, 0.5) 98%, rgba(185, 234, 255, 1) 100%),
   //   url('./Books.png') center/contain repeat;
-  background: radial-gradient(50% 50% at 50% 50%, #FFF 0%, #F2FBFF 0.01%, #D4F2FF 100%);  
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #fff 0%,
+    #f2fbff 0.01%,
+    #d4f2ff 100%
+  );
   padding: 6rem 1rem 0rem 1rem;
+  padding-bottom: 4%;
 }
 
 .card_container {
@@ -22,6 +28,7 @@
     max-width: 90%;
     margin: auto;
     grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 10%;
   }
 }
 
@@ -31,5 +38,9 @@
     margin: auto;
     height: auto;
     grid-template-columns: 1fr;
+  }
+
+  .team_container {
+    padding-bottom: 15%;
   }
 }
