@@ -22,9 +22,11 @@
   // top:0;
   // backdrop-filter: blur(10px);
   // background-color: #1f2937;
-  background: linear-gradient(180deg,
-      rgba(22, 3, 35, 0.6) 85.5%,
-      rgba(22, 3, 35, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(22, 3, 35, 0.6) 85.5%,
+    rgba(22, 3, 35, 0) 100%
+  );
   backdrop-filter: blur(0.949999988079071px);
 }
 
@@ -68,7 +70,7 @@
 }
 
 .Navbarbody .navbar .sidebar .navitemMobile:hover {
-  background:transparent;
+  background: transparent;
 }
 
 .Navbarbody .navbar .navitems :first-child {
@@ -87,12 +89,14 @@
   width: 350px;
   z-index: 2;
   // background: linear-gradient(to left, #150322 0.9%,rgba(22, 3, 34, 0.55) 59.8%, rgba(22, 3, 34, 0.45) 67.8%, rgba(22, 3, 34, 0.0) 100%);
-  background: linear-gradient(to right,
-      #150322 0.9%,
-      rgba(22, 3, 34, 0.65) 95%,
-      rgba(22, 3, 34, 0.65) 90.8%,
-      rgba(22, 3, 34, 0) 99.15%,
-      rgba(22, 3, 34, 0) 99.15%);
+  background: linear-gradient(
+    to right,
+    #150322 0.9%,
+    rgba(22, 3, 34, 0.65) 95%,
+    rgba(22, 3, 34, 0.65) 90.8%,
+    rgba(22, 3, 34, 0) 99.15%,
+    rgba(22, 3, 34, 0) 99.15%
+  );
 
   // background: linear-gradient(89deg, rgba(22, 3, 34, 0.00)  0.9%, rgba(22, 3, 34, 0.75) 90.8%, #150322 99.15%);
   // box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
@@ -192,7 +196,6 @@
 // }
 
 @media only screen and (max-width: 320px) {
-
   .navitems .mobileview,
   #navItemHome,
   #navItemContact,
@@ -208,7 +211,6 @@
 }
 
 @media only screen and (max-width: 320px) {
-
   .navitems .mobileview,
   #navItemHome,
   #navItemContact,
@@ -224,7 +226,6 @@
 }
 
 @media only screen and (max-width: 480px) {
-
   .navitems .mobileview,
   #navItemHome,
   #navItemContact,
@@ -240,7 +241,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-
   .navitems .mobileview,
   #navItemHome,
   #navItemContact,
@@ -256,7 +256,6 @@
 }
 
 @media only screen and (max-width: 910px) {
-
   .navitems .mobileview,
   #navItemHome,
   #navItemContact,
