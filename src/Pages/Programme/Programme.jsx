@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import PageHeader from "../../Components/PageHeader/PageHeader";
 import EventDetailsDay1 from "../../assets/data/EventDetailsDay1";
@@ -30,13 +29,32 @@ const Programme = () => {
 
   return (
     <>
-      <PageHeader bgColor="#808080" fgColor="rgb(251, 219, 208, 1)" heading="Programme" />
+      <PageHeader
+        bgColor="#808080"
+        fgColor="rgb(251, 219, 208, 1)"
+        heading="Programme"
+      />
       <div className="hello">
         <div className="outer-1">
           <div className="day-buttons">
-            <button className={selectedDay === "Day1" ? "activeDay" : ""} onClick={() => handleDayClick("Day1")}>Day 1</button>
-            <button className={selectedDay === "Day2" ? "activeDay" : ""} onClick={() => handleDayClick("Day2")}>Day 2</button>
-            <button className={selectedDay === "Day3" ? "activeDay" : ""} onClick={() => handleDayClick("Day3")}>Day 3</button>
+            <button
+              className={selectedDay === "Day1" ? "activeDay" : ""}
+              onClick={() => handleDayClick("Day1")}
+            >
+              Day 1
+            </button>
+            <button
+              className={selectedDay === "Day2" ? "activeDay" : ""}
+              onClick={() => handleDayClick("Day2")}
+            >
+              Day 2
+            </button>
+            <button
+              className={selectedDay === "Day3" ? "activeDay" : ""}
+              onClick={() => handleDayClick("Day3")}
+            >
+              Day 3
+            </button>
           </div>
           <motion.div className="box-1">
             <motion.div
@@ -58,7 +76,10 @@ const Programme = () => {
                   className="one"
                   key={index}
                   style={{
-                    borderLeft: event.Place === "Shridhar Shriram Auditorium" ? "16px solid #07A6DB" : "16px solid #FFCA42",
+                    borderLeft:
+                      event.Place === "Shridhar Shriram Auditorium"
+                        ? "16px solid #07A6DB"
+                        : "16px solid #FFCA42",
                   }}
                 >
                   {/* <div className="event-indicate"></div> */}
@@ -67,14 +88,15 @@ const Programme = () => {
                     <p>{event.Place}</p>
                   </div>
                   <div className="timelin">
-                  <h1
-                 
-                  > {event.Event_Name}</h1>
-                  <p
-                  style={{
-                    display: !event.Address ? "none" : "block" 
-                  }}
-                  > {event.Address}</p>
+                    <h1> {event.Event_Name}</h1>
+                    <p
+                      style={{
+                        display: !event.Address ? "none" : "block",
+                      }}
+                    >
+                      {" "}
+                      {event.Address}
+                    </p>
                   </div>
                 </motion.div>
               ))}

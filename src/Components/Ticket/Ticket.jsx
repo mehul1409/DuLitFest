@@ -7,7 +7,7 @@ import passheading from "./passheading.png";
 import SectionHeader from "../../Components/SectionHeader/SectionHeader";
 import mobileticket from "/assets/images/ticketmobile.png";
 import desktopticket from "/assets/images/ticketdesktop.png";
-import ticketButton from "/assets/images/ticketButton.png"
+import ticketButton from "/assets/images/ticketButton.png";
 import { Link } from "react-router-dom";
 
 const Ticket = () => {
@@ -82,17 +82,21 @@ const Ticket = () => {
   return (
     <>
       <SectionHeader text="GET YOUR FREE PASS" />
-      <div className="TicketSection flex flex-col justify-center items-center m-16">
+      <div className="TicketSection flex flex-col justify-center items-center mb-16 mt-6">
         <div className="DesktopTicketSection">
           <img src={desktopticket} alt="mobile ticket" />
           <div className="DesktopTicketButton">
-            <Link to="/register"><img src={ticketButton} alt="button ticket" /></Link>
+            <Link to="/register">
+              <img src={ticketButton} alt="button ticket" />
+            </Link>
           </div>
         </div>
         <div className="MobileTicketSection">
           <img src={mobileticket} alt="desktop ticket" />
           <div className="MobileTicketButton">
-            <Link to="/register"><img src={ticketButton} alt="button ticket mobile" /></Link>
+            <Link to="/register">
+              <img src={ticketButton} alt="button ticket mobile" />
+            </Link>
           </div>
         </div>
       </div>
