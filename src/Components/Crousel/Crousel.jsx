@@ -15,6 +15,7 @@ import "./Crousel.css";
 
 // import required modules
 import { FreeMode, Pagination } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 export default function App() {
   return (
@@ -31,28 +32,36 @@ export default function App() {
         modules={[FreeMode, Pagination]}
       >
         <SwiperSlide className="swip-box">
-          <img src={spons} alt="sponser" className="crousimg" />
-          <div className="crouss-div">
-            <div className="crous-text1">Partners</div>
-          </div>
+          <Link to="/sponsers">
+            <img src={spons} alt="sponser" className="crousimg" />
+            <div className="crouss-div">
+              <div className="crous-text1">Partners</div>
+            </div>
+          </Link>
         </SwiperSlide>
         <SwiperSlide className="swip-box">
-          <img src={register} alt="sponser" className="crousimg" />
-          <div className="crouss-div">
-            <div className="crous-text1">Register</div>
-          </div>
+          <Link to="/register">
+            <img src={register} alt="sponser" className="crousimg" />
+            <div className="crouss-div">
+              <div className="crous-text1">Register</div>
+            </div>
+          </Link>
         </SwiperSlide>
         <SwiperSlide className="swip-box">
-          <img src={time} alt="sponser" className="crousimg" />
-          <div className="crouss-div">
-            <div className="crous-text1">Programme</div>
-          </div>
+          <Link to="/programme">
+            <img src={time} alt="sponser" className="crousimg" />
+            <div className="crouss-div">
+              <div className="crous-text1">Programme</div>
+            </div>
+          </Link>
         </SwiperSlide>
         <SwiperSlide className="swip-box">
-          <img src={speak} alt="sponser" className="crousimg" />
-          <div className="crouss-div">
-            <div className="crous-text1">Speakers</div>
-          </div>
+          <Link to="/sponsers">
+            <img src={speak} alt="sponser" className="crousimg" />
+            <div className="crouss-div">
+              <div className="crous-text1">Speakers</div>
+            </div>
+          </Link>
         </SwiperSlide>
       </Swiper>
     </>
