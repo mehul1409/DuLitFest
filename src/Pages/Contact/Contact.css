@@ -7,21 +7,24 @@
 } */
 
 .cccontainer {
- 
-     /* background: radial-gradient(50% 50% at 50% 50%, #FFF 0%, #B9EAFF 100%), url('./Books.png'); */
-     /* background: #B9EAFF url('../Speakers/Books.png') center/contain repeat; */
-    /* background: linear-gradient(rgba(185, 234, 255, 1) 0%, rgba(185, 234, 255, 0.5) 1%, rgba(185, 234, 255, 0.1) 5%, rgba(185, 234, 255, 0.1) 50%, rgba(185, 234, 255, 0.5) 98%, rgba(185, 234, 255, 1) 100%),
+  /* background: radial-gradient(50% 50% at 50% 50%, #FFF 0%, #B9EAFF 100%), url('./Books.png'); */
+  /* background: #B9EAFF url('../Speakers/Books.png') center/contain repeat; */
+  /* background: linear-gradient(rgba(185, 234, 255, 1) 0%, rgba(185, 234, 255, 0.5) 1%, rgba(185, 234, 255, 0.1) 5%, rgba(185, 234, 255, 0.1) 50%, rgba(185, 234, 255, 0.5) 98%, rgba(185, 234, 255, 1) 100%),
       url('../Speakers/Books.png') center/contain repeat; */
-      
-    padding: 6rem 1rem 0rem 1rem;
-    /* background: radial-gradient(50% 50% at 50% 50%, #FFF 0%, #F2FBFF 0.01%, #D4F2FF 100%); */
- 
+
+  padding: 6rem 1rem 0rem 1rem;
+  /* background: radial-gradient(50% 50% at 50% 50%, #FFF 0%, #F2FBFF 0.01%, #D4F2FF 100%); */
 }
 
 .cccontact-form {
   /* min-height: 100vh; */
   z-index: 0;
-  background: radial-gradient(50% 50% at 50% 50%, #FFF 0%, #F2FBFF 0.01%, #D4F2FF 100%);
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #fff 0%,
+    #f2fbff 0.01%,
+    #d4f2ff 100%
+  );
   justify-content: center;
   /* display: grid; */
   display: flex;
@@ -38,7 +41,7 @@
   font-size: 2.5rem;
   font-weight: 700;
 
-  font-family: "poppins";
+  /* font-family: "poppins"; */
   border-radius: 10px;
   background-color: #510666;
 }
@@ -53,7 +56,7 @@
   font-weight: 500;
   color: #69275c;
   text-align: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
   border-bottom: 1px solid #000;
   border-bottom-width: 1px;
 }
