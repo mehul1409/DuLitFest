@@ -80,7 +80,12 @@ const Ticket = () => {
   // );
 
   return (
-    <>
+    <motion.div
+    initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 2, delay: 0.3 }}
+          viewport={{ once: true }}
+    >
       <SectionHeader text="GET YOUR FREE PASS" />
       <div className="TicketSection flex flex-col justify-center items-center mb-16 mt-6">
         <div className="DesktopTicketSection">
@@ -100,7 +105,7 @@ const Ticket = () => {
           </div>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 };
 

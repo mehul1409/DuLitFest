@@ -24,9 +24,14 @@ const ExploreCard = () => {
         {/* <h1 className="headexp">Explore the Event</h1> */}
       </motion.div>
 
-      <div className="crousel-div">
+      <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1, delay: 0.3 }}
+      viewport={{ once: true }}
+      className="crousel-div">
         <Crousel />
-      </div>
+      </motion.div>
 
       <motion.main
         initial={{ opacity: 0 }}

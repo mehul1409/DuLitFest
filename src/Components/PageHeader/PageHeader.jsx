@@ -18,10 +18,10 @@ const PageHeader = (props) => {
         ></path>
       </svg> */}
       <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1.5, delay: 0.3 }}
-        viewport={{ once: true }}
+        // initial={{ opacity: 0 }}
+        // whileInView={{ opacity: 1 }}
+        // transition={{ duration: 1.5, delay: 0.3 }}
+        // viewport={{ once: true }}
         className="HeadingOfPage">
         <h1 style={{ textColor: props.textColor }}>{props.heading}</h1>
       </motion.div>
