@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./RegisterForm.scss";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { db } from "../../../firebase";
@@ -19,7 +19,7 @@ const RegisterForm = () => {
       option3: false,
     },
   });
-
+  const formRef = useRef(null);
   const [formErrors, setFormErrors] = useState({
     name: "",
     email: "",
@@ -47,14 +47,14 @@ const RegisterForm = () => {
           ...formData,
           timestamp: serverTimestamp(),
         });
-        console.log("Document written with ID: ", docRef.id);
+        //console.log("Document written with ID: ", docRef.id);
       }
       if (formData.checkboxes.option2) {
         const docRef = await addDoc(collection(db, "Day2"), {
           ...formData,
           timestamp: serverTimestamp(),
         });
-        console.log("Document written with ID: ", docRef.id);
+        // console.log("Document written with ID: ", docRef.id);
       }
       if (formData.checkboxes.option3) {
         const docRef = await addDoc(collection(db, "Day3"), {
@@ -66,8 +66,84 @@ const RegisterForm = () => {
       alert("Registered Successfully");
     } catch (error) {
       console.error("Error adding document: ", error);
+      alert("Encountered some error, Please try again");
     }
   };
+  const addToGoogleSheet = async (Data) => {
+    const formData = new FormData(formRef.current);
+    console.log("Entered google send function");
+
+    const postToGoogleSheet = async (url) => {
+      try {
+        const response = await fetch(url, {
+          method: "POST",
+          body: formData,
+        });
+
+        console.log("Response Status:", response.status);
+
+        if (!response.ok) {
+          // Handle non-successful responses
+          console.error("Error:", response.statusText);
+          throw new Error("Failed to send data to Google Sheet");
+        }
+
+        const responseData = await response.text();
+        console.log("Response Data:", responseData);
+
+      } catch (error) {
+        console.error("Error:", error.message);
+        throw error; // Rethrow the error for further handling if needed
+      }
+    };
+
+    if (Data.checkboxes.option1) {
+      try {
+        await postToGoogleSheet("https://script.google.com/macros/s/AKfycbzw2ZQOme_P3LRcIG4NQius9SJQS437zTsK1C9xn28pnIYslz0hSSMxz5p0GD470y0b/exec");
+
+      } catch (error) {
+        console.log("Retrying with an alternative URL for option1");
+        try {
+          await postToGoogleSheet("https://script.google.com/macros/s/AKfycbzW69SbEzn5AtU1W7NkBjx99pDip7VzkBgslwXC5uLavGVpejnm5WuuW5-OTQTnAjxS/exec");
+        } catch (retryError) {
+          console.error("Failed to send data for option1:", retryError.message);
+          // Handle the error, perhaps by notifying the user or logging
+        }
+      }
+    }
+
+    if (Data.checkboxes.option2) {
+      try {
+        await postToGoogleSheet("https://script.google.com/macros/s/AKfycbwPnVdfR-Zwhj76IJ1SWy-gGm85px9Juov0cjZ25Uc9CmGJG6qlO-jEKWr8_GfpAcgO/exec");
+
+      } catch (error) {
+        console.log("Retrying with an alternative URL for option2");
+        try {
+          await postToGoogleSheet("https://script.google.com/macros/s/AKfycbyllvSghOdeOdcwiZ81I77dVuk94m1UMOeEKlriwOERJpoBj524G5DC99FhbrqZoCBx/exec");
+        } catch (retryError) {
+          console.error("Failed to send data for option2:", retryError.message);
+          // Handle the error, perhaps by notifying the user or logging
+        }
+      }
+    }
+
+    if (Data.checkboxes.option3) {
+      try {
+        await postToGoogleSheet("https://script.google.com/macros/s/AKfycbxc6epjgg3xtGpAq2UdP4u5xXV3KC1BSByorgQL0uBlvS7_Zc-9lRzw-9y9QU74sMbopQ/exec");
+
+
+      } catch (error) {
+        console.log("Retrying with an alternative URL for option3");
+        try {
+          await postToGoogleSheet("https://script.google.com/macros/s/AKfycby97wHs4404UPlMlN5GcGYwU5EnpvW25GQjKqy-REXNTUeCfwOy41ei5161_M--SsKt/exec");
+        } catch (retryError) {
+          console.error("Failed to send data for option3:", retryError.message);
+          // Handle the error, perhaps by notifying the user or logging
+        }
+      }
+    }
+  };
+
   const handleFormSubmit = async (e) => {
     e.preventDefault();
 
@@ -110,8 +186,8 @@ const RegisterForm = () => {
 
     if (Object.keys(errors).length === 0) {
       console.log("Form data submitted:", formData);
-      const send = await addToFirestore(formData);
-
+      const send1 = await addToFirestore(formData);
+      const send2 = await addToGoogleSheet(formData);
       //reset the form
       setFormData({
         name: "",
@@ -130,8 +206,9 @@ const RegisterForm = () => {
   return (
     <>
       <div className="regis">
-      {/* <SectionHeader text="Registration Form" /> */}
+        {/* <SectionHeader text="Registration Form" /> */}
         <motion.form
+          ref={formRef}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1.5, delay: 0.3 }}
