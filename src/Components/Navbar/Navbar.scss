@@ -276,6 +276,12 @@
   .Navbarbody .navbar li {
     margin: 3% 1%;
   }
+  .Navbarbody .navbar .navitems .registerButton a {
+  
+    &:hover {
+      transform:none;
+    }
+  }
 }
 
 // @media only screen and (min-width: 1025px) {

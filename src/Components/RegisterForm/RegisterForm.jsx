@@ -4,6 +4,8 @@ import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { db } from "../../../firebase";
 import { motion } from "framer-motion";
 // import SectionHeader from "../../Components/SectionHeader/SectionHeader";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const RegisterForm = () => {
@@ -63,7 +65,14 @@ const RegisterForm = () => {
         });
         // console.log("Document written with ID: ", docRef.id);
       }
-      alert("Registered Successfully");
+      // toast("Registered Successfully");
+      toast.success("Registered Successfully", {
+        position: toast.POSITION.TOP_CENTER,
+        // style: {
+        //   backgroundColor: "#d4f2ff ",
+        // },
+        className: 'custom-toast-success'
+      });
     } catch (error) {
       console.error("Error adding document: ", error);
     }
@@ -129,6 +138,7 @@ const RegisterForm = () => {
   };
   return (
     <>
+    <ToastContainer />
       <div className="regis">
       {/* <SectionHeader text="Registration Form" /> */}
         <motion.form

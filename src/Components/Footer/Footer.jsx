@@ -1,11 +1,10 @@
 import "./Footer.scss";
-import { CiInstagram } from "react-icons/ci";
-// import { FaFacebook } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-// import { FaLinkedin } from "react-icons/fa";
-import { CiLinkedin } from "react-icons/ci";
-// import wave1 from "./wave1.png";
+import { FaInstagram } from "react-icons/fa";
+
 import { motion } from "framer-motion";
+import phonefoot from './phonefoot.png'
+import {FaXTwitter} from "react-icons/fa6"
+import {FaLinkedinIn} from "react-icons/fa"
 
 const Footer = (props) => {
   return (
@@ -43,8 +42,8 @@ const Footer = (props) => {
       {/* <img src={wave1} alt="wave" style={{mixBlendMode: "multiply"}} /> */}
       {/* </div> */}
       <div className="design-underline"></div>
-      <div className="px-4 py-2 mx-auto sm:max-w-full md:max-w-full lg:max-w-full  Colorbg-backgroundColor text-white">
-        <div className="flex flex-col-reverse items-start lg:flex-row md:flex-row md:justify-between text-white py-4 md:py-0 ">
+      <div className="px-4 py-2 mx-auto sm:max-w-full md:max-w-full lg:max-w-full  Colorbg-backgroundColor text-white" >
+        <div className="flex flex-col-reverse items-start lg:flex-row md:flex-row md:justify-between text-white py-4 md:py-0 " style={{marginRight : "2%"}}>
           <div className="sm:col-span-2 text-white mr-8 md:mr-0 mt-4">
             <a
               href="/"
@@ -52,19 +51,20 @@ const Footer = (props) => {
               title="Company"
               className="inline-flex items-center"
             >
-              <img
+              {/* <img
                 src="/assets/images/Logo.svg"
                 alt="logo"
                 className="h-20 md:h-28"
               />
               <span className="ml-2 mr-10 md:mr-0 md:w-20 text-md font-bold tracking-wide text-white uppercase md:text-xl">
                 Delhi University Literature Festival
-              </span>
+              </span> */}
+              <img src={phonefoot} alt="logo" className="phonefoot" />
             </a>
           </div>
-          <div className="space-y-2 text-sm pt-5">
+          <div className="space-y-2 text-sm pt-2">
             <p
-              className="text-xl font-bold tracking-wide text-white"
+              className="text-2xl font-bold tracking-wide text-white"
               id="paragraph"
             >
               Contacts
@@ -83,7 +83,7 @@ const Footer = (props) => {
               </a>
             </div> */}
             <div className="flex">
-              <p className="mr-1 text-white " id="paragraph">
+              <p className="mr-1 mb-2 text-white " id="paragraph">
                 Email:
               </p>
               <a
@@ -91,6 +91,7 @@ const Footer = (props) => {
                 aria-label="Our email"
                 title="Our email"
                 className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+                id="foot-contact"
               >
                 contact@dulitfest.org
               </a>
@@ -113,7 +114,7 @@ const Footer = (props) => {
             </div> */}
           </div>
           <div className="pt-4">
-            <span className="text-xl font-bold tracking-wide text-white">
+            <span className="text-2xl font-bold text-white " id="footsocial">
               Social
             </span>
             <div className="flex items-center mt-1 space-x-3">
@@ -122,21 +123,21 @@ const Footer = (props) => {
                 className="text-whitetransition-colors duration-300 hover:text-deep-purple-accent-400"
                 target="_blank"
               >
-                <CiInstagram className="text-3xl" />
+                <FaInstagram className="text-2xl" />
               </a>
               <a
                 href="https://www.linkedin.com/company/delhi-university-literature-festival/"
                 className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
                 target="_blank"
               >
-                <CiLinkedin className="text-3xl text-white" />
+                <FaLinkedinIn className="text-2xl text-white" />
               </a>
               <a
                 href="https://x.com/dulitfest?t=q9T6I9tY6MVR_Unh8NtJOg&s=09"
                 className="text-white transition-colors duration-300 hover:text-deep-purple-accent-400"
                 target="_blank"
               >
-                <FaTwitter className="text-3xl" />
+                <FaXTwitter className="text-2xl" />
               </a>
             </div>
           </div>

@@ -95,6 +95,7 @@ const Navbar = () => {
             transition={{ duration: 0.6 }}
             className="registerButton"
             id="navItemRegister"
+            whileTap={{ scale: 0.9 }} 
           >
             <Link to="/register">REGISTER</Link>
           </motion.li>

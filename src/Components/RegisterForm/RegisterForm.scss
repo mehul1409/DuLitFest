@@ -106,5 +106,15 @@ label {
 }
 
 .regbtn:hover {
-  background-color: #0056b3 !important;
+  background-color: #6da4de !important;
+}
+
+/* styles.css or your custom CSS file */
+.custom-toast-success {
+  background-color: #d4f2ff !important; /* Change the background color */
+}
+
+.Toastify__progress-bar {
+  // display: none;
+  background-color: #a0c4ea !important;
 }
