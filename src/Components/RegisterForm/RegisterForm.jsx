@@ -75,7 +75,11 @@ const RegisterForm = () => {
       });
     } catch (error) {
       console.error("Error adding document: ", error);
-      alert("Encountered some error, Please try again");
+      toast.error("Encountered some error, Please try again", {
+        position: toast.POSITION.TOP_CENTER,
+        className: 'custom-toast-success'
+      });
+      // alert("Encountered some error, Please try again");
     }
   };
   const addToGoogleSheet = async (Data) => {
