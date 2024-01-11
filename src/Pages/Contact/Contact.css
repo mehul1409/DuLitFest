@@ -12,7 +12,7 @@
   /* background: linear-gradient(rgba(185, 234, 255, 1) 0%, rgba(185, 234, 255, 0.5) 1%, rgba(185, 234, 255, 0.1) 5%, rgba(185, 234, 255, 0.1) 50%, rgba(185, 234, 255, 0.5) 98%, rgba(185, 234, 255, 1) 100%),
       url('../Speakers/Books.png') center/contain repeat; */
 
-  padding: 6rem 1rem 0rem 1rem;
+  padding: 0rem 1rem 0rem 1rem;
   /* background: radial-gradient(50% 50% at 50% 50%, #FFF 0%, #F2FBFF 0.01%, #D4F2FF 100%); */
 }
 
@@ -31,6 +31,7 @@
   /* grid-template-rows: 1fr auto 1fr; */
   align-items: center;
 }
+
 .cccontact-form .cccontainer {
   margin: 4%;
 }

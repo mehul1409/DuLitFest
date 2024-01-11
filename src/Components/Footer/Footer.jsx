@@ -4,7 +4,7 @@ import { CiInstagram } from "react-icons/ci";
 import { FaTwitter } from "react-icons/fa";
 // import { FaLinkedin } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
-import wave1 from "./wave1.png";
+// import wave1 from "./wave1.png";
 import { motion } from "framer-motion";
 
 const Footer = (props) => {

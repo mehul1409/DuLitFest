@@ -56,19 +56,7 @@ const App = () => {
           </Routes>
         </motion.div>
       </AnimatePresence>
-
-
-
-
-      </Suspense>
-     
-
-
-      
     </>
-    // <>
-    // <Loader />
-    // </>
   );
 };
 
