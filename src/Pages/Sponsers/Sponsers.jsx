@@ -1,7 +1,7 @@
 import Footer from "../../Components/Footer/Footer";
 import PageHeader from "../../Components/PageHeader/PageHeader";
-import picc2 from "./title.png";
-import clglogo from "./venue.png";
+import picc2 from "./title.jpg";
+import clglogo from "./venue.jpg";
 import "./Sponsers.scss";
 import { motion } from "framer-motion";
 // import "slick-carousel/slick/slick.css";
