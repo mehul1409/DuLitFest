@@ -43,7 +43,6 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-
 }
 
 .Ticketheading {
@@ -129,7 +128,6 @@
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2.5px);
-
 }
 
 .jjj {
@@ -162,32 +160,27 @@
     left: 15px;
     transform: rotate(0deg);
   }
-
 }
 
 @media screen and (max-width: 735px) {
   .DesktopTicketButton img {
     width: 85%;
   }
-
 }
 
 @media screen and (max-width: 430px) {
   .MobileTicketButton img {
     width: 88%;
-
   }
 }
 
 @media screen and (max-width: 387px) {
   .MobileTicketButton img {
     width: 76%;
-
   }
-
 }
 
-@media screen and (max-aspect-ratio : 4/3) {
+@media screen and (max-width: 620x) {
   .DesktopTicketSection {
     display: none;
   }

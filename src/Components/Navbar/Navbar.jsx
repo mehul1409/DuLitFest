@@ -21,9 +21,9 @@ const Navbar = () => {
     <div className="Navbarbody">
       <div className="navbar">
         <ul className="navitems">
-        <li className="hamburger" onClick={handleClick}>
+          <li className="hamburger" onClick={handleClick}>
             <a href="">
-              <RxHamburgerMenu size={32}/>
+              <RxHamburgerMenu size={32} />
             </a>
           </li>
           <motion.img
@@ -95,11 +95,10 @@ const Navbar = () => {
             transition={{ duration: 0.6 }}
             className="registerButton"
             id="navItemRegister"
-            whileTap={{ scale: 0.9 }} 
+            whileTap={{ scale: 0.9 }}
           >
             <Link to="/register">REGISTER</Link>
           </motion.li>
-          
         </ul>
         <ul className="sidebar" id={`${sidebarVisible ? "show" : ""}`}>
           <li className="sidebb">
@@ -110,36 +109,39 @@ const Navbar = () => {
           </li>
           <li className="sidebb" onClick={closeMobileMenu}>
             <Link to="/" className="navitemMobile">
-              HOME
+              Home
             </Link>
             <div className="NavitemsUnderline"></div>
           </li>
           <li className="sidebb" onClick={closeMobileMenu}>
             <Link to="/speakers" className="navitemMobile">
-              SPEAKERS
+              Speakers
             </Link>
             <div className="NavitemsUnderline"></div>
           </li>
           <li className="sidebb" onClick={closeMobileMenu}>
             <Link to="/programme" className="navitemMobile">
-              PROGRAMME
+              Programme
             </Link>
             <div className="NavitemsUnderline"></div>
           </li>
           <li className="sidebb" onClick={closeMobileMenu}>
             <Link to="/sponsers" className="navitemMobile">
-              PARTNERS
+              Partners
             </Link>
             <div className="NavitemsUnderline"></div>
           </li>
           <li className="sidebb" onClick={closeMobileMenu}>
             <Link to="/contact" className="navitemMobile">
-              CONTACT
+              Contact
             </Link>
             <div className="NavitemsUnderline"></div>
           </li>
-          <li className=" sidebb sidebbregb registerButton" onClick={closeMobileMenu}>
-            <Link to="/register">REGISTER</Link>
+          <li
+            className=" sidebb sidebbregb registerButton"
+            onClick={closeMobileMenu}
+          >
+            <Link to="/register">Register</Link>
             <div className="registerunderline"></div>
           </li>
         </ul>

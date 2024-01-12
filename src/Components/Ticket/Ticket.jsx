@@ -3,7 +3,6 @@ import "./Ticket.css";
 import picc2 from "./picc2.png";
 import clglogo from "./clglogo.png";
 import { motion } from "framer-motion";
-import passheading from "./passheading.png";
 import SectionHeader from "../../Components/SectionHeader/SectionHeader";
 import mobileticket from "/assets/images/ticketmobile.png";
 import desktopticket from "/assets/images/ticketdesktop.png";
@@ -23,7 +22,6 @@ const Ticket = () => {
   //       transition={{ duration: 1.5, delay: 0.3 }}
   //       viewport={{ once: true }}
   //       className="Ticketheading">
-  //       {/* <img src={passheading} alt="image" className="backii backii2" /> */}
   //       <SectionHeader text="GET YOUR FREE PASS" />
   //       {/* <p className="headticket">Get Your Free Pass</p> */}
   //     </motion.div>
@@ -81,10 +79,10 @@ const Ticket = () => {
 
   return (
     <motion.div
-    initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 2, delay: 0.3 }}
-          viewport={{ once: true }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 2, delay: 0.3 }}
+      viewport={{ once: true }}
     >
       <SectionHeader text="GET YOUR FREE PASS" />
       <div className="TicketSection flex flex-col justify-center items-center mb-16 mt-6">
