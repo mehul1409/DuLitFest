@@ -2,9 +2,9 @@ import "./Footer.scss";
 import { FaInstagram } from "react-icons/fa";
 
 import { motion } from "framer-motion";
-import phonefoot from './phonefoot.png'
-import {FaXTwitter} from "react-icons/fa6"
-import {FaLinkedinIn} from "react-icons/fa"
+import phonefoot from "./phonefoot.png";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa";
 
 const Footer = (props) => {
   return (
@@ -42,8 +42,11 @@ const Footer = (props) => {
       {/* <img src={wave1} alt="wave" style={{mixBlendMode: "multiply"}} /> */}
       {/* </div> */}
       <div className="design-underline"></div>
-      <div className="px-4 py-2 mx-auto sm:max-w-full md:max-w-full lg:max-w-full  Colorbg-backgroundColor text-white" >
-        <div className="flex flex-col-reverse items-start lg:flex-row md:flex-row md:justify-between text-white py-4 md:py-0 " style={{marginRight : "2%"}}>
+      <div className="px-4 py-2 mx-auto sm:max-w-full md:max-w-full lg:max-w-full  Colorbg-backgroundColor text-white">
+        <div
+          className="flex flex-col-reverse items-start lg:flex-row md:flex-row md:justify-between text-white py-4 md:py-0 "
+          style={{ marginRight: "2%" }}
+        >
           <div className="sm:col-span-2 text-white mr-8 md:mr-0 mt-4">
             <a
               href="/"
@@ -67,7 +70,7 @@ const Footer = (props) => {
               className="text-2xl font-bold tracking-wide text-white"
               id="paragraph"
             >
-              Contacts
+              Contact us
             </p>
             {/* <div className="flex">
               <p className="mr-1 text-white " id="paragraph">
@@ -84,7 +87,7 @@ const Footer = (props) => {
             </div> */}
             <div className="flex">
               <p className="mr-1 mb-2 text-white " id="paragraph">
-                Email:
+                Email :
               </p>
               <a
                 href="mailto:info@lorem.mail"
@@ -115,7 +118,7 @@ const Footer = (props) => {
           </div>
           <div className="pt-4">
             <span className="text-2xl font-bold text-white " id="footsocial">
-              Social
+              Follow us
             </span>
             <div className="flex items-center mt-1 space-x-3">
               <a
