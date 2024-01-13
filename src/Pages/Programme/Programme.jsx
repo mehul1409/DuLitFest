@@ -69,7 +69,7 @@ const Programme = () => {
               viewport={{ once: true }}
               className="Day1"
             >
-              {`Day - ${selectedDay.slice(-1)} - 19th January, 2024`}
+              {`Day - ${selectedDay.slice(-1)} - ${Number(selectedDay.slice(-1)) + 18}th January, 2024`}
             </motion.div>
             <ul>
               {getEventDetails().map((event, index) => (
