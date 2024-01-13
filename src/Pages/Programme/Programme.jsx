@@ -89,8 +89,8 @@ const Programme = () => {
                 >
                   {/* <div className="event-indicate"></div> */}
                   <div className="top">
-                    <p>{event.time}</p>
-                    <p>{event.Place}</p>
+                    <p className="day-time-venue">{event.time}</p>
+                    <p className="day-time-venue">{event.Place}</p>
                   </div>
                   <div className="timelin">
                     <h1> {event.Event_Name}</h1>

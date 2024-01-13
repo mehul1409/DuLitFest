@@ -1,20 +1,18 @@
 import Footer from "../../Components/Footer/Footer";
 import PageHeader from "../../Components/PageHeader/PageHeader";
-import picc2 from "./title.jpg";
-import clglogo from "./venue.jpg";
+import picc2 from "./picc2.png";
+import clglogo from "./clglogo.png";
+import mediaPartner1 from "/assets/images/Republic_TVMediaPartner.webp";
+import mediaPartner2 from "/assets/images/SangamMediaPartner.jpg";
+import knowledgePartner from "/assets/images/KnowledgePartner.png";
+import partner from "/assets/images/CPSPartner.jpg";
 import "./Sponsers.scss";
 import { motion } from "framer-motion";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
 
 const Sponsers = () => {
   return (
     <>
-      <PageHeader
-        bgColor="#334d50"
-        fgColor="#cbcaa5"
-        heading="Our Partners"
-      />
+      <PageHeader bgColor="#334d50" fgColor="#cbcaa5" heading="Our Partners" />
       <div className="Sponsersbody">
         <div className="middle">
           <div className="sponsers">
@@ -23,20 +21,60 @@ const Sponsers = () => {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.3 }}
               viewport={{ once: true }}
-              className="boxx-1"
+              className="Sponsersboxx"
             >
-              {/* <h1>Title Partner</h1> */}
               <img className="imgg" src={picc2} alt="" />
+              <h1 className="SponsorsTitle">Title Partner</h1>
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.3 }}
               viewport={{ once: true }}
-              className="boxx-2"
+              className="Sponsersboxx"
             >
-              {/* <h1> Venue Partner</h1> */}
               <img className="imgg" src={clglogo} alt="" />
+              <h1 className="SponsorsTitle"> Venue Partner</h1>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="Sponsersboxx"
+            >
+              <img className="imgg" src={mediaPartner1} alt="" />
+              <h1 className="SponsorsTitle"> Media Partner</h1>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="Sponsersboxx"
+            >
+              <img className="imgg" src={mediaPartner2} alt="" />
+              <h1 className="SponsorsTitle"> Media Partner</h1>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="Sponsersboxx"
+            >
+              <img className="imgg" src={partner} alt="" />
+              <h1 className="SponsorsTitle"> Partner</h1>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="Sponsersboxx"
+            >
+              <img className="imgg" src={knowledgePartner} alt="" />
+              <h1 className="SponsorsTitle"> Knowledge Partner</h1>
             </motion.div>
           </div>
         </div>
