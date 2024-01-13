@@ -4,8 +4,8 @@ import picc2 from "./picc2.png";
 import clglogo from "./clglogo.png";
 import { motion } from "framer-motion";
 import SectionHeader from "../../Components/SectionHeader/SectionHeader";
-import mobileticket from "/assets/images/ticketmobile.png";
-import desktopticket from "/assets/images/ticketdesktop.png";
+import mobileticket1 from "/assets/images/mobileticket.png";
+import desktopticket1 from "/assets/images/DesktopTicket.png";
 import ticketButton from "/assets/images/ticketButton.png";
 import { Link } from "react-router-dom";
 
@@ -87,7 +87,7 @@ const Ticket = () => {
       <SectionHeader text="GET YOUR FREE PASS" />
       <div className="TicketSection flex flex-col justify-center items-center mb-16 mt-6">
         <div className="DesktopTicketSection">
-          <img src={desktopticket} alt="mobile ticket" />
+          <img src={desktopticket1} alt="mobile ticket" />
           <div className="DesktopTicketButton">
             <Link to="/register">
               <img src={ticketButton} alt="button ticket" />
@@ -95,7 +95,7 @@ const Ticket = () => {
           </div>
         </div>
         <div className="MobileTicketSection">
-          <img src={mobileticket} alt="desktop ticket" />
+          <img src={mobileticket1} alt="desktop ticket" />
           <div className="MobileTicketButton">
             <Link to="/register">
               <img src={ticketButton} alt="button ticket mobile" />
