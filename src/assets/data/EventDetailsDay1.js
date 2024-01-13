@@ -16,7 +16,7 @@ const EventDetailsDay1 = [
         "time": "1:00 - 1:50 PM",
         "Place": "Shridhar Shriram Auditorium",
         "Event_Name": "Forever Ayodhya Text",
-        "Address": "",
+        "Address": "Koenraad Elst, Adv. Vishnu Shankar Jain and C. Pothraju in conversation",
     },
     {
         "time": "1:00 - 1:50 PM",
@@ -24,23 +24,19 @@ const EventDetailsDay1 = [
         "Event_Name": "Being Hindu in Bangladesh",
         "Address": "Deep Halder & Devdutta Majji in conversation with Utpal Kumar",
     },
-    {
-        "time": "2:00 - 2:50 PM",
-        "Place": "Shridhar Shriram Auditorium",
-        "Event_Name": "Warrior of the Fourth Estate",
-        "Address": "",
-    },
+
     {
         "time": "2:00 - 2:50 PM",
         "Place": "Arun Jaitley Front Lawn",
-        "Event_Name": "She The Leader : Women in Politics",
-        "Address": "Nidhi Sharma in conversation with Priya Sharma",
+        "Event_Name": "Mental Health Workshop with Smita Barooha",
+        "Address": "",
     },
+
     {
         "time": "3:00 - 3:50 PM",
         "Place": "Shridhar Shriram Auditorium",
         "Event_Name": "Burning Roses in my Garden",
-        "Address": " Harish Trivedi in conversation",
+        "Address": " Taslima Nasrin in conversation with Prof. Harish Trivedi",
     },
     {
         "time": "3:00 - 3:50 PM",
@@ -58,19 +54,26 @@ const EventDetailsDay1 = [
         "time": "4:00 - 4:50 PM",
         "Place": "Arun Jaitley Front Lawn",
         "Event_Name": "Nothing But the Truth",
-        "Address": "Rishabh Shah in conversation",
+        "Address": "Rishabh Shah in conversation with Mohit Gupta",
     },
     {
         "time": "5:00 PM - 5:50 PM",
         "Place": "Shridhar Shriram Auditorium",
         "Event_Name": "The Art of Habit",
         "Address": "Gauranga Das Prabhu in conversation",
+
+    },
+    {
+        "time": "5:00 - 5:50 PM",
+        "Place": "Arun Jaitley Front Lawn",
+        "Event_Name": "She The Leader : Women in Politics",
+        "Address": "Nidhi Sharma in conversation with Priya Sharma",
     },
     {
         "time": "6:00 PM - 6:50 PM",
         "Place": "Shridhar Shriram Auditorium",
         "Event_Name": "Book Launch - Mahabharata Unravelled II - The Dharma Discourses",
-        "Address": "Ami Ganatra & J. Sai Deepak in conversation with Sanjeev Sanya",
+        "Address": "Ami Ganatra & J. Sai Deepak in conversation with Sanjeev Sanyal",
     },
 ]
 
