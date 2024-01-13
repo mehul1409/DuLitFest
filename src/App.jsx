@@ -4,7 +4,7 @@ import Home from "./Pages/Home/Home";
 import Speakers from "./Pages/Speakers/Speakers";
 import Programme from "./Pages/Programme/Programme";
 import Register from "./Pages/Register/Register";
-import Sponsers from "./Pages/Sponsers/Sponsers";
+import Sponsers from "./Pages/Sponsers/Sponsers.jsx";
 import Contact from "./Pages/Contact/Contact";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 import Navbar from "./Components/Navbar/Navbar";
