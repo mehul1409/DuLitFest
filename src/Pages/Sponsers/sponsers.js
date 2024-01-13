@@ -1,22 +1,22 @@
 const sponsersdetail = [
     {
         img:'/assets/images/sponsers/clglogo.png',
-        title:'Venue partner'
+        title:'Venue Partner'
     },{
         img:'/assets/images/sponsers/picc2.png',
-        title:'Title parnter'
-    },{
-        img:"/assets/images/sponsers/CPSPartner.png",
-        title:'Partner'
+        title:'Title Parnter'
     },{
         img:'/assets/images/sponsers/KnowledgePartner.png',
-        title:'Knownledge partner'
+        title:'Knownledge Partner'
     },{
         img:'/assets/images/sponsers/SangamMediaPartner.png',
         title:'Media Partner'
     },{
         img:'/assets/images/sponsers/Republic_TVMediaPartner.webp',
         title:'Media Partner'
+    },{
+        img:"/assets/images/sponsers/CPSPartner.png",
+        title:'Partner'
     },
 ]
 
