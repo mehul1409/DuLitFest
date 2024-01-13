@@ -10,10 +10,10 @@ const Sponsers = () => {
       <div className="sponsers">
         {sponsersdetail.map((sponsers, index) => (
           <div className="partners" key={index}>
+            <div className="partnerstitle">{sponsers.title}</div>
             <div className="partnersLogo">
               <img src={sponsers.img} alt="" />
             </div>
-            <div className="partnerstitle">{sponsers.title}</div>
           </div>
         ))}
       </div>

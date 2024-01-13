@@ -4,7 +4,7 @@ const sponsersdetail = [
         title:'Venue Partner'
     },{
         img:'/assets/images/sponsers/picc2.png',
-        title:'Title Parnter'
+        title:'Title Partner'
     },{
         img:'/assets/images/sponsers/KnowledgePartner.png',
         title:'Knownledge Partner'
