@@ -6,9 +6,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import spons from "/assets/images/explorePartners1.png";
+import spons from "/assets/images/partners.png";
 import register from "/assets/images/exploreRegister1.png";
-import speak from "/assets/images/exploreSpeaker1.png";
+import speak from "/assets/images/speakers.png";
 import time from "/assets/images/exploreProgramme1.png";
 
 import "./Crousel.css";

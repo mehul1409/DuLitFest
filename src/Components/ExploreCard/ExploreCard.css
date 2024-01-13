@@ -86,26 +86,30 @@ border-bottom-left-radius: 50px;
 }
 
 .card:nth-child(1) {
-  background-image: url("/assets/images/explorePartners1.png");
+  background-image: url("/assets/images/partners.png");
   background-repeat: no-repeat;
   /* background-attachment: fixed;
   background-size: cover; */
   background-position: center center;
+  background-size: cover;
 }
 .card:nth-child(2) {
   background-image: url("/assets/images/exploreProgramme1.png");
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
 }
 .card:nth-child(3) {
-  background-image: url("/assets/images/image75.png");
+  background-image: url("/assets/images/speakers.png");
   background-repeat: no-repeat;
-  background-position: center center;
+  /* background-position: center center; */
+  background-size: cover;
 }
 .card:nth-child(4) {
   background-image: url("/assets/images/exploreRegister1.png");
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
 }
 
 .title {
