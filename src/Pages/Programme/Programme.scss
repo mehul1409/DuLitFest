@@ -80,6 +80,25 @@
   border-bottom-right-radius: 0;
 }
 
+.timelin {
+  // background-color: #3e0067;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.top {
+  // background-color: aqua;
+  // height: 0px;
+}
+.one {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  // background-color: #fabf29 !important;
+}
+
 .box-1,
 .box-2,
 .box-3 {
@@ -105,11 +124,17 @@
   background-color: #3e0067;
 }
 
+.day-time-venue {
+  height: 0;
+}
+
 ul {
   div {
     .top {
+      width: 100%;
       display: flex;
       justify-content: space-between;
+      align-items: center;
 
       p {
         font-size: 1.2rem;
