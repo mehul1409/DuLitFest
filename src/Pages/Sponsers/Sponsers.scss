@@ -1,58 +1,38 @@
 .sponsers {
+  width:100vw;
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-evenly;
+  background: radial-gradient(50% 50% at 50% 50%, #fff 0%, #f2fbff 0.01%, #d4f2ff 100%);
 }
 
-.Sponsersboxx {
-  padding: 10px;
-  width: fit-content;
+.partnersLogo{
+  height:250px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partners{
+  margin:2% 5%;
+}
+
+.partnersLogo img{
+  width:100%;
+}
+
+.partnerstitle{
   text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top:5%;
+}
 
-  h1 {
-    font-size: 1.7rem;
-    font-weight: 800;
-    padding: 5% 5%;
-  }
-
-  .imgg {
-    min-width: 320px;
-    max-height: 400px;
+@media only screen and (max-width:768px){
+  .partners{
+    margin:5%;
   }
 }
 
-.middle {
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    #fff 0%,
-    #f2fbff 0.01%,
-    #d4f2ff 100%
-  );
-  padding: 5% 0;
-}
-
-@media screen and (max-aspect-ratio: 4/3) {
-  .sponsers {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  .Sponsersboxx {
-    margin-bottom: 20px;
-  }
-
-  .middle {
-    padding: 10% 0;
-  }
-}
-
-@media screen and (max-width: 426px) {
-  .Sponsersboxx {
-    .imgg {
-      min-width: 300px;
-      max-height: 450px;
-    }
-  }
-}
