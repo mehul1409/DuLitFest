@@ -14,6 +14,7 @@ const RegisterForm = () => {
     email: "",
     phone: "",
     age: "",
+    gender: "",
     profession: "",
     checkboxes: {
       option1: false,
@@ -27,6 +28,7 @@ const RegisterForm = () => {
     email: "",
     phone: "",
     age: "",
+    gender: "",
     profession: "",
     checkboxes: "",
   });
@@ -113,7 +115,6 @@ const RegisterForm = () => {
     if (Data.checkboxes.option1) {
       try {
         await postToGoogleSheet("https://script.google.com/macros/s/AKfycbzw2ZQOme_P3LRcIG4NQius9SJQS437zTsK1C9xn28pnIYslz0hSSMxz5p0GD470y0b/exec");
-
       } catch (error) {
         console.log("Retrying with an alternative URL for option1");
         try {
@@ -143,8 +144,6 @@ const RegisterForm = () => {
     if (Data.checkboxes.option3) {
       try {
         await postToGoogleSheet("https://script.google.com/macros/s/AKfycbxc6epjgg3xtGpAq2UdP4u5xXV3KC1BSByorgQL0uBlvS7_Zc-9lRzw-9y9QU74sMbopQ/exec");
-
-
       } catch (error) {
         console.log("Retrying with an alternative URL for option3");
         try {
@@ -186,7 +185,9 @@ const RegisterForm = () => {
     } else if (isNaN(formData.age) || +formData.age <= 0) {
       errors.age = "Invalid age";
     }
-
+    if (!formData.gender.trim()) {
+      errors.gender = "Gender is required";
+    }
     if (!formData.profession.trim()) {
       errors.profession = "College/Profession is required";
     }
@@ -207,6 +208,7 @@ const RegisterForm = () => {
         email: "",
         phone: "",
         age: "",
+        gender: "",
         profession: "",
         checkboxes: {
           option1: false,
@@ -218,7 +220,7 @@ const RegisterForm = () => {
   };
   return (
     <>
-    <ToastContainer />
+      <ToastContainer />
       <div className="regis">
         {/* <SectionHeader text="Registration Form" /> */}
         <motion.form
@@ -284,6 +286,24 @@ const RegisterForm = () => {
               onChange={handleInputChange}
             />
             <p className="error">{formErrors.age}</p>
+          </div>
+          <div>
+            <label htmlFor="gender">Gender:</label>
+            <select
+              className="reginput"
+              id="gender"
+              name="gender"
+              placeholder="Select Gender"
+              value={formData.gender}
+              onChange={handleInputChange}
+            >
+              <option value="" >Select Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="others">Othesr</option>
+              <option value="Perfer Not To Say">Prefer Not to Say</option>
+            </select>
+            <p className="error">{formErrors.gender}</p>
           </div>
 
           <div>
@@ -355,8 +375,8 @@ const RegisterForm = () => {
               Register
             </button>
           </div>
-        </motion.form>
-      </div>
+        </motion.form >
+      </div >
     </>
   );
 };

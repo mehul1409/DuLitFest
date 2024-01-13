@@ -4,12 +4,10 @@
   // background-color: black;
   // background-image: linear-gradient(to bottom, #BBD2C5 0%,#536976 100%);
   // background-image: linear-gradient(to bottom, #e4e5e6 0%, #00416a 100%);
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    #fff 0%,
-    #f2fbff 0.01%,
-    #d4f2ff 100%
-  );
+  background: radial-gradient(50% 50% at 50% 50%,
+      #fff 0%,
+      #f2fbff 0.01%,
+      #d4f2ff 100%);
   padding-bottom: 30px;
   padding: 5%;
 }
@@ -111,10 +109,14 @@ label {
 
 /* styles.css or your custom CSS file */
 .custom-toast-success {
-  background-color: #d4f2ff !important; /* Change the background color */
+  background-color: #d4f2ff !important;
+  /* Change the background color */
 }
 
-.Toastify__progress-bar {
-  // display: none;
-  // background-color: #a0c4ea !important;
+// .Toastify__progress-bar {
+//   // display: none;
+//   // background-color: #a0c4ea !important;
+// }
+option:first {
+  color: #999;
 }
