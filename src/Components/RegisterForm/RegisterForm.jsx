@@ -3,10 +3,9 @@ import "./RegisterForm.scss";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { db } from "../../../firebase";
 import { motion } from "framer-motion";
-// import SectionHeader from "../../Components/SectionHeader/SectionHeader";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
+import SectionHeader from "../../Components/SectionHeader/SectionHeader";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const RegisterForm = () => {
   const [formData, setFormData] = useState({
@@ -73,13 +72,13 @@ const RegisterForm = () => {
         // style: {
         //   backgroundColor: "#d4f2ff ",
         // },
-        className: 'custom-toast-success'
+        className: "custom-toast-success",
       });
     } catch (error) {
       console.error("Error adding document: ", error);
       toast.error("Encountered some error, Please try again", {
         position: toast.POSITION.TOP_CENTER,
-        className: 'custom-toast-success'
+        className: "custom-toast-success",
       });
       // alert("Encountered some error, Please try again");
     }
@@ -105,7 +104,6 @@ const RegisterForm = () => {
 
         const responseData = await response.text();
         console.log("Response Data:", responseData);
-
       } catch (error) {
         console.error("Error:", error.message);
         throw error; // Rethrow the error for further handling if needed
@@ -114,11 +112,15 @@ const RegisterForm = () => {
 
     if (Data.checkboxes.option1) {
       try {
-        await postToGoogleSheet("https://script.google.com/macros/s/AKfycbzw2ZQOme_P3LRcIG4NQius9SJQS437zTsK1C9xn28pnIYslz0hSSMxz5p0GD470y0b/exec");
+        await postToGoogleSheet(
+          "https://script.google.com/macros/s/AKfycbzw2ZQOme_P3LRcIG4NQius9SJQS437zTsK1C9xn28pnIYslz0hSSMxz5p0GD470y0b/exec"
+        );
       } catch (error) {
         console.log("Retrying with an alternative URL for option1");
         try {
-          await postToGoogleSheet("https://script.google.com/macros/s/AKfycbzW69SbEzn5AtU1W7NkBjx99pDip7VzkBgslwXC5uLavGVpejnm5WuuW5-OTQTnAjxS/exec");
+          await postToGoogleSheet(
+            "https://script.google.com/macros/s/AKfycbzW69SbEzn5AtU1W7NkBjx99pDip7VzkBgslwXC5uLavGVpejnm5WuuW5-OTQTnAjxS/exec"
+          );
         } catch (retryError) {
           console.error("Failed to send data for option1:", retryError.message);
           // Handle the error, perhaps by notifying the user or logging
@@ -128,12 +130,15 @@ const RegisterForm = () => {
 
     if (Data.checkboxes.option2) {
       try {
-        await postToGoogleSheet("https://script.google.com/macros/s/AKfycbwPnVdfR-Zwhj76IJ1SWy-gGm85px9Juov0cjZ25Uc9CmGJG6qlO-jEKWr8_GfpAcgO/exec");
-
+        await postToGoogleSheet(
+          "https://script.google.com/macros/s/AKfycbwPnVdfR-Zwhj76IJ1SWy-gGm85px9Juov0cjZ25Uc9CmGJG6qlO-jEKWr8_GfpAcgO/exec"
+        );
       } catch (error) {
         console.log("Retrying with an alternative URL for option2");
         try {
-          await postToGoogleSheet("https://script.google.com/macros/s/AKfycbyllvSghOdeOdcwiZ81I77dVuk94m1UMOeEKlriwOERJpoBj524G5DC99FhbrqZoCBx/exec");
+          await postToGoogleSheet(
+            "https://script.google.com/macros/s/AKfycbyllvSghOdeOdcwiZ81I77dVuk94m1UMOeEKlriwOERJpoBj524G5DC99FhbrqZoCBx/exec"
+          );
         } catch (retryError) {
           console.error("Failed to send data for option2:", retryError.message);
           // Handle the error, perhaps by notifying the user or logging
@@ -143,11 +148,15 @@ const RegisterForm = () => {
 
     if (Data.checkboxes.option3) {
       try {
-        await postToGoogleSheet("https://script.google.com/macros/s/AKfycbxc6epjgg3xtGpAq2UdP4u5xXV3KC1BSByorgQL0uBlvS7_Zc-9lRzw-9y9QU74sMbopQ/exec");
+        await postToGoogleSheet(
+          "https://script.google.com/macros/s/AKfycbxc6epjgg3xtGpAq2UdP4u5xXV3KC1BSByorgQL0uBlvS7_Zc-9lRzw-9y9QU74sMbopQ/exec"
+        );
       } catch (error) {
         console.log("Retrying with an alternative URL for option3");
         try {
-          await postToGoogleSheet("https://script.google.com/macros/s/AKfycby97wHs4404UPlMlN5GcGYwU5EnpvW25GQjKqy-REXNTUeCfwOy41ei5161_M--SsKt/exec");
+          await postToGoogleSheet(
+            "https://script.google.com/macros/s/AKfycby97wHs4404UPlMlN5GcGYwU5EnpvW25GQjKqy-REXNTUeCfwOy41ei5161_M--SsKt/exec"
+          );
         } catch (retryError) {
           console.error("Failed to send data for option3:", retryError.message);
           // Handle the error, perhaps by notifying the user or logging
@@ -221,162 +230,209 @@ const RegisterForm = () => {
   return (
     <>
       <ToastContainer />
-      <div className="regis">
-        {/* <SectionHeader text="Registration Form" /> */}
-        <motion.form
-          ref={formRef}
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1.5, delay: 0.3 }}
-          viewport={{ once: true }}
-          className="registration-form"
-          onSubmit={handleFormSubmit}
-        >
-          <div>
-            <label htmlFor="name">Name:</label>
-            <input
-              className="reginput"
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              placeholder="Enter your name"
-              onChange={handleInputChange}
-            />
-            <p className="error">{formErrors.name}</p>
-          </div>
-
-          <div>
-            <label htmlFor="email">Email:</label>
-            <input
-              className="reginput"
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Enter your email"
-              value={formData.email}
-              onChange={handleInputChange}
-            />
-            <p className="error">{formErrors.email}</p>
-          </div>
-
-          <div>
-            <label htmlFor="phone">Phone:</label>
-            <input
-              className="reginput"
-              type="text"
-              id="phone"
-              name="phone"
-              placeholder="Enter your phone number"
-              value={formData.phone}
-              onChange={handleInputChange}
-            />
-            <p className="error">{formErrors.phone}</p>
-          </div>
-
-          <div>
-            <label htmlFor="age">Age:</label>
-            <input
-              className="reginput"
-              type="text"
-              id="age"
-              name="age"
-              placeholder="Enter your age"
-              value={formData.age}
-              onChange={handleInputChange}
-            />
-            <p className="error">{formErrors.age}</p>
-          </div>
-          <div>
-            <label htmlFor="gender">Gender:</label>
-            <select
-              className="reginput"
-              id="gender"
-              name="gender"
-              placeholder="Select Gender"
-              value={formData.gender}
-              onChange={handleInputChange}
-            >
-              <option value="" >Select Gender</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="others">Othesr</option>
-              <option value="Perfer Not To Say">Prefer Not to Say</option>
-            </select>
-            <p className="error">{formErrors.gender}</p>
-          </div>
-
-          <div>
-            <label htmlFor="profession">College/Profession:</label>
-            <input
-              className="reginput"
-              type="text"
-              id="profession"
-              name="profession"
-              placeholder="Enter your college/profession"
-              value={formData.profession}
-              onChange={handleInputChange}
-            />
-            <p className="error">{formErrors.profession}</p>
-          </div>
-
-          <div className="form-group">
-            <label>Days you will be attending the fest:</label>
-            <div className="checkbox-group">
-              <label className="dayylab">
-                <div className="dareg">
-                  <li className="reglist">Day 1</li>
+      <div className="RegistrationPage">
+        <div className="regisGuidelineSection">
+          <div className="GuidelineContainer">
+            <div className="RegistrationPageHeader">
+              <div className="RegistrationPageHeaderSectionHeader_text">
+                <div className="RegistrationPageHeaderSectionHeader_text_text-content">
+                  Rules & Regulations of the Festival
                 </div>
-                <input
-                  className="dayregi"
-                  type="checkbox"
-                  name="checkboxes"
-                  value="option1"
-                  checked={formData.checkboxes.option1}
-                  onChange={handleInputChange}
-                />
-              </label>
+                <div className="RegistrationPageHeaderUnderline"></div>
+              </div>
             </div>
-            <div className="checkbox-group">
-              <label className="dayylab">
-                <div className="dareg">
-                  <li className="reglist">Day 2</li>
-                </div>
-                <input
-                  className="dayregi"
-                  type="checkbox"
-                  name="checkboxes"
-                  value="option2"
-                  checked={formData.checkboxes.option2}
-                  onChange={handleInputChange}
-                />
-              </label>
+
+            <p className="regisGuidelines">
+              1 - The registration & entry to the venue are on a First Come,
+              First Serve basis. Entry to the venue may temporarily close to
+              avoid overcrowding.
+              <br /> 2 - Please carry your Government ID or College ID to the
+              venue for entry. Keep your IDs handy at the entrance gate.
+              <br /> 3 - Entry to the venue for SRCC students shall be from Gate
+              no. 3.
+              <br /> 4 - Entry to the venue for Outsiders shall be from Gate no.
+              2.
+              <br /> 5 - Heavy Baggage is not allowed at the festival venue due
+              to security protocols.
+              <br /> 6 - Entry to the Statue Lawn, Indoor Stadium and the SRCC
+              Main building is restricted for Outsiders.
+              <br /> 7 - Parking at the venue is restricted. We encourage the
+              attendees to use public transport.
+              <br /> 8 - Please carry your own water bottles.
+              <br /> 9 - Political activity of any kind is prohibited during the
+              course of the festival.
+              <br /> 10 - Follow the instructions as directed by the organizing
+              team.
+              <br /> 11 - The discretion of the organizing team & SRCC Faculty
+              over any issue pertaining to the festival is deemed final.
+            </p>
+          </div>
+        </div>
+        <div className="regis">
+          <div className="RegistrationPageHeader">
+            <div className="RegistrationPageHeaderSectionHeader_text">
+              <div className="RegistrationPageHeaderSectionHeader_text_text-content">
+                Registration Form
+              </div>
+              <div className="RegistrationPageHeaderUnderline"></div>
             </div>
-            <div className="checkbox-group">
-              <label className="dayylab">
-                <div className="dareg">
-                  <li className="reglist">Day 3</li>
-                </div>
-                <input
-                  className="dayregi"
-                  type="checkbox"
-                  name="checkboxes"
-                  value="option3"
-                  checked={formData.checkboxes.option3}
-                  onChange={handleInputChange}
-                />
-              </label>
-            </div>
-            <p className="error">{formErrors.checkboxes}</p>
           </div>
 
-          <div className="heyreg">
-            <button className="regbtn" onClick={handleFormSubmit}>
-              Register
-            </button>
-          </div>
-        </motion.form >
-      </div >
+          <motion.form
+            ref={formRef}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.5, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="registration-form"
+            onSubmit={handleFormSubmit}
+          >
+            <div>
+              <label htmlFor="name">Name:</label>
+              <input
+                className="reginput"
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                placeholder="Enter your name"
+                onChange={handleInputChange}
+              />
+              <p className="error">{formErrors.name}</p>
+            </div>
+
+            <div>
+              <label htmlFor="email">Email:</label>
+              <input
+                className="reginput"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                value={formData.email}
+                onChange={handleInputChange}
+              />
+              <p className="error">{formErrors.email}</p>
+            </div>
+
+            <div>
+              <label htmlFor="phone">Phone:</label>
+              <input
+                className="reginput"
+                type="text"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+                value={formData.phone}
+                onChange={handleInputChange}
+              />
+              <p className="error">{formErrors.phone}</p>
+            </div>
+
+            <div>
+              <label htmlFor="age">Age:</label>
+              <input
+                className="reginput"
+                type="text"
+                id="age"
+                name="age"
+                placeholder="Enter your age"
+                value={formData.age}
+                onChange={handleInputChange}
+              />
+              <p className="error">{formErrors.age}</p>
+            </div>
+            <div>
+              <label htmlFor="gender">Gender:</label>
+              <select
+                className="reginput"
+                id="gender"
+                name="gender"
+                placeholder="Select Gender"
+                value={formData.gender}
+                onChange={handleInputChange}
+              >
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Othesr</option>
+                <option value="Perfer Not To Say">Prefer Not to Say</option>
+              </select>
+              <p className="error">{formErrors.gender}</p>
+            </div>
+
+            <div>
+              <label htmlFor="profession">College/Profession:</label>
+              <input
+                className="reginput"
+                type="text"
+                id="profession"
+                name="profession"
+                placeholder="Enter your college/profession"
+                value={formData.profession}
+                onChange={handleInputChange}
+              />
+              <p className="error">{formErrors.profession}</p>
+            </div>
+
+            <div className="form-group">
+              <label>Days you will be attending the fest:</label>
+              <div className="checkbox-group">
+                <label className="dayylab">
+                  <div className="dareg">
+                    <li className="reglist">Day 1</li>
+                  </div>
+                  <input
+                    className="dayregi"
+                    type="checkbox"
+                    name="checkboxes"
+                    value="option1"
+                    checked={formData.checkboxes.option1}
+                    onChange={handleInputChange}
+                  />
+                </label>
+              </div>
+              <div className="checkbox-group">
+                <label className="dayylab">
+                  <div className="dareg">
+                    <li className="reglist">Day 2</li>
+                  </div>
+                  <input
+                    className="dayregi"
+                    type="checkbox"
+                    name="checkboxes"
+                    value="option2"
+                    checked={formData.checkboxes.option2}
+                    onChange={handleInputChange}
+                  />
+                </label>
+              </div>
+              <div className="checkbox-group">
+                <label className="dayylab">
+                  <div className="dareg">
+                    <li className="reglist">Day 3</li>
+                  </div>
+                  <input
+                    className="dayregi"
+                    type="checkbox"
+                    name="checkboxes"
+                    value="option3"
+                    checked={formData.checkboxes.option3}
+                    onChange={handleInputChange}
+                  />
+                </label>
+              </div>
+              <p className="error">{formErrors.checkboxes}</p>
+            </div>
+
+            <div className="heyreg">
+              <button className="regbtn" onClick={handleFormSubmit}>
+                Register
+              </button>
+            </div>
+          </motion.form>
+        </div>
+      </div>
     </>
   );
 };
