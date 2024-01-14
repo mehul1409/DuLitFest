@@ -15,21 +15,20 @@ const EventDetailsDay1 = [
     {
         "time": "1:00 - 1:50 PM",
         "Place": "Shridhar Shriram Auditorium",
-        "Event_Name": "Forever Ayodhya",
-        "Address": "Koenraad Elst in conversation with Lipika Bhushan",
+        "Event_Name": "Being Hindu in Bangladesh: The Untold Story",
+        "Address": "Deep Halder & Devdutta Majji in conversation with Utpal Kumar",
     },
     {
         "time": "1:00 - 1:50 PM",
         "Place": "Front Lawn",
-        "Event_Name": "Being Hindu in Bangladesh: The Untold Story",
-        "Address": "Deep Halder & Devdutta Majji in conversation with Utpal Kumar",
+        "Event_Name": "Forever Ayodhya",
+        "Address": "Koenraad Elst in conversation with Lipika Bhushan",
     },
-
     {
         "time": "2:00 - 2:50 PM",
         "Place": "Front Lawn",
         "Event_Name": "Relationship Hacks in the Times of Gen-Alpha",
-        "Address": "Mental Health Workshop with Smita Barooha",
+        "Address": "Mental Health Workshop with Smita Barooah",
     },
 
     {
@@ -67,7 +66,7 @@ const EventDetailsDay1 = [
         "time": "5:00 - 5:50 PM",
         "Place": "Front Lawn",
         "Event_Name": "She The Leader : Women in Politics",
-        "Address": "Nidhi Sharma and Neha Shalini Dua in conversation with Priya Sharma",
+        "Address": "Nidhi Sharma in conversation with Priya Sharma",
     },
     {
         "time": "6:00 PM - 6:50 PM",
