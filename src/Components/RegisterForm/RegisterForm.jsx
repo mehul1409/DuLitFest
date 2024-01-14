@@ -231,206 +231,227 @@ const RegisterForm = () => {
     <>
       <ToastContainer />
       <div className="RegistrationPage">
-        <div className="regisGuidelineSection">
-          <div className="GuidelineContainer">
+        <div className="RegistrationPageSection">
+          <div className="regisGuidelineSection">
+            <div className="GuidelineContainer">
+              <div className="RegistrationPageHeader">
+                <div className="RegistrationPageHeaderSectionHeader_text">
+                  <div className="RegistrationPageHeaderSectionHeader_text_text-content">
+                    Rules & Regulations of the Festival
+                  </div>
+                  <div className="RegistrationPageHeaderUnderline"></div>
+                </div>
+              </div>
+              <div className="regisGuidelines">
+                <ol style={{ listStyleType: "decimal" }}>
+                  <li>
+                    The registration & entry to the venue are on a First Come,
+                    First Serve basis. Entry to the venue may temporarily close
+                    to avoid overcrowding.
+                  </li>
+                  <li>
+                    Please carry your Government ID or College ID to the venue
+                    for entry. Keep your IDs handy at the entrance gate.
+                  </li>
+                  <li>
+                    Entry to the venue for SRCC students shall be from Gate no.
+                    3.
+                  </li>
+                  <li>
+                    Entry to the venue for Outsiders shall be from Gate no. 2.
+                  </li>
+                  <li>
+                    Heavy Baggage is not allowed at the festival venue due to
+                    security protocols.
+                  </li>
+                  <li>
+                    Entry to the Statue Lawn, Indoor Stadium and the SRCC Main
+                    building is restricted for Outsiders.
+                  </li>
+                  <li>
+                    Parking at the venue is restricted. We encourage the
+                    attendees to use public transport.
+                  </li>
+                  <li>Please carry your own water bottles.</li>
+                  <li>
+                    Political activity of any kind is prohibited during the
+                    course of the festival.
+                  </li>
+                  <li>
+                    Follow the instructions as directed by the organizing team.
+                  </li>
+                  <li>
+                    The discretion of the organizing team & SRCC Faculty over
+                    any issue pertaining to the festival is deemed final.
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div className="regis">
             <div className="RegistrationPageHeader">
               <div className="RegistrationPageHeaderSectionHeader_text">
                 <div className="RegistrationPageHeaderSectionHeader_text_text-content">
-                  Rules & Regulations of the Festival
+                  Registration Form
                 </div>
                 <div className="RegistrationPageHeaderUnderline"></div>
               </div>
             </div>
 
-            <p className="regisGuidelines">
-              1 - The registration & entry to the venue are on a First Come,
-              First Serve basis. Entry to the venue may temporarily close to
-              avoid overcrowding.
-              <br /> 2 - Please carry your Government ID or College ID to the
-              venue for entry. Keep your IDs handy at the entrance gate.
-              <br /> 3 - Entry to the venue for SRCC students shall be from Gate
-              no. 3.
-              <br /> 4 - Entry to the venue for Outsiders shall be from Gate no.
-              2.
-              <br /> 5 - Heavy Baggage is not allowed at the festival venue due
-              to security protocols.
-              <br /> 6 - Entry to the Statue Lawn, Indoor Stadium and the SRCC
-              Main building is restricted for Outsiders.
-              <br /> 7 - Parking at the venue is restricted. We encourage the
-              attendees to use public transport.
-              <br /> 8 - Please carry your own water bottles.
-              <br /> 9 - Political activity of any kind is prohibited during the
-              course of the festival.
-              <br /> 10 - Follow the instructions as directed by the organizing
-              team.
-              <br /> 11 - The discretion of the organizing team & SRCC Faculty
-              over any issue pertaining to the festival is deemed final.
-            </p>
+            <motion.form
+              ref={formRef}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1.5, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="registration-form"
+              onSubmit={handleFormSubmit}
+            >
+              <div>
+                <label htmlFor="name">Name:</label>
+                <input
+                  className="reginput"
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  placeholder="Enter your name"
+                  onChange={handleInputChange}
+                />
+                <p className="error">{formErrors.name}</p>
+              </div>
+
+              <div>
+                <label htmlFor="email">Email:</label>
+                <input
+                  className="reginput"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                />
+                <p className="error">{formErrors.email}</p>
+              </div>
+
+              <div>
+                <label htmlFor="phone">Phone:</label>
+                <input
+                  className="reginput"
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                  value={formData.phone}
+                  onChange={handleInputChange}
+                />
+                <p className="error">{formErrors.phone}</p>
+              </div>
+
+              <div>
+                <label htmlFor="age">Age:</label>
+                <input
+                  className="reginput"
+                  type="text"
+                  id="age"
+                  name="age"
+                  placeholder="Enter your age"
+                  value={formData.age}
+                  onChange={handleInputChange}
+                />
+                <p className="error">{formErrors.age}</p>
+              </div>
+              <div>
+                <label htmlFor="gender">Gender:</label>
+                <select
+                  className="reginput"
+                  id="gender"
+                  name="gender"
+                  placeholder="Select Gender"
+                  value={formData.gender}
+                  onChange={handleInputChange}
+                >
+                  <option value="">Select Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="others">Othesr</option>
+                  <option value="Perfer Not To Say">Prefer Not to Say</option>
+                </select>
+                <p className="error">{formErrors.gender}</p>
+              </div>
+
+              <div>
+                <label htmlFor="profession">College/Profession:</label>
+                <input
+                  className="reginput"
+                  type="text"
+                  id="profession"
+                  name="profession"
+                  placeholder="Enter your college/profession"
+                  value={formData.profession}
+                  onChange={handleInputChange}
+                />
+                <p className="error">{formErrors.profession}</p>
+              </div>
+
+              <div className="form-group">
+                <label>Days you will be attending the fest:</label>
+                <div className="checkbox-group">
+                  <label className="dayylab">
+                    <div className="dareg">
+                      <li className="reglist">Day 1</li>
+                    </div>
+                    <input
+                      className="dayregi"
+                      type="checkbox"
+                      name="checkboxes"
+                      value="option1"
+                      checked={formData.checkboxes.option1}
+                      onChange={handleInputChange}
+                    />
+                  </label>
+                </div>
+                <div className="checkbox-group">
+                  <label className="dayylab">
+                    <div className="dareg">
+                      <li className="reglist">Day 2</li>
+                    </div>
+                    <input
+                      className="dayregi"
+                      type="checkbox"
+                      name="checkboxes"
+                      value="option2"
+                      checked={formData.checkboxes.option2}
+                      onChange={handleInputChange}
+                    />
+                  </label>
+                </div>
+                <div className="checkbox-group">
+                  <label className="dayylab">
+                    <div className="dareg">
+                      <li className="reglist">Day 3</li>
+                    </div>
+                    <input
+                      className="dayregi"
+                      type="checkbox"
+                      name="checkboxes"
+                      value="option3"
+                      checked={formData.checkboxes.option3}
+                      onChange={handleInputChange}
+                    />
+                  </label>
+                </div>
+                <p className="error">{formErrors.checkboxes}</p>
+              </div>
+
+              <div className="heyreg">
+                <button className="regbtn" onClick={handleFormSubmit}>
+                  Register
+                </button>
+              </div>
+            </motion.form>
           </div>
-        </div>
-        <div className="regis">
-          <div className="RegistrationPageHeader">
-            <div className="RegistrationPageHeaderSectionHeader_text">
-              <div className="RegistrationPageHeaderSectionHeader_text_text-content">
-                Registration Form
-              </div>
-              <div className="RegistrationPageHeaderUnderline"></div>
-            </div>
-          </div>
-
-          <motion.form
-            ref={formRef}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1.5, delay: 0.3 }}
-            viewport={{ once: true }}
-            className="registration-form"
-            onSubmit={handleFormSubmit}
-          >
-            <div>
-              <label htmlFor="name">Name:</label>
-              <input
-                className="reginput"
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                placeholder="Enter your name"
-                onChange={handleInputChange}
-              />
-              <p className="error">{formErrors.name}</p>
-            </div>
-
-            <div>
-              <label htmlFor="email">Email:</label>
-              <input
-                className="reginput"
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter your email"
-                value={formData.email}
-                onChange={handleInputChange}
-              />
-              <p className="error">{formErrors.email}</p>
-            </div>
-
-            <div>
-              <label htmlFor="phone">Phone:</label>
-              <input
-                className="reginput"
-                type="text"
-                id="phone"
-                name="phone"
-                placeholder="Enter your phone number"
-                value={formData.phone}
-                onChange={handleInputChange}
-              />
-              <p className="error">{formErrors.phone}</p>
-            </div>
-
-            <div>
-              <label htmlFor="age">Age:</label>
-              <input
-                className="reginput"
-                type="text"
-                id="age"
-                name="age"
-                placeholder="Enter your age"
-                value={formData.age}
-                onChange={handleInputChange}
-              />
-              <p className="error">{formErrors.age}</p>
-            </div>
-            <div>
-              <label htmlFor="gender">Gender:</label>
-              <select
-                className="reginput"
-                id="gender"
-                name="gender"
-                placeholder="Select Gender"
-                value={formData.gender}
-                onChange={handleInputChange}
-              >
-                <option value="">Select Gender</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="others">Othesr</option>
-                <option value="Perfer Not To Say">Prefer Not to Say</option>
-              </select>
-              <p className="error">{formErrors.gender}</p>
-            </div>
-
-            <div>
-              <label htmlFor="profession">College/Profession:</label>
-              <input
-                className="reginput"
-                type="text"
-                id="profession"
-                name="profession"
-                placeholder="Enter your college/profession"
-                value={formData.profession}
-                onChange={handleInputChange}
-              />
-              <p className="error">{formErrors.profession}</p>
-            </div>
-
-            <div className="form-group">
-              <label>Days you will be attending the fest:</label>
-              <div className="checkbox-group">
-                <label className="dayylab">
-                  <div className="dareg">
-                    <li className="reglist">Day 1</li>
-                  </div>
-                  <input
-                    className="dayregi"
-                    type="checkbox"
-                    name="checkboxes"
-                    value="option1"
-                    checked={formData.checkboxes.option1}
-                    onChange={handleInputChange}
-                  />
-                </label>
-              </div>
-              <div className="checkbox-group">
-                <label className="dayylab">
-                  <div className="dareg">
-                    <li className="reglist">Day 2</li>
-                  </div>
-                  <input
-                    className="dayregi"
-                    type="checkbox"
-                    name="checkboxes"
-                    value="option2"
-                    checked={formData.checkboxes.option2}
-                    onChange={handleInputChange}
-                  />
-                </label>
-              </div>
-              <div className="checkbox-group">
-                <label className="dayylab">
-                  <div className="dareg">
-                    <li className="reglist">Day 3</li>
-                  </div>
-                  <input
-                    className="dayregi"
-                    type="checkbox"
-                    name="checkboxes"
-                    value="option3"
-                    checked={formData.checkboxes.option3}
-                    onChange={handleInputChange}
-                  />
-                </label>
-              </div>
-              <p className="error">{formErrors.checkboxes}</p>
-            </div>
-
-            <div className="heyreg">
-              <button className="regbtn" onClick={handleFormSubmit}>
-                Register
-              </button>
-            </div>
-          </motion.form>
         </div>
       </div>
     </>
