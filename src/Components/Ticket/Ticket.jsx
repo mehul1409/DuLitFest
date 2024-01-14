@@ -1,7 +1,5 @@
 import React from "react";
 import "./Ticket.css";
-import picc2 from "./picc2.png";
-import clglogo from "./clglogo.png";
 import { motion } from "framer-motion";
 import SectionHeader from "../../Components/SectionHeader/SectionHeader";
 import mobileticket from "/assets/images/Ticket2.png";
