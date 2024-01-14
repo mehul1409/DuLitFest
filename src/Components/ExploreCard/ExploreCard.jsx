@@ -1,13 +1,8 @@
 import "./ExploreCard.css";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import vector from "./vector.png";
 import Crousel from "../Crousel/Crousel";
 import SectionHeader from "../SectionHeader/SectionHeader";
-import spons from "/assets/images/explorePartners1.png";
-import register from "/assets/images/exploreRegister1.png";
-import speak from "/assets/images/exploreSpeaker1.png";
-import time from "/assets/images/exploreProgramme1.png";
 
 const ExploreCard = () => {
   return (
@@ -25,11 +20,12 @@ const ExploreCard = () => {
       </motion.div>
 
       <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1, delay: 0.3 }}
-      viewport={{ once: true }}
-      className="crousel-div">
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.3 }}
+        viewport={{ once: true }}
+        className="crousel-div"
+      >
         <Crousel />
       </motion.div>
 
