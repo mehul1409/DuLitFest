@@ -104,7 +104,7 @@ const SpeakersData = [
     {
         "name": "Amb. Rajiv Dogra",
         "imgUrl": "/assets/images/rajivdogra.png",
-        "tag": "Former diplomat, author"
+        "tag": "Author & Former diplomat"
     },
     {
         "name": "Ashwin Sanghi",
