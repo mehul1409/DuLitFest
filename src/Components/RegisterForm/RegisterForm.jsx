@@ -1,6 +1,13 @@
 import React, { useRef, useState } from "react";
 import "./RegisterForm.scss";
-import { collection, addDoc, serverTimestamp } from "firebase/firestore";
+import {
+  collection,
+  addDoc,
+  serverTimestamp,
+  query,
+  getDocs,
+  where,
+} from "firebase/firestore";
 import { db } from "../../../firebase";
 import { motion } from "framer-motion";
 import SectionHeader from "../../Components/SectionHeader/SectionHeader";
@@ -42,6 +49,49 @@ const RegisterForm = () => {
     }));
   };
 
+  const checkEmailExists = async (email) => {
+    try {
+      const day1Query = query(
+        collection(db, "Day1"),
+        where("email", "==", email)
+      );
+      const day2Query = query(
+        collection(db, "Day2"),
+        where("email", "==", email)
+      );
+      const day3Query = query(
+        collection(db, "Day3"),
+        where("email", "==", email)
+      );
+
+      const [day1Docs, day2Docs, day3Docs] = await Promise.all([
+        getDocs(day1Query),
+        getDocs(day2Query),
+        getDocs(day3Query),
+      ]);
+
+      const day = day1Docs.size > 0 || day2Docs.size > 0 || day3Docs.size > 0;
+      if (day === true) {
+        if (day1Docs.size > 0) {
+          return "1";
+        } else if (day2Docs.size > 0) {
+          return "2";
+        } else if (day3Docs.size > 0) {
+          return "3";
+        }
+      }
+      return false;
+    } catch (error) {
+      console.error("Error checking email existence: ", error);
+      // Log the specific error for better debugging
+      toast.error("Error checking email existence. See console for details", {
+        position: toast.POSITION.TOP_CENTER,
+        className: "custom-toast-error",
+      });
+      return false; // Assume email doesn't exist in case of an error
+    }
+  };
+
   const addToFirestore = async (formData) => {
     try {
       console.log("Adding your data to database");
@@ -69,16 +119,13 @@ const RegisterForm = () => {
       // toast("Registered Successfully");
       toast.success("Registered Successfully", {
         position: toast.POSITION.TOP_CENTER,
-        // style: {
-        //   backgroundColor: "#d4f2ff ",
-        // },
         className: "custom-toast-success",
       });
     } catch (error) {
       console.error("Error adding document: ", error);
       toast.error("Encountered some error, Please try again", {
         position: toast.POSITION.TOP_CENTER,
-        className: "custom-toast-success",
+        className: "custom-toast-error",
       });
       // alert("Encountered some error, Please try again");
     }
@@ -209,6 +256,14 @@ const RegisterForm = () => {
 
     if (Object.keys(errors).length === 0) {
       console.log("Form data submitted:", formData);
+      const emailExists = await checkEmailExists(formData.email);
+      if (emailExists) {
+        toast.error(`User Already Registered`, {
+          position: toast.POSITION.TOP_CENTER,
+          className: "custom-toast-error",
+        });
+        return; // Stop execution if email exists
+      }
       const send1 = await addToFirestore(formData);
       const send2 = await addToGoogleSheet(formData);
       //reset the form
@@ -375,7 +430,7 @@ const RegisterForm = () => {
                   <option value="">Select Gender</option>
                   <option value="male">Male</option>
                   <option value="female">Female</option>
-                  <option value="others">Othesr</option>
+                  <option value="others">Others</option>
                   <option value="Perfer Not To Say">Prefer Not to Say</option>
                 </select>
                 <p className="error">{formErrors.gender}</p>
