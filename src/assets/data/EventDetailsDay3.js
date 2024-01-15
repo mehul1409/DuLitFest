@@ -4,7 +4,7 @@ const EventDetailsDay3 = [
         "time": "10:00-10:50 AM",
         "Place": "Shridhar Shriram Auditorium",
         "Event_Name": "Internal Security",
-        "Address": "Aravind Bhatia in converstaion with Colonel Rama",
+        "Address": "Major General Arvind Bhatia in converstaion with Colonel Rama",
     },
     {
 
@@ -18,7 +18,7 @@ const EventDetailsDay3 = [
         "time": "11:00-11:50 AM",
         "Place": "Front Lawn",
         "Event_Name": "Soul and Swords: The History of Political Hinduism",
-        "Address": "Hindol Sengupta in conversation with Shweta Punj",
+        "Address": "Hindol Sengupta in conversation with Aabhas Maldahiyar",
     },
 
     {
@@ -72,7 +72,7 @@ const EventDetailsDay3 = [
         "time": "4:00 - 4:50 PM",
         "Place": "Front Lawn",
         "Event_Name": "Pranab, My Father: A Daughter Remembers",
-        "Address": "Sharmishtha Mukherjee in Conversation ",
+        "Address": "Sharmishtha Mukherjee in conversation ",
     },
     {
         "time": "5:00 PM - 6:30 PM",

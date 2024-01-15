@@ -292,7 +292,7 @@ const RegisterForm = () => {
               <div className="RegistrationPageHeader">
                 <div className="RegistrationPageHeaderSectionHeader_text">
                   <div className="RegistrationPageHeaderSectionHeader_text_text-content">
-                    Rules & Regulations of the Festival
+                    Rules of the DU Literature Festival
                   </div>
                   <div className="RegistrationPageHeaderUnderline"></div>
                 </div>
@@ -300,44 +300,79 @@ const RegisterForm = () => {
               <div className="regisGuidelines">
                 <ol style={{ listStyleType: "decimal" }}>
                   <li>
-                    The registration & entry to the venue are on a First Come,
-                    First Serve basis. Entry to the venue may temporarily close
-                    to avoid overcrowding.
+                    Registration & Entry to the venue are on a First Come, First
+                    Serve basis.
                   </li>
                   <li>
-                    Please carry your Government ID or College ID to the venue
-                    for entry. Keep your IDs handy at the entrance gate.
+                    Entry to the venue may temporarily closed to avoid
+                    overcrowding and/or keeping in view the security
+                    requirements.
                   </li>
                   <li>
-                    Entry to the venue for SRCC students shall be from Gate no.
-                    3.
+                    Entry to non-SRCC students will be from Gate No. 2 of the
+                    College only.
                   </li>
                   <li>
-                    Entry to the venue for Outsiders shall be from Gate no. 2.
+                    For SRCC students, entry will be from Gate No. 3 of the
+                    College.
+                  </li>
+                  <li>
+                    Please carry your College ID and Government ID to the venue
+                    for entry.
+                  </li>
+                  <li>
+                    Keep your IDs handy at the Entry Gate for ready reference at
+                    the Registration Counter. Your ID will be matched against
+                    your registered ID filled at the time of registration.
+                  </li>
+                  <li>
+                    You would be given identification bands/ID cards at the
+                    Registration Desk at the venue after registration. Kindly
+                    wear them for the duration of the Literature Fest inside the
+                    Campus.
                   </li>
                   <li>
                     Heavy Baggage is not allowed at the festival venue due to
                     security protocols.
                   </li>
                   <li>
-                    Entry to the Statue Lawn, Indoor Stadium and the SRCC Main
-                    building is restricted for Outsiders.
+                    Bringing alcohol, Drugs, and any other narcotic substance
+                    would lead you to be immediately ejected out of the
+                    Festival.
                   </li>
                   <li>
-                    Parking at the venue is restricted. We encourage the
-                    attendees to use public transport.
-                  </li>
-                  <li>Please carry your own water bottles.</li>
-                  <li>
-                    Political activity of any kind is prohibited during the
-                    course of the festival.
+                    Kindly observe general discipline and decorum. Be mindful of
+                    the classes ongoing during the Literature Fest.
                   </li>
                   <li>
-                    Follow the instructions as directed by the organizing team.
+                    Parking at the venue is highly limited. We strongly
+                    encourage attendees to use public transport.
                   </li>
                   <li>
-                    The discretion of the organizing team & SRCC Faculty over
-                    any issue pertaining to the festival is deemed final.
+                    Entry to the Statue Lawn, Stadium and the SRCC Main building
+                    is restricted for outsiders.
+                  </li>
+                  <li>
+                    We are aiming for a 100% ecologically sustainable event.
+                    Kindly do not litter in the venue.
+                  </li>
+                  <li>
+                    Please carry your own water bottles to help us further
+                    reduce the ecological footprint of the event.
+                  </li>
+                  <li>
+                    This is an event for appreciation of literature and literary
+                    thought. Therefore, political activity of any kind is highly
+                    prohibited during the course of the festival. 
+                  </li>
+                  <li>
+                    For smooth and meaningful functioning of the programme,
+                    kindly follow the instructions as given by the Organizing
+                    team. 
+                  </li>
+                  <li>
+                    The discretion of the Organizing team and SRCC over any
+                    issue pertaining to the festival shall be final.
                   </li>
                 </ol>
               </div>

@@ -13,7 +13,7 @@ const EventDetailsDay2 = [
         "Event_Name": "The Importance of Shinzo Abe : India, Japan and the Indo-Pacific",
         "Address": "Amb. Lakshmi Puri and Suhasini Haider in conversation with Prof. Ranjana Mukopadhyay",
     },
-     {
+    {
 
         "time": "11:00-11:50 AM",
         "Place": "Front Lawn",
@@ -26,7 +26,7 @@ const EventDetailsDay2 = [
         "Event_Name": "1947– 1957 India : The Birth of a Republic",
         "Address": "Chandrachur Ghose in conversation with Anand Ranganathan",
     },
-   
+
     {
         "time": "12:00-12:50 PM",
         "Place": "Front Lawn",
@@ -55,7 +55,7 @@ const EventDetailsDay2 = [
         "time": "2:00 - 2:50 PM",
         "Place": "Front Lawn",
         "Event_Name": "Modi, Hindus and Bharat ",
-        "Address": "Rahul Shivshankar & Anand Ranganathan in conversation with Ramesh Shinde",
+        "Address": "Rahul Shivshankar & Anand Ranganathan in conversation",
     },
     {
         "time": "3:00 - 3:50 PM",
@@ -81,7 +81,7 @@ const EventDetailsDay2 = [
         "Event_Name": "Middle of Diamond India : National Renaissance Through Participation and Enterprise",
         "Address": "Shashank Mani Tripathi in conversation with Anant Merathia",
     },
-    
+
     {
         "time": "5:00 PM - 5:50 PM",
         "Place": "Front Lawn",
@@ -92,6 +92,7 @@ const EventDetailsDay2 = [
         "time": "6:00 PM - 6:50 PM",
         "Place": "Shridhar Shriram Auditorium",
         "Event_Name": "Book Launch: Bharat Rising : Dharma, Democracy, Diplomacy ",
+        "Address": "Amb. Kanwal Sibal, Bibek Debroy, Amb. Rajiv Dogra, Ashwin Sanghi, Utpal Kumar in conversation with Rami Desai",
     },
 ]
 
