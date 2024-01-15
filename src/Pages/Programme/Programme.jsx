@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PageHeader from "../../Components/PageHeader/PageHeader";
 import EventDetailsDay1 from "../../assets/data/EventDetailsDay1";
-import EventDetailsDay2 from "../../assets/data/EventDetailsDay2";
+import EventDetailsDay2 from "../../assets/data/EventDetailsDay21";
 import EventDetailsDay3 from "../../assets/data/EventDetailsDay3";
 import { motion } from "framer-motion";
 import "./Programme.scss";
@@ -37,11 +37,12 @@ const Programme = () => {
       <div className="hello">
         <div className="outer-1">
           <motion.div
-           initial={{ opacity: 0 }}
-           whileInView={{ opacity: 1 }}
-           transition={{ duration: 1, delay:0.1 }}
-           viewport={{ once: true }}
-          className="day-buttons">
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="day-buttons"
+          >
             <button
               className={selectedDay === "Day1" ? "activeDay" : ""}
               onClick={() => handleDayClick("Day1")}
@@ -65,11 +66,13 @@ const Programme = () => {
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 2.5, delay:0.3 }}
+              transition={{ duration: 2.5, delay: 0.3 }}
               viewport={{ once: true }}
               className="Day1"
             >
-              {`Day - ${selectedDay.slice(-1)} - ${Number(selectedDay.slice(-1)) + 18}th January, 2024`}
+              {`Day - ${selectedDay.slice(-1)} - ${
+                Number(selectedDay.slice(-1)) + 18
+              }th January, 2024`}
             </motion.div>
             <ul>
               {getEventDetails().map((event, index) => (
