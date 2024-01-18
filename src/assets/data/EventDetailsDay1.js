@@ -3,7 +3,7 @@ const EventDetailsDay1 = [
 
         "time": "11:00-11:50 AM",
         "Place": "Shridhar Shriram Auditorium",
-        "Event_Name": "inaugration Ceremony",
+        "Event_Name": "Inaugration Ceremony",
         "Address": "Festival Director Dr. Swapan Dasgupta, Dean of Colleges (DU) Prof. Balaram Pani & Principal SRCC Prof. Simrit Kaur",
     },
     {

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import PageHeader from "../../Components/PageHeader/PageHeader";
 import EventDetailsDay1 from "../../assets/data/EventDetailsDay1";
-import EventDetailsDay2 from "../../assets/data/EventDetailsDay21";
-import EventDetailsDay3 from "../../assets/data/EventDetailsDay3";
+import EventDetailsDay2 from "../../assets/data/EventDetailsDay2";
+import EventDetailsDay3 from "../../assets/data/EventDetailsDay31";
 import { motion } from "framer-motion";
 import "./Programme.scss";
 import Footer from "../../Components/Footer/Footer";

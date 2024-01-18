@@ -1,62 +1,54 @@
 const EventDetailsDay2 = [
     {
-
-        "time": "10:00-10:50 AM",
-        "Place": "Front Lawn",
-        "Event_Name": "Gender in Indian Tradition",
-        "Address": "Rinkoo Wadhera in conversation with Saumya Dey",
-    },
-    {
-
         "time": "11:00-11:50 AM",
         "Place": "Shridhar Shriram Auditorium",
         "Event_Name": "The Importance of Shinzo Abe : India, Japan and the Indo-Pacific",
-        "Address": "Amb. Lakshmi Puri and Suhasini Haider in conversation with Prof. Ranjana Mukopadhyay",
+        "Address": "Amb. Hiroshi Suzuki, Amb. Lakshmi Puri and Suhasini Haider in conversation with Prof. Ranjana Mukhopadhyay",
     },
     {
-
         "time": "11:00-11:50 AM",
         "Place": "Front Lawn",
         "Event_Name": "They Have a Name for it ",
-        "Address": "Anisha Kaul in conversation with Anand Ranganathan",
+        "Address": "Anisha Kaul in conversation with Aditya Raj Kaul",
     },
     {
         "time": "12:00-12:50 PM",
         "Place": "Shridhar Shriram Auditorium",
-        "Event_Name": "1947– 1957 India : The Birth of a Republic",
-        "Address": "Chandrachur Ghose in conversation with Anand Ranganathan",
-    },
-
-    {
-        "time": "12:00-12:50 PM",
-        "Place": "Front Lawn",
         "Event_Name": "Another Sort of Freedom : A Memoir",
         "Address": "Gurcharan Das in conversation with Ranjit Dass",
     },
     {
-        "time": "1:00 - 1:50 PM",
-        "Place": "Shridhar Shriram Auditorium",
-        "Event_Name": "Posthumous Book Launch : Aryo ka Adidesh Bharat by Late Prof. B. B. Lal",
-        "Address": "Dr. B. R. Mani, AVM Rajesh Lal, Sanjeev Sanyal in conversation with Swapan Dasgupta",
-    },
-    {
-        "time": "1:00 - 1:50 PM",
+        "time": "12:00 - 12:50 PM",
         "Place": "Front Lawn",
         "Event_Name": "The Art of Translations",
         "Address": "Urmila Gupta, Ashutosh Garg, Rachna Bhola Yamini in conversation with Maneesha Taneja",
     },
     {
-        "time": "2:00 - 2:50 PM",
+        "time": "1:00 - 1:50 PM",
         "Place": "Shridhar Shriram Auditorium",
-        "Event_Name": "Vichoda and Calling Sehmat",
-        "Address": "Harinder Sikka in conversation with ",
+        "Event_Name": "Posthumous Book Launch : Aryo ka Adidesh Bharat by Late Prof. B. B. Lal",
+        "Address": "Smt. Meenakshi Lekhi, AVM Rajesh Lal, Dr. B. R. Mani, Dr. Swapan Dasgupta & Sanjeev Sanyal ",
+    },
+    {
+        "time": "1:00 - 1:50 PM",
+        "Place": "Front Lawn",
+        "Event_Name": "Modi, Hindus and Bharat ",
+        "Address": "Rahul Shivshankar & Anand Ranganathan in conversation with Aabhas Maldahiyar",
+    },
+
+    {
+        "time": "2:00-2:50 PM",
+        "Place": "Shridhar Shriram Auditorium",
+        "Event_Name": "1947– 1957 India : The Birth of a Republic",
+        "Address": "Chandrachur Ghose in conversation with Anand Ranganathan",
     },
     {
         "time": "2:00 - 2:50 PM",
         "Place": "Front Lawn",
-        "Event_Name": "Modi, Hindus and Bharat ",
-        "Address": "Rahul Shivshankar & Anand Ranganathan in conversation with Ramesh Shinde",
+        "Event_Name": "Vichoda and Calling Sehmat",
+        "Address": "Harinder Sikka in conversation with Ramesh Shinde",
     },
+
     {
         "time": "3:00 - 3:50 PM",
         "Place": "Shridhar Shriram Auditorium",
@@ -79,9 +71,8 @@ const EventDetailsDay2 = [
         "time": "4:00 - 4:50 PM",
         "Place": "Front Lawn",
         "Event_Name": "Middle of Diamond India : National Renaissance Through Participation and Enterprise",
-        "Address": "Shashank Mani Tripathi in conversation with Anant Merathia",
+        "Address": "Shashank Mani Tripathi & Prof. Rakesh Sinha in conversation with Anant Merathia",
     },
-
     {
         "time": "5:00 PM - 5:50 PM",
         "Place": "Front Lawn",
@@ -91,7 +82,8 @@ const EventDetailsDay2 = [
     {
         "time": "6:00 PM - 6:50 PM",
         "Place": "Shridhar Shriram Auditorium",
-        "Event_Name": "Book Launch: Bharat Rising : Dharma, Democracy, Diplomacy ",
+        "Event_Name": "Bharat Rising : Dharma, Democracy, Diplomacy ",
+        "Address": " Amb. Kanwal Sibal, Bibek Debroy, Amb. Rajiv Dogra, Ashwin Sanghi & Utpal Kumar in conversation with Rami Desai	",
     },
 ]
 
