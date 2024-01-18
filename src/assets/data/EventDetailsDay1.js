@@ -24,13 +24,20 @@ const EventDetailsDay1 = [
         "Event_Name": "Being Hindu in Bangladesh: The Untold Story",
         "Address": "Deep Halder & Devdutta Majji in conversation with Utpal Kumar",
     },
+    {
+         "time": "1:00 - 1:50 PM",
+        "Place": "Seminar Hall",
+        "Event_Name": "The Livelihood Battles of Nano Entrepreneurs",
+        "Address": "Talk by Prof. Madhu Kishwar",
+        
+    },
     
     
     {
         "time": "2:00 - 2:50 PM",
         "Place": "Shridhar Shriram Auditorium",
         "Event_Name": "Burning Roses in my Garden",
-        "Address": " Taslima Nasrin in conversation with Prof. Harish Trivedi",
+        "Address": " Prof. Harish Trivedi in conversation",
     },
  {
         "time": "3:00 - 3:50 PM",
