@@ -1,5 +1,5 @@
 const EventDetailsDay3 = [
-    
+
     {
 
         "time": "11:00-11:50 AM",
@@ -12,7 +12,7 @@ const EventDetailsDay3 = [
         "time": "11:00-11:50 AM",
         "Place": "Front Lawn",
         "Event_Name": "Soul and Swords: The History of Political Hinduism",
-        "Address": "Hindol Sengupta in conversation with ",
+        "Address": "Hindol Sengupta in conversation with Sunaina Kumar ",
     },
 
     {
@@ -21,11 +21,11 @@ const EventDetailsDay3 = [
         "Event_Name": "India In Search of Glory : Political Calculus and Economy",
         "Address": "Dr. Ashok K. Lahiri in conversation with Gautam Chikermane",
     },
-{
+    {
         "time": "12:00-12:50 PM",
         "Place": "Front Lawn",
         "Event_Name": "India's Experiment with Democracy: The Life of a Nation Through Its Elections",
-        "Address": "S.Y. Quraishi in conversation with Ashutosh Mishra",
+        "Address": "S. Y. Quraishi in conversation with Manisha Priyam",
     },
     {
         "time": "1:00 - 1:50 PM",
@@ -45,13 +45,13 @@ const EventDetailsDay3 = [
         "time": "2:00 - 2:50 PM",
         "Place": "Shridhar Shriram Auditorium",
         "Event_Name": "The Commissioner For Lost Causes",
-        "Address": "Arun Shourie in conversation with Prof. Dhananjay Singh",
+        "Address": "Arun Shourie in conversation with Sahil Aggarwal",
     },
     {
         "time": "2:00 - 2:50 PM",
         "Place": "Front Lawn",
         "Event_Name": "The Middle Eastern Dilemma",
-        "Address": "Neeraj Atri, Aabhas Maldahiyar in conversation with Ramesh Shinde",
+        "Address": "Neeraj Atri & Aabhas Maldahiyar in conversation with Rahul Dewan",
     },
 
     {
@@ -60,7 +60,7 @@ const EventDetailsDay3 = [
         "Event_Name": "From DU to Prime Time : Conversations with Rajat Sharma",
         "Address": "Rajat Sharma in conversation with Shobhit Mathur",
     },
-{
+    {
         "time": "3:00 - 3:50 PM",
         "Place": "Front Lawn",
         "Event_Name": "Internal Security ",
