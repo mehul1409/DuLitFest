@@ -1,8 +1,21 @@
-# React + Vite
+# DU Literature Festival Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive website developed for the DU Literature Festival, created collaboratively by a team of four members.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- *React*
+  - Utilized for crafting a dynamic and interactive user interface.
+- *CSS*
+  - Employed for designing a visually appealing and responsive layout.
+
+## Key Features
+
+- *Event Information:*
+  - Detailed sections about the festival schedule, speakers, and events.
+- *Registration:*
+  - Allows users to register for various festival events.
+- *Interactive Design:*
+  - Engaging and user-friendly interface powered by React.
+- *Responsive Layout:*
+  - Ensures optimal viewing on a variety of devices.
